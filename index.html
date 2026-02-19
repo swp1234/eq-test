@@ -1186,7 +1186,7 @@
           <div class="advice-card-header">
             <span class="advice-card-icon">${dim.icon}</span>
             <span class="advice-card-name">${i18n.t(`dim.${dim.key}`)}</span>
-            <span class="advice-card-score">${score}점</span>
+            <span class="advice-card-score">${score}${window.i18n?.t('units.points') || '점'}</span>
           </div>
           <div class="advice-card-desc">${i18n.t(`desc.${dim.key}`)}</div>
           <div class="advice-card-tip">${i18n.t(`advice.${dim.key}`)}</div>

@@ -118,5 +118,8 @@
     "copy": "Bağlantıyı Kopyala",
     "copied": "Kopyalandı!",
     "twitterText": "EQ puanım {score} ({grade})! Senin Duygusal Zekan ne kadar?"
+  },
+  "units": {
+    "points": "puan"
   }
 }

@@ -118,5 +118,8 @@
     "copy": "링크 복사",
     "copied": "복사됨!",
     "twitterText": "나의 EQ 감성지수: {score}점 ({grade})! 당신의 감성지능은 몇 점인가요?"
+  },
+  "units": {
+    "points": "점"
   }
 }

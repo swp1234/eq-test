@@ -118,5 +118,8 @@
     "copy": "リンクをコピー",
     "copied": "コピー済み！",
     "twitterText": "私のEQスコアは{score}点（{grade}）！あなたの感情知能は？"
+  },
+  "units": {
+    "points": "点"
   }
 }

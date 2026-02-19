@@ -118,5 +118,8 @@
     "copy": "Salin Tautan",
     "copied": "Disalin!",
     "twitterText": "Skor EQ saya adalah {score} ({grade})! Berapa Kecerdasan Emosional Anda?"
+  },
+  "units": {
+    "points": "poin"
   }
 }

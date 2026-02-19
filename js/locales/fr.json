@@ -118,5 +118,8 @@
     "copy": "Copier le lien",
     "copied": "Copié !",
     "twitterText": "Mon score EQ est de {score} ({grade}) ! Quelle est votre intelligence émotionnelle ?"
+  },
+  "units": {
+    "points": "pts"
   }
 }
