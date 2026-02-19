@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="40" fill="#0a0e1a"/>
+  <rect width="192" height="192" rx="40" fill="url(#bg)"/>
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="30%">
+      <stop offset="0%" stop-color="#00bcd4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00bcd4"/>
+      <stop offset="100%" stop-color="#4dd0e1"/>
+    </linearGradient>
+  </defs>
+  <!-- Heart with brain concept -->
+  <text x="96" y="115" font-size="80" text-anchor="middle" font-family="system-ui">=š</text>
+  <!-- EQ text -->
+  <text x="96" y="158" font-size="26" font-weight="800" text-anchor="middle" font-family="system-ui, sans-serif" fill="url(#g1)">EQ</text>
+</svg>

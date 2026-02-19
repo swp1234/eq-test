@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Tes EQ | Berapa Kecerdasan Emosional Anda? - DopaBrain",
+    "description": "Ukur Kecerdasan Emosional (EQ) Anda dengan 40 pertanyaan dalam 5 dimensi: kesadaran diri, regulasi diri, motivasi, empati, dan keterampilan sosial."
+  },
+  "accessibility": {
+    "skipMain": "Lewati ke konten utama"
+  },
+  "app": {
+    "title": "Tes EQ",
+    "subtitle": "Tes Kecerdasan Emosional",
+    "heroTitle": "Berapa Skor EQ Anda?"
+  },
+  "dim": {
+    "awareness": "Kesadaran Diri",
+    "awarenessDesc": "Mengenali emosi Anda dan dampaknya",
+    "regulation": "Regulasi Diri",
+    "regulationDesc": "Mengelola dorongan dan emosi secara konstruktif",
+    "motivation": "Motivasi",
+    "motivationDesc": "Dorongan batin dan semangat menuju tujuan",
+    "empathy": "Empati",
+    "empathyDesc": "Memahami dan peduli terhadap perasaan orang lain",
+    "social": "Keterampilan Sosial",
+    "socialDesc": "Membangun hubungan dan memberikan pengaruh"
+  },
+  "intro": {
+    "desc": "Temukan kecerdasan emosional Anda di 5 dimensi dengan 40 pertanyaan dan dapatkan saran yang dipersonalisasi.",
+    "chip1": "40 Pertanyaan",
+    "chip2": "~8 Menit",
+    "chip3": "5 Dimensi",
+    "disclaimer": "⚠️ Tes ini hanya untuk pemahaman diri dan bukan penilaian psikologis resmi.",
+    "start": "Mulai Tes"
+  },
+  "scale": {
+    "disagree": "Sangat\nTidak Setuju",
+    "neither": "Netral",
+    "agree": "Sangat\nSetuju",
+    "hint": "1 = Sangat Tidak Setuju  |  5 = Sangat Setuju"
+  },
+  "quiz": {
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "finish": "Lihat Hasil"
+  },
+  "q1": "Saya dapat mengidentifikasi dengan tepat emosi yang sedang saya rasakan.",
+  "q2": "Ketika saya marah, saya memahami dengan jelas alasannya.",
+  "q3": "Saya sadar bagaimana emosi saya memengaruhi penilaian dan tindakan saya.",
+  "q4": "Saya dapat menilai kekuatan dan kelemahan saya secara jujur.",
+  "q5": "Saya memiliki pemahaman yang jelas tentang nilai-nilai inti saya.",
+  "q6": "Ketika stres, saya dapat dengan cepat mengidentifikasi sumbernya.",
+  "q7": "Saya menggunakan umpan balik dari orang lain untuk memperdalam pemahaman diri.",
+  "q8": "Saya sering memeriksa kondisi emosional saya sepanjang hari.",
+  "q9": "Meski marah, saya menghindari bertindak secara impulsif.",
+  "q10": "Saya dapat menjaga ketenangan dalam situasi sulit atau penuh tekanan.",
+  "q11": "Saya pulih dengan cepat dari emosi negatif.",
+  "q12": "Saya dapat menunda kepuasan segera untuk memprioritaskan tujuan jangka panjang.",
+  "q13": "Saya dapat tetap tenang dan rasional bahkan dalam situasi konflik.",
+  "q14": "Saya menghindari menyalahkan diri secara berlebihan ketika membuat kesalahan.",
+  "q15": "Saya berusaha mempertahankan prinsip dan nilai saya dalam situasi apa pun.",
+  "q16": "Suasana hati saya umumnya stabil, tanpa perubahan ekstrem.",
+  "q17": "Saya menetapkan tujuan dan bekerja keras untuk mencapainya.",
+  "q18": "Saya tidak mudah menyerah ketika menghadapi hambatan.",
+  "q19": "Saya memiliki ketahanan untuk bangkit kembali setelah kegagalan.",
+  "q20": "Saya membawa semangat dalam pekerjaan meski tanpa penghargaan eksternal.",
+  "q21": "Saya terus-menerus berusaha untuk berkembang dan tumbuh sebagai pribadi.",
+  "q22": "Saya menikmati menetapkan tujuan yang menantang dan ambisius.",
+  "q23": "Saya bersedia melakukan pengorbanan jangka pendek demi kesuksesan jangka panjang.",
+  "q24": "Saya benar-benar menikmati belajar keterampilan dan pengetahuan baru.",
+  "q25": "Saya dapat dengan mudah membaca kondisi emosional orang lain.",
+  "q26": "Saya berusaha memahami situasi dari perspektif orang lain.",
+  "q27": "Saya merasa sangat tersentuh ketika melihat seseorang dalam kesedihan.",
+  "q28": "Saya dapat merasakan bagaimana perasaan seseorang meskipun mereka tidak mengatakannya.",
+  "q29": "Saya dengan mudah memahami dan menghormati orang dari latar belakang budaya yang berbeda.",
+  "q30": "Saya segera menyadari ketika seseorang merasa tidak nyaman.",
+  "q31": "Saya dapat melihat masalah dari sudut pandang orang lain.",
+  "q32": "Dalam situasi konflik, saya terlebih dahulu mempertimbangkan perasaan pihak lain.",
+  "q33": "Saya dapat dengan mudah terhubung dengan orang-orang baru.",
+  "q34": "Saya efektif dalam menengahi konflik secara damai.",
+  "q35": "Saya cenderung mendorong kerja sama terbaik dalam sebuah tim.",
+  "q36": "Saya mendengarkan dengan penuh perhatian dan merespons dengan bijaksana.",
+  "q37": "Saya mampu memberikan pengaruh positif pada orang-orang di sekitar saya.",
+  "q38": "Saya menganggap membangun kepercayaan dalam hubungan sangat penting.",
+  "q39": "Saya mengekspresikan diri dengan jelas agar orang lain mudah memahami.",
+  "q40": "Saya merasa nyaman dalam berbagai situasi sosial.",
+  "grade": {
+    "exceptional": "✨ EQ Luar Biasa",
+    "exceptionalDesc": "Kecerdasan emosional Anda sangat luar biasa. Anda dengan terampil mengelola emosi diri dan orang lain.",
+    "excellent": "🌟 EQ Sangat Baik",
+    "excellentDesc": "Anda memiliki kecerdasan emosional tinggi dengan keterampilan interpersonal yang kuat.",
+    "good": "💚 EQ Baik",
+    "goodDesc": "Kecerdasan emosional Anda solid. Anda mengelola emosi dengan baik di sebagian besar situasi.",
+    "average": "💛 EQ Rata-rata",
+    "averageDesc": "Kecerdasan emosional Anda di tingkat rata-rata. Latihan terfokus di area tertentu akan membantu pertumbuhan.",
+    "developing": "🔶 EQ Berkembang",
+    "developingDesc": "Anda memiliki banyak kesempatan untuk mengembangkan kecerdasan emosional. Latihan konsisten dapat membawa peningkatan signifikan."
+  },
+  "result": {
+    "yourEQ": "Skor EQ Anda",
+    "dimTitle": "Skor per Dimensi",
+    "adviceTitle": "Analisis & Saran",
+    "retry": "Ikuti Tes Lagi"
+  },
+  "desc": {
+    "awareness": "Kesadaran diri adalah kemampuan memahami emosi, kekuatan, dan kelemahan Anda secara akurat. Skor lebih tinggi berarti keputusan yang lebih bijak dan terinformasi.",
+    "regulation": "Regulasi diri adalah kemampuan mengendalikan emosi dan dorongan yang mengganggu secara konstruktif. Skor lebih tinggi berarti tetap tenang di bawah tekanan.",
+    "motivation": "Motivasi adalah dorongan batin untuk mencapai tujuan. Skor lebih tinggi berarti teguh menghadapi kesulitan dan bergerak penuh semangat menuju tujuan.",
+    "empathy": "Empati adalah kemampuan memahami dan berbagi perasaan orang lain. Skor lebih tinggi berarti hubungan yang lebih dalam dan dukungan yang lebih efektif.",
+    "social": "Keterampilan sosial melibatkan mengelola hubungan dengan terampil dan menginspirasi kerja sama. Skor lebih tinggi berarti kerja tim, kepemimpinan, dan jaringan yang lebih baik."
+  },
+  "advice": {
+    "awareness": "💡 Simpan jurnal emosi. Luangkan 5 menit sehari untuk mencatat apa yang Anda rasakan dan mengapa. Meditasi mindfulness juga sangat efektif.",
+    "regulation": "💡 Latih teknik 'berhenti dan berpikir'. Saat emosi kuat muncul, hitung sampai 10 dan bernapas dalam-dalam. Olahraga teratur dan tidur berkualitas adalah fondasinya.",
+    "motivation": "💡 Pecah tujuan besar menjadi tonggak kecil. Mengalami keberhasilan kecil setiap hari memperkuat motivasi intrinsik. Tuliskan 'mengapa Anda' dan baca ulang sesering mungkin.",
+    "empathy": "💡 Latih mendengarkan tanpa menghakimi. Setelah percakapan, tanyakan pada diri sendiri: 'Bagaimana perasaan orang itu?' Membaca fiksi yang beragam juga efektif mengembangkan empati.",
+    "social": "💡 Coba lakukan percakapan tulus dengan seseorang yang baru setiap minggu. Dalam konflik, akui perspektif orang lain terlebih dahulu sebelum mengungkapkan milik Anda."
+  },
+  "share": {
+    "copy": "Salin Tautan",
+    "copied": "Disalin!",
+    "twitterText": "Skor EQ saya adalah {score} ({grade})! Berapa Kecerdasan Emosional Anda?"
+  }
+}

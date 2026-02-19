@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "EQ Test | What's Your Emotional Intelligence Score? - DopaBrain",
+    "description": "Measure your Emotional Intelligence (EQ) with 40 questions across 5 dimensions: self-awareness, self-regulation, motivation, empathy, and social skills."
+  },
+  "accessibility": {
+    "skipMain": "Skip to main content"
+  },
+  "app": {
+    "title": "EQ Test",
+    "subtitle": "Emotional Intelligence Test",
+    "heroTitle": "What's Your EQ Score?"
+  },
+  "dim": {
+    "awareness": "Self-Awareness",
+    "awarenessDesc": "Recognizing your emotions and their impact",
+    "regulation": "Self-Regulation",
+    "regulationDesc": "Managing impulses and emotions constructively",
+    "motivation": "Motivation",
+    "motivationDesc": "Inner drive and passion toward your goals",
+    "empathy": "Empathy",
+    "empathyDesc": "Understanding and caring for others' feelings",
+    "social": "Social Skills",
+    "socialDesc": "Building relationships and wielding influence"
+  },
+  "intro": {
+    "desc": "Discover your emotional intelligence across 5 dimensions with 40 questions and receive personalized advice.",
+    "chip1": "40 Questions",
+    "chip2": "~8 Minutes",
+    "chip3": "5 Dimensions",
+    "disclaimer": "⚠️ This test is for self-understanding only and is not an official psychological assessment.",
+    "start": "Start the Test"
+  },
+  "scale": {
+    "disagree": "Strongly\nDisagree",
+    "neither": "Neutral",
+    "agree": "Strongly\nAgree",
+    "hint": "1 = Strongly Disagree  |  5 = Strongly Agree"
+  },
+  "quiz": {
+    "prev": "Previous",
+    "next": "Next",
+    "finish": "See Results"
+  },
+  "q1": "I can accurately identify the emotions I am feeling.",
+  "q2": "When I'm angry, I can clearly understand why.",
+  "q3": "I am aware of how my emotions influence my judgment and actions.",
+  "q4": "I can honestly assess my own strengths and weaknesses.",
+  "q5": "I have a clear understanding of my core values.",
+  "q6": "When under stress, I can quickly identify the source.",
+  "q7": "I use feedback from others to deepen my self-understanding.",
+  "q8": "I frequently check in with my emotional state throughout the day.",
+  "q9": "Even when angry, I avoid acting impulsively.",
+  "q10": "I maintain composure in difficult or stressful situations.",
+  "q11": "I recover quickly from negative emotions.",
+  "q12": "I can delay immediate gratification to prioritize long-term goals.",
+  "q13": "I can remain calm and rational even in conflict situations.",
+  "q14": "I avoid excessive self-blame when I make mistakes.",
+  "q15": "I strive to uphold my principles and values in any situation.",
+  "q16": "My mood is generally stable without extreme highs and lows.",
+  "q17": "I set goals and work persistently to achieve them.",
+  "q18": "I do not give up easily when faced with obstacles.",
+  "q19": "I have the resilience to bounce back after failure.",
+  "q20": "I bring passion to my work even without external rewards.",
+  "q21": "I constantly strive to improve and grow as a person.",
+  "q22": "I enjoy setting challenging and ambitious goals.",
+  "q23": "I am willing to make short-term sacrifices for long-term success.",
+  "q24": "I genuinely enjoy learning new skills and knowledge.",
+  "q25": "I can easily read the emotional state of others.",
+  "q26": "I make an effort to understand situations from others' perspectives.",
+  "q27": "I feel deeply moved when I see someone in pain or grief.",
+  "q28": "I can sense how someone is feeling even without them saying it.",
+  "q29": "I easily understand and respect people from different cultural backgrounds.",
+  "q30": "I immediately notice when someone is feeling uncomfortable.",
+  "q31": "I can look at problems from another person's point of view.",
+  "q32": "In conflict situations, I consider the other person's feelings first.",
+  "q33": "I can easily connect with new people.",
+  "q34": "I am effective at mediating conflicts peacefully.",
+  "q35": "I tend to bring out the best cooperation within a team.",
+  "q36": "I listen attentively and respond thoughtfully in conversations.",
+  "q37": "I am able to have a positive influence on the people around me.",
+  "q38": "I consider building trust to be very important in relationships.",
+  "q39": "I express myself clearly so others can easily understand.",
+  "q40": "I feel comfortable in a wide variety of social situations.",
+  "grade": {
+    "exceptional": "✨ Exceptional EQ",
+    "exceptionalDesc": "Your emotional intelligence is outstanding. You masterfully handle your own and others' emotions with great leadership.",
+    "excellent": "🌟 Excellent EQ",
+    "excellentDesc": "You have high emotional intelligence with strong interpersonal skills and excellent emotional regulation.",
+    "good": "💚 Good EQ",
+    "goodDesc": "Your emotional intelligence is solid. You handle emotions well in most situations with room for growth.",
+    "average": "💛 Average EQ",
+    "averageDesc": "Your emotional intelligence is at an average level. Focused practice in specific areas will help you grow quickly.",
+    "developing": "🔶 Developing EQ",
+    "developingDesc": "You have great opportunities to develop your emotional intelligence. Consistent practice can lead to significant improvement."
+  },
+  "result": {
+    "yourEQ": "Your EQ Score",
+    "dimTitle": "Dimension Scores",
+    "adviceTitle": "Analysis & Advice",
+    "retry": "Take the Test Again"
+  },
+  "desc": {
+    "awareness": "Self-awareness is the ability to accurately understand your own emotions, strengths, weaknesses, and needs. Higher scores here mean you make wiser, more informed decisions.",
+    "regulation": "Self-regulation is the ability to constructively control disruptive emotions and impulses. Higher scores mean you stay calm and clear-headed even under pressure.",
+    "motivation": "Motivation is the inner drive to achieve. Higher scores mean you persevere through adversity and consistently move toward your goals with passion.",
+    "empathy": "Empathy is the ability to understand and share the feelings of others. Higher scores mean you build deeper relationships and support others effectively.",
+    "social": "Social skills involve adeptly managing relationships and inspiring cooperation. Higher scores mean strong teamwork, leadership, and networking abilities."
+  },
+  "advice": {
+    "awareness": "💡 Keep an emotion journal. Spend 5 minutes a day noting what you felt and why. Mindfulness meditation is also highly effective for building self-awareness.",
+    "regulation": "💡 Practice the 'stop and think' technique. When strong emotions arise, count to 10 and breathe deeply. Regular exercise and quality sleep are the foundation of emotional regulation.",
+    "motivation": "💡 Break big goals into small milestones. Experiencing small wins daily strengthens your intrinsic motivation. Write down your 'why' and revisit it often.",
+    "empathy": "💡 Practice listening without judgment when others speak. After conversations, ask yourself: 'How was the other person feeling?' Reading diverse fiction also effectively builds empathy.",
+    "social": "💡 Try to have one genuine conversation with someone new each week. In conflicts, practice acknowledging the other person's perspective before expressing your own."
+  },
+  "share": {
+    "copy": "Copy Link",
+    "copied": "Copied!",
+    "twitterText": "My EQ score is {score} ({grade})! What's your Emotional Intelligence?"
+  }
+}

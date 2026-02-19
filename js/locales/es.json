@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "Test EQ | ¿Cuál es tu Inteligencia Emocional? - DopaBrain",
+    "description": "Mide tu Inteligencia Emocional (EQ) con 40 preguntas en 5 dimensiones: autoconciencia, autorregulación, motivación, empatía y habilidades sociales."
+  },
+  "accessibility": {
+    "skipMain": "Saltar al contenido principal"
+  },
+  "app": {
+    "title": "Test de Inteligencia Emocional",
+    "subtitle": "Emotional Intelligence Test",
+    "heroTitle": "¿Cuál es tu puntuación EQ?"
+  },
+  "dim": {
+    "awareness": "Autoconciencia",
+    "awarenessDesc": "Reconocer tus emociones y su impacto",
+    "regulation": "Autorregulación",
+    "regulationDesc": "Gestionar impulsos y emociones constructivamente",
+    "motivation": "Motivación",
+    "motivationDesc": "Impulso interior y pasión hacia tus metas",
+    "empathy": "Empatía",
+    "empathyDesc": "Comprender y cuidar los sentimientos de otros",
+    "social": "Habilidades Sociales",
+    "socialDesc": "Construir relaciones y ejercer influencia"
+  },
+  "intro": {
+    "desc": "Descubre tu inteligencia emocional en 5 dimensiones con 40 preguntas y recibe consejos personalizados.",
+    "chip1": "40 preguntas",
+    "chip2": "~8 minutos",
+    "chip3": "5 dimensiones",
+    "disclaimer": "⚠️ Esta prueba es solo para autocomprensión y no es una evaluación psicológica oficial.",
+    "start": "Comenzar el Test"
+  },
+  "scale": {
+    "disagree": "Totalmente\nen desacuerdo",
+    "neither": "Neutral",
+    "agree": "Totalmente\nde acuerdo",
+    "hint": "1 = Totalmente en desacuerdo  |  5 = Totalmente de acuerdo"
+  },
+  "quiz": {
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "finish": "Ver Resultados"
+  },
+  "q1": "Puedo identificar con precisión las emociones que estoy sintiendo.",
+  "q2": "Cuando estoy enojado/a, entiendo claramente por qué.",
+  "q3": "Soy consciente de cómo mis emociones influyen en mis juicios y acciones.",
+  "q4": "Puedo evaluar honestamente mis fortalezas y debilidades.",
+  "q5": "Tengo una comprensión clara de mis valores fundamentales.",
+  "q6": "Cuando estoy bajo estrés, puedo identificar rápidamente la fuente.",
+  "q7": "Uso la retroalimentación de otros para profundizar mi autocomprensión.",
+  "q8": "Reviso frecuentemente mi estado emocional a lo largo del día.",
+  "q9": "Incluso cuando estoy enojado/a, evito actuar impulsivamente.",
+  "q10": "Mantengo la compostura en situaciones difíciles o estresantes.",
+  "q11": "Me recupero rápidamente de las emociones negativas.",
+  "q12": "Puedo retrasar la gratificación inmediata para priorizar objetivos a largo plazo.",
+  "q13": "Puedo mantener la calma y la racionalidad incluso en situaciones de conflicto.",
+  "q14": "Evito culparme excesivamente cuando cometo errores.",
+  "q15": "Me esfuerzo por mantener mis principios y valores en cualquier situación.",
+  "q16": "Mi estado de ánimo es generalmente estable, sin extremos.",
+  "q17": "Establezco metas y trabajo persistentemente para lograrlas.",
+  "q18": "No me rindo fácilmente cuando enfrento obstáculos.",
+  "q19": "Tengo la resiliencia para recuperarme después de un fracaso.",
+  "q20": "Traigo pasión a mi trabajo incluso sin recompensas externas.",
+  "q21": "Constantemente me esfuerzo por mejorar y crecer como persona.",
+  "q22": "Disfruto establecer metas desafiantes y ambiciosas.",
+  "q23": "Estoy dispuesto/a a hacer sacrificios a corto plazo por el éxito a largo plazo.",
+  "q24": "Genuinamente disfruto aprender nuevas habilidades y conocimientos.",
+  "q25": "Puedo leer fácilmente el estado emocional de los demás.",
+  "q26": "Me esfuerzo por entender las situaciones desde la perspectiva de otros.",
+  "q27": "Me conmuevo profundamente cuando veo a alguien en dolor o tristeza.",
+  "q28": "Puedo sentir cómo se siente alguien aunque no lo diga.",
+  "q29": "Entiendo y respeto fácilmente a personas de diferentes entornos culturales.",
+  "q30": "Noto de inmediato cuando alguien se siente incómodo.",
+  "q31": "Puedo ver los problemas desde el punto de vista de otra persona.",
+  "q32": "En situaciones de conflicto, primero considero los sentimientos de la otra persona.",
+  "q33": "Puedo conectar fácilmente con personas nuevas.",
+  "q34": "Soy efectivo/a mediando conflictos pacíficamente.",
+  "q35": "Tiendo a fomentar la mejor cooperación dentro de un equipo.",
+  "q36": "Escucho atentamente y respondo con reflexión en las conversaciones.",
+  "q37": "Puedo tener una influencia positiva en las personas a mi alrededor.",
+  "q38": "Considero muy importante construir confianza en las relaciones.",
+  "q39": "Me expreso claramente para que otros me entiendan fácilmente.",
+  "q40": "Me siento cómodo/a en una amplia variedad de situaciones sociales.",
+  "grade": {
+    "exceptional": "✨ EQ Excepcional",
+    "exceptionalDesc": "Tu inteligencia emocional es sobresaliente. Manejas magistralmente las emociones propias y ajenas con gran liderazgo.",
+    "excellent": "🌟 EQ Excelente",
+    "excellentDesc": "Tienes alta inteligencia emocional con fuertes habilidades interpersonales y excelente regulación emocional.",
+    "good": "💚 Buen EQ",
+    "goodDesc": "Tu inteligencia emocional es sólida. Manejas bien las emociones en la mayoría de situaciones.",
+    "average": "💛 EQ Promedio",
+    "averageDesc": "Tu inteligencia emocional está en un nivel promedio. La práctica enfocada en áreas específicas te ayudará a crecer.",
+    "developing": "🔶 EQ en Desarrollo",
+    "developingDesc": "Tienes grandes oportunidades para desarrollar tu inteligencia emocional. La práctica constante puede llevar a mejoras significativas."
+  },
+  "result": {
+    "yourEQ": "Tu puntuación EQ",
+    "dimTitle": "Puntuaciones por dimensión",
+    "adviceTitle": "Análisis y consejos",
+    "retry": "Hacer el test de nuevo"
+  },
+  "desc": {
+    "awareness": "La autoconciencia es la capacidad de entender con precisión tus propias emociones, fortalezas y debilidades. Una puntuación más alta significa decisiones más sabias y mejor fundamentadas.",
+    "regulation": "La autorregulación es la capacidad de controlar constructivamente las emociones e impulsos disruptivos. Una puntuación más alta significa mantener la calma bajo presión.",
+    "motivation": "La motivación es el impulso interno hacia el logro. Una puntuación más alta significa perseverar en la adversidad y avanzar apasionadamente hacia tus metas.",
+    "empathy": "La empatía es la capacidad de entender y compartir los sentimientos de otros. Una puntuación más alta significa relaciones más profundas y apoyo más efectivo.",
+    "social": "Las habilidades sociales implican gestionar relaciones hábilmente e inspirar cooperación. Una puntuación más alta significa mejor trabajo en equipo, liderazgo y networking."
+  },
+  "advice": {
+    "awareness": "💡 Lleva un diario de emociones. Dedica 5 minutos al día a anotar lo que sentiste y por qué. La meditación mindfulness también es muy efectiva.",
+    "regulation": "💡 Practica la técnica de 'parar y pensar'. Cuando surjan emociones fuertes, cuenta hasta 10 y respira profundo. El ejercicio regular y el sueño de calidad son la base.",
+    "motivation": "💡 Divide grandes metas en pequeños hitos. Experimentar pequeños éxitos diariamente fortalece la motivación intrínseca. Escribe tu 'por qué' y reléelo con frecuencia.",
+    "empathy": "💡 Practica escuchar sin juzgar. Después de las conversaciones, pregúntate: '¿Cómo se sentía la otra persona?' Leer ficción variada también desarrolla la empatía.",
+    "social": "💡 Intenta tener una conversación genuina con alguien nuevo cada semana. En conflictos, reconoce primero la perspectiva del otro antes de expresar la tuya."
+  },
+  "share": {
+    "copy": "Copiar enlace",
+    "copied": "¡Copiado!",
+    "twitterText": "Mi puntuación EQ es {score} ({grade}). ¿Cuál es tu Inteligencia Emocional?"
+  }
+}

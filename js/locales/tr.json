@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "EQ Testi | Duygusal Zekanız Ne Kadar? - DopaBrain",
+    "description": "40 soruyla 5 boyutta Duygusal Zekanızı (EQ) ölçün: öz-farkındalık, öz-düzenleme, motivasyon, empati ve sosyal beceriler."
+  },
+  "accessibility": {
+    "skipMain": "Ana içeriğe geç"
+  },
+  "app": {
+    "title": "EQ Testi",
+    "subtitle": "Duygusal Zeka Testi",
+    "heroTitle": "EQ Puanınız Ne Kadar?"
+  },
+  "dim": {
+    "awareness": "Öz-Farkındalık",
+    "awarenessDesc": "Duygularınızı ve etkilerini tanıma yeteneği",
+    "regulation": "Öz-Düzenleme",
+    "regulationDesc": "Dürtü ve duyguları yapıcı biçimde yönetme",
+    "motivation": "Motivasyon",
+    "motivationDesc": "Hedeflere yönelik içsel itki ve tutku",
+    "empathy": "Empati",
+    "empathyDesc": "Başkalarının duygularını anlama ve önemseme",
+    "social": "Sosyal Beceriler",
+    "socialDesc": "İlişki kurma ve etki yaratma yeteneği"
+  },
+  "intro": {
+    "desc": "40 soruyla 5 boyutta duygusal zekanızı keşfedin ve kişiselleştirilmiş tavsiyeler alın.",
+    "chip1": "40 Soru",
+    "chip2": "~8 Dakika",
+    "chip3": "5 Boyut",
+    "disclaimer": "⚠️ Bu test yalnızca öz-anlayış içindir ve resmi bir psikolojik değerlendirme değildir.",
+    "start": "Teste Başla"
+  },
+  "scale": {
+    "disagree": "Hiç\nkatılmıyorum",
+    "neither": "Nötr",
+    "agree": "Tamamen\nkatılıyorum",
+    "hint": "1 = Hiç katılmıyorum  |  5 = Tamamen katılıyorum"
+  },
+  "quiz": {
+    "prev": "Önceki",
+    "next": "Sonraki",
+    "finish": "Sonuçları Gör"
+  },
+  "q1": "Hissettiğim duyguları doğru bir şekilde tanımlayabilirim.",
+  "q2": "Öfkelendiğimde nedenini açıkça anlayabilirim.",
+  "q3": "Duygularımın yargılarımı ve eylemlerimi nasıl etkilediğinin farkındayım.",
+  "q4": "Güçlü ve zayıf yönlerimi dürüstçe değerlendirebilirim.",
+  "q5": "Temel değerlerimin ne olduğunu net bir şekilde biliyorum.",
+  "q6": "Stres altındayken kaynağını hızla tespit edebilirim.",
+  "q7": "Başkalarından gelen geri bildirimleri öz-anlayışımı derinleştirmek için kullanırım.",
+  "q8": "Gün içinde duygusal durumumu sık sık kontrol ederim.",
+  "q9": "Öfkeli olsam bile dürtüsel davranmaktan kaçınırım.",
+  "q10": "Zor veya stresli durumlarda sakinliğimi koruyabilirim.",
+  "q11": "Olumsuz duygulardan hızla toparlanabilirim.",
+  "q12": "Uzun vadeli hedefleri önceliklendirmek için anlık tatmini erteleyebilirim.",
+  "q13": "Çatışma durumlarında bile sakin ve rasyonel kalabilirim.",
+  "q14": "Hata yaptığımda kendimi aşırı suçlamaktan kaçınırım.",
+  "q15": "Her durumda ilkelerimi ve değerlerimi korumaya çalışırım.",
+  "q16": "Ruh halim genellikle istikrarlıdır, aşırı iniş çıkış olmaz.",
+  "q17": "Hedefler belirleyip onlara ulaşmak için ısrarla çalışırım.",
+  "q18": "Engellerle karşılaşınca kolayca pes etmem.",
+  "q19": "Başarısızlıktan sonra toparlanma dayanıklılığım var.",
+  "q20": "Dış ödüller olmasa bile işime tutkuyla sarılırım.",
+  "q21": "Sürekli olarak daha iyi bir insan olmaya çalışırım.",
+  "q22": "Zorlu ve iddialı hedefler belirlemekten keyif alırım.",
+  "q23": "Uzun vadeli başarı için kısa vadeli fedakarlıklar yapmaya hazırım.",
+  "q24": "Yeni beceriler ve bilgiler öğrenmekten gerçekten zevk alırım.",
+  "q25": "Başkalarının duygusal durumunu kolayca okuyabilirim.",
+  "q26": "Durumları başkalarının bakış açısından anlamaya çalışırım.",
+  "q27": "Birini acı veya üzüntü içinde gördüğümde derinden etkilenirim.",
+  "q28": "Söylenmeden bile birinin nasıl hissettiğini anlayabilirim.",
+  "q29": "Farklı kültürel geçmişlerden gelen insanları kolayca anlayıp saygı gösteririm.",
+  "q30": "Birisi rahatsız hissettiğinde hemen fark ederim.",
+  "q31": "Sorunlara başka birinin bakış açısından bakabilirim.",
+  "q32": "Çatışma durumlarında önce karşı tarafın duygularını göz önünde bulundururum.",
+  "q33": "Yeni insanlarla kolayca bağlantı kurabilirim.",
+  "q34": "Çatışmaları barışçıl biçimde arabuluculukla çözmede etkili olabilirim.",
+  "q35": "Bir ekipte en iyi iş birliğini ortaya çıkarmaya çalışırım.",
+  "q36": "Dikkatle dinleyip konuşmalarda düşünceli biçimde yanıt veririm.",
+  "q37": "Etrafımdaki insanlara olumlu etki edebilirim.",
+  "q38": "İlişkilerde güven inşa etmeyi çok önemli buluyorum.",
+  "q39": "Başkalarının kolayca anlayabileceği şekilde kendimi ifade ederim.",
+  "q40": "Çok çeşitli sosyal ortamlarda rahat hissederim.",
+  "grade": {
+    "exceptional": "✨ Olağanüstü EQ",
+    "exceptionalDesc": "Duygusal zekanız olağanüstüdür. Kendi ve başkalarının duygularını ustalıkla yönetirsiniz.",
+    "excellent": "🌟 Mükemmel EQ",
+    "excellentDesc": "Güçlü kişilerarası becerilerle yüksek duygusal zekaya sahipsiniz.",
+    "good": "💚 İyi EQ",
+    "goodDesc": "Duygusal zekanız sağlamdır. Çoğu durumda duygularınızı iyi yönetirsiniz.",
+    "average": "💛 Ortalama EQ",
+    "averageDesc": "Duygusal zekanız ortalama düzeyde. Belirli alanlara odaklanmak hızlı büyümenize yardımcı olacaktır.",
+    "developing": "🔶 Gelişmekte Olan EQ",
+    "developingDesc": "Duygusal zekanızı geliştirmek için pek çok fırsatınız var. Tutarlı pratik önemli iyileşmeler getirebilir."
+  },
+  "result": {
+    "yourEQ": "EQ Puanınız",
+    "dimTitle": "Boyut Puanları",
+    "adviceTitle": "Analiz ve Tavsiyeler",
+    "retry": "Testi Tekrar Yap"
+  },
+  "desc": {
+    "awareness": "Öz-farkındalık, kendi duygularınızı, güçlü ve zayıf yönlerinizi doğru biçimde anlamak becerisidir. Daha yüksek puanlar daha akıllıca kararlar anlamına gelir.",
+    "regulation": "Öz-düzenleme, yıkıcı duygu ve dürtüleri yapıcı biçimde kontrol etmek becerisidir. Daha yüksek puanlar baskı altında bile sakin kalmak demektir.",
+    "motivation": "Motivasyon, başarıya yönelik içsel itki güçtür. Daha yüksek puanlar, güçlüklere rağmen ısrar etmek ve hedeflere tutkuyla ilerlemek anlamına gelir.",
+    "empathy": "Empati, başkalarının duygularını anlamak ve paylaşmak becerisidir. Daha yüksek puanlar daha derin ilişkiler ve daha etkili destek demektir.",
+    "social": "Sosyal beceriler, ilişkileri ustaca yönetmeyi ve iş birliğini ilham etmeyi kapsar. Daha yüksek puanlar üstün ekip çalışması, liderlik ve ağ kurma demektir."
+  },
+  "advice": {
+    "awareness": "💡 Duygu günlüğü tutun. Her gün 5 dakika ne hissettiğinizi ve nedenini not edin. Bilinçli farkındalık meditasyonu da çok etkilidir.",
+    "regulation": "💡 'Dur ve düşün' tekniğini uygulayın. Güçlü duygular belirdiğinde 10'a kadar sayın ve derin nefes alın. Düzenli egzersiz ve kaliteli uyku temeldedir.",
+    "motivation": "💡 Büyük hedefleri küçük kilometre taşlarına bölün. Her gün küçük başarılar yaşamak içsel motivasyonu güçlendirir. 'Neden'inizi yazıp sık sık okuyun.",
+    "empathy": "💡 Yargılamadan dinleme pratiği yapın. Konuşmalar sonrası kendinize sorun: 'Karşımdaki nasıl hissediyordu?' Çeşitli kurgu okumak da empatiyi geliştirir.",
+    "social": "💡 Her hafta yeni biriyle samimi bir sohbet etmeye çalışın. Çatışmalarda önce karşının bakış açısını kabul edin, ardından kendi düşüncenizi ifade edin."
+  },
+  "share": {
+    "copy": "Bağlantıyı Kopyala",
+    "copied": "Kopyalandı!",
+    "twitterText": "EQ puanım {score} ({grade})! Senin Duygusal Zekan ne kadar?"
+  }
+}
