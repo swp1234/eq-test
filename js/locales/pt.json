@@ -1,125 +1,168 @@
 {
   "meta": {
-    "title": "Teste EQ | Qual é a sua Inteligência Emocional? - DopaBrain",
-    "description": "Meça sua Inteligência Emocional (EQ) com 40 perguntas em 5 dimensões: autoconsciência, autorregulação, motivação, empatia e habilidades sociais."
+    "title": "Teste EQ | Desafio de Leitura Emocional - DopaBrain",
+    "description": "Leia cenas emocionais e teste sua empatia! 10 cenários interativos medindo 4 dimensões do seu EQ."
   },
   "accessibility": {
     "skipMain": "Ir para o conteúdo principal"
   },
   "app": {
-    "title": "Teste de IE",
-    "subtitle": "Teste de Inteligência Emocional",
-    "heroTitle": "Qual é a sua pontuação EQ?"
+    "title": "Teste EQ",
+    "subtitle": "Desafio de Leitura Emocional",
+    "heroTitle": "Desafio de Leitura Emocional"
   },
   "dim": {
     "awareness": "Autoconsciência",
-    "awarenessDesc": "Reconhecer suas emoções e seu impacto",
-    "regulation": "Autorregulação",
-    "regulationDesc": "Gerenciar impulsos e emoções construtivamente",
-    "motivation": "Motivação",
-    "motivationDesc": "Impulso interior e paixão em direção aos seus objetivos",
     "empathy": "Empatia",
-    "empathyDesc": "Compreender e cuidar dos sentimentos dos outros",
     "social": "Habilidades Sociais",
-    "socialDesc": "Construir relacionamentos e exercer influência"
+    "regulation": "Regulação Emocional"
   },
   "intro": {
-    "desc": "Descubra sua inteligência emocional em 5 dimensões com 40 perguntas e receba conselhos personalizados.",
-    "chip1": "40 perguntas",
-    "chip2": "~8 minutos",
-    "chip3": "5 dimensões",
-    "disclaimer": "⚠️ Este teste é apenas para autocompreensão e não é uma avaliação psicológica oficial.",
-    "start": "Iniciar o Teste"
+    "desc": "Leia cenas emocionais, decodifique sentimentos ocultos e teste sua empatia em 10 desafios interativos.",
+    "chip1": "10 Rodadas",
+    "chip2": "~3 min",
+    "chip3": "4 Dimensões",
+    "disclaimer": "⚠️ Este teste é apenas para autoconhecimento e não é uma avaliação psicológica oficial.",
+    "start": "Iniciar Desafio"
   },
-  "scale": {
-    "disagree": "Discordo\ntotalmente",
-    "neither": "Neutro",
-    "agree": "Concordo\ntotalmente",
-    "hint": "1 = Discordo totalmente  |  5 = Concordo totalmente"
+  "types": {
+    "decoder": "Decodificador de Emoções",
+    "decoderDesc": "Leia cenas com emojis e identifique emoções ocultas",
+    "decoderCount": "4 rodadas",
+    "response": "Melhor Resposta",
+    "responseDesc": "Escolha a resposta mais empática",
+    "responseCount": "3 rodadas",
+    "dilemma": "Dilema Social",
+    "dilemmaDesc": "Navegue conflitos com inteligência emocional",
+    "dilemmaCount": "3 rodadas"
   },
-  "quiz": {
-    "prev": "Anterior",
-    "next": "Próximo",
-    "finish": "Ver Resultados"
+  "scene1": {
+    "context": "Uma mulher fica com raiva de um homem. Ele parece assustado. Então ela começa a chorar.",
+    "bubble": "\"Você nunca me ouve...\"",
+    "question": "O que a mulher REALMENTE está sentindo por trás da raiva?",
+    "optA": "Ela está apenas com raiva e quer brigar",
+    "optB": "Ela se sente ignorada e emocionalmente negligenciada",
+    "optC": "Ela está tentando manipulá-lo com lágrimas",
+    "optD": "Ela está frustrada mas não sabe por quê"
   },
-  "q1": "Posso identificar com precisão as emoções que estou sentindo.",
-  "q2": "Quando estou com raiva, entendo claramente o motivo.",
-  "q3": "Estou ciente de como minhas emoções influenciam meus julgamentos e ações.",
-  "q4": "Posso avaliar honestamente meus pontos fortes e fracos.",
-  "q5": "Tenho uma compreensão clara dos meus valores fundamentais.",
-  "q6": "Quando estou sob estresse, posso identificar rapidamente a fonte.",
-  "q7": "Uso o feedback dos outros para aprofundar minha autocompreensão.",
-  "q8": "Verifico frequentemente meu estado emocional ao longo do dia.",
-  "q9": "Mesmo quando estou com raiva, evito agir impulsivamente.",
-  "q10": "Mantenho a compostura em situações difíceis ou estressantes.",
-  "q11": "Me recupero rapidamente de emoções negativas.",
-  "q12": "Posso adiar a gratificação imediata para priorizar objetivos de longo prazo.",
-  "q13": "Posso permanecer calmo(a) e racional mesmo em situações de conflito.",
-  "q14": "Evito me culpar excessivamente quando cometo erros.",
-  "q15": "Me esforço para manter meus princípios e valores em qualquer situação.",
-  "q16": "Meu humor é geralmente estável, sem extremos.",
-  "q17": "Estabeleço metas e trabalho persistentemente para alcançá-las.",
-  "q18": "Não desisto facilmente quando enfrento obstáculos.",
-  "q19": "Tenho resiliência para me recuperar após um fracasso.",
-  "q20": "Trago paixão ao meu trabalho mesmo sem recompensas externas.",
-  "q21": "Me esforço constantemente para melhorar e crescer como pessoa.",
-  "q22": "Gosto de definir metas desafiadoras e ambiciosas.",
-  "q23": "Estou disposto(a) a fazer sacrifícios de curto prazo pelo sucesso a longo prazo.",
-  "q24": "Genuinamente gosto de aprender novas habilidades e conhecimentos.",
-  "q25": "Posso ler facilmente o estado emocional dos outros.",
-  "q26": "Me esforço para entender as situações pela perspectiva dos outros.",
-  "q27": "Fico profundamente comovido(a) quando vejo alguém em dor ou tristeza.",
-  "q28": "Posso sentir como alguém está se sentindo mesmo sem que eles digam.",
-  "q29": "Entendo e respeito facilmente pessoas de diferentes origens culturais.",
-  "q30": "Noto imediatamente quando alguém está se sentindo desconfortável.",
-  "q31": "Posso ver os problemas pelo ponto de vista de outra pessoa.",
-  "q32": "Em situações de conflito, considero primeiro os sentimentos da outra pessoa.",
-  "q33": "Consigo me conectar facilmente com pessoas novas.",
-  "q34": "Sou eficaz em mediar conflitos pacificamente.",
-  "q35": "Costumo promover a melhor cooperação dentro de uma equipe.",
-  "q36": "Ouço atentamente e respondo de forma reflexiva nas conversas.",
-  "q37": "Sou capaz de ter uma influência positiva nas pessoas ao meu redor.",
-  "q38": "Considero muito importante construir confiança nos relacionamentos.",
-  "q39": "Me expresso claramente para que os outros possam me entender facilmente.",
-  "q40": "Me sinto confortável(a) em uma ampla variedade de situações sociais.",
-  "grade": {
-    "exceptional": "✨ EQ Excepcional",
-    "exceptionalDesc": "Sua inteligência emocional é excepcional. Você gerencia magistralmente as próprias e as emoções dos outros.",
-    "excellent": "🌟 EQ Excelente",
-    "excellentDesc": "Você tem alta inteligência emocional com fortes habilidades interpessoais e excelente regulação emocional.",
-    "good": "💚 Bom EQ",
-    "goodDesc": "Sua inteligência emocional é sólida. Você lida bem com as emoções na maioria das situações.",
-    "average": "💛 EQ Médio",
-    "averageDesc": "Sua inteligência emocional está em nível médio. A prática focada em áreas específicas ajudará você a crescer rapidamente.",
-    "developing": "🔶 EQ em Desenvolvimento",
-    "developingDesc": "Você tem ótimas oportunidades para desenvolver sua inteligência emocional. A prática constante pode levar a melhorias significativas."
+  "scene2": {
+    "context": "Um menino sorri quando uma menina lhe dá um presente. Mas depois sua expressão fica vazia.",
+    "bubble": "\"Ah... obrigado...\"",
+    "question": "Por que a expressão do menino mudou?",
+    "optA": "Ele não gostou do presente e é rude",
+    "optB": "Ele está sobrecarregado e processando suas emoções",
+    "optC": "Ele se sente culpado porque não comprou nada para ela",
+    "optD": "Ele está surpreso e tentando esconder a empolgação"
+  },
+  "scene3": {
+    "context": "Um gerente sorri em uma reunião. Ele verifica o celular e de repente parece frustrado. Sua colega nota e fica preocupada.",
+    "bubble": "",
+    "question": "O que provavelmente está acontecendo com o gerente?",
+    "optA": "Más notícias quebraram sua fachada calma",
+    "optB": "Ele está irritado com a colega sem motivo",
+    "optC": "Ele estava apenas vendo redes sociais e ficou entediado",
+    "optD": "Ele está lutando para manter o controle emocional sob pressão profissional"
+  },
+  "scene4": {
+    "context": "Uma avó visita alegremente sua filha. A filha sorri nervosamente. A expressão da avó se entristece.",
+    "bubble": "\"Eu posso ver que você não está bem, querida...\"",
+    "question": "O que a avó percebeu?",
+    "optA": "A filha esconde dor atrás de um sorriso falso, e a avó enxerga isso",
+    "optB": "A filha está incomodada com a visita inesperada",
+    "optC": "A avó está imaginando problemas que não existem",
+    "optD": "A filha está nervosa por ter algo para contar à mãe"
+  },
+  "scene5": {
+    "context": "Seu amigo próximo acabou de ser reprovado em um exame importante. Está sentado sozinho, derrotado.",
+    "bubble": "\"Estudei tanto... Não entendo...\"",
+    "question": "Qual é a melhor resposta?",
+    "optA": "\"Não se preocupe, é só uma prova. Você passa na próxima!\"",
+    "optB": "\"Talvez você devesse estudar de forma diferente.\"",
+    "optC": "\"Deve estar sendo muito frustrante. Estou aqui se quiser conversar.\"",
+    "optD": "\"Eu sei o quanto você se esforçou. Tudo bem se sentir desapontado.\""
+  },
+  "scene6": {
+    "context": "Sua colega está chorando na sala de descanso depois de um término.",
+    "bubble": "\"Desculpa, não consigo parar de chorar...\"",
+    "question": "Qual é a resposta mais emocionalmente inteligente?",
+    "optA": "\"Você vai encontrar alguém melhor, não chore!\"",
+    "optB": "\"Términos são normais, todo mundo passa por isso.\"",
+    "optC": "\"Quer dar uma caminhada? Às vezes o ar fresco ajuda.\"",
+    "optD": "\"Tudo bem chorar. Estou aqui com você, sem pressa.\""
+  },
+  "scene7": {
+    "context": "Um funcionário novo está visivelmente ansioso antes de sua primeira grande apresentação. Fica conferindo suas anotações.",
+    "bubble": "\"E se eu estragar tudo?\"",
+    "question": "Como colega sênior, o que você diz?",
+    "optA": "\"Vai ficar tudo bem, não pensa muito.\"",
+    "optB": "\"Eu também fiquei nervoso na minha primeira apresentação. Vamos repassar os pontos-chave juntos.\"",
+    "optC": "\"Se não está preparado, talvez seja melhor remarcar.\"",
+    "optD": "\"Imagina todo mundo de cueca, haha.\""
+  },
+  "scene8": {
+    "context": "Seu colega apresentou a SUA ideia como se fosse dele em uma reunião. Seu chefe adorou e o elogiou.",
+    "bubble": "",
+    "question": "O que você faz?",
+    "optA": "Confrontar com raiva na frente de todos agora",
+    "optB": "Não dizer nada mas guardar rancor para sempre",
+    "optC": "Depois da reunião, conversar em privado sobre o crédito e enviar suas notas originais ao chefe",
+    "optD": "Mencionar casualmente 'Fico feliz que a equipe gostou do meu conceito original'"
+  },
+  "scene9": {
+    "context": "Dois membros da equipe estão discutindo acaloradamente sobre a direção do projeto. Os outros estão desconfortáveis. Você é o líder.",
+    "bubble": "",
+    "question": "Como você lida com isso?",
+    "optA": "Escolher o lado que você concorda para acabar logo",
+    "optB": "Mandar os dois pararem e seguirem sua decisão",
+    "optC": "Sugerir uma pausa de 5 minutos, depois deixar cada um explicar calmamente",
+    "optD": "Reconhecer ambas perspectivas, encontrar pontos em comum e guiar para um compromisso que sirva ao projeto"
+  },
+  "scene10": {
+    "context": "Você ganhou um prêmio, mas seu amigo próximo que também competiu está visivelmente triste. Todos te parabenizam.",
+    "bubble": "",
+    "question": "Qual a forma mais emocionalmente inteligente de agir?",
+    "optA": "Comemorar bastante — você mereceu e seu amigo deveria ficar feliz",
+    "optB": "Minimizar sua vitória para não magoar o amigo",
+    "optC": "Aceitar com gratidão, depois verificar como o amigo está em particular",
+    "optD": "Aceitar com gratidão, reconhecer publicamente o esforço do amigo e depois procurá-lo com empatia genuína"
+  },
+  "feedback": {
+    "perfect": "Excelente percepção emocional!",
+    "good": "Boa leitura!",
+    "okay": "Nada mal, continue observando!",
+    "miss": "Questão difícil!"
+  },
+  "level": {
+    "beginner": "🌱 EQ Iniciante",
+    "beginnerDesc": "Você está começando sua jornada de inteligência emocional. Com prática, pode melhorar muito.",
+    "learner": "📚 EQ Aprendiz",
+    "learnerDesc": "Sua consciência emocional está crescendo. Às vezes capta sentimentos profundos e sua empatia está se desenvolvendo.",
+    "skilled": "🎯 EQ Competente",
+    "skilledDesc": "Você tem uma inteligência emocional sólida. Lê a maioria das situações com precisão e responde com empatia genuína.",
+    "master": "💫 EQ Mestre",
+    "masterDesc": "Sua inteligência emocional é impressionante. Você sente naturalmente o que os outros sentem e responde com sabedoria.",
+    "sage": "🧘 EQ Sábio",
+    "sageDesc": "Inteligência emocional excepcional. Você tem um dom raro para entender emoções humanas no nível mais profundo."
+  },
+  "tips": {
+    "awareness": "Pratique check-in emocional 3 vezes ao dia: pause e nomeie exatamente o que está sentindo e por quê.",
+    "empathy": "Ao ouvir alguém, foque em entender os sentimentos antes de formular sua resposta.",
+    "social": "Em conflitos, reconheça a perspectiva do outro antes de compartilhar a sua.",
+    "regulation": "Quando emoções fortes surgirem, faça 3 respirações profundas antes de responder. Essa pequena pausa muda tudo.",
+    "general": "Leia ficção regularmente — estudos mostram que melhora significativamente a empatia e a compreensão emocional."
   },
   "result": {
-    "yourEQ": "Sua pontuação EQ",
-    "dimTitle": "Pontuações por dimensão",
-    "adviceTitle": "Análise e conselhos",
-    "retry": "Fazer o teste novamente"
-  },
-  "desc": {
-    "awareness": "A autoconsciência é a capacidade de entender com precisão suas próprias emoções, pontos fortes e fracos. Pontuações mais altas significam decisões mais sábias e informadas.",
-    "regulation": "A autorregulação é a capacidade de controlar construtivamente emoções e impulsos disruptivos. Pontuações mais altas significam manter a calma sob pressão.",
-    "motivation": "A motivação é o impulso interno para alcançar. Pontuações mais altas significam perseverar em adversidades e avançar apaixonadamente em direção aos seus objetivos.",
-    "empathy": "A empatia é a capacidade de entender e compartilhar os sentimentos dos outros. Pontuações mais altas significam relacionamentos mais profundos e suporte mais eficaz.",
-    "social": "As habilidades sociais envolvem gerenciar relacionamentos habilmente e inspirar cooperação. Pontuações mais altas significam melhor trabalho em equipe, liderança e networking."
-  },
-  "advice": {
-    "awareness": "💡 Mantenha um diário de emoções. Dedique 5 minutos por dia para anotar o que sentiu e por quê. A meditação mindfulness também é muito eficaz.",
-    "regulation": "💡 Pratique a técnica de 'pare e pense'. Quando surgirem emoções fortes, conte até 10 e respire fundo. Exercícios regulares e sono de qualidade são a base.",
-    "motivation": "💡 Divida grandes metas em pequenos marcos. Experimentar pequenas vitórias diariamente fortalece a motivação intrínseca. Escreva seu 'porquê' e releia frequentemente.",
-    "empathy": "💡 Pratique escutar sem julgamento. Após conversas, pergunte-se: 'Como a outra pessoa estava se sentindo?' Ler ficção variada também desenvolve a empatia.",
-    "social": "💡 Tente ter uma conversa genuína com alguém novo toda semana. Em conflitos, reconheça primeiro a perspectiva do outro antes de expressar a sua."
+    "dimTitle": "Pontuação por Dimensão",
+    "tipsTitle": "Dicas de Crescimento",
+    "personalTips": "Dicas Personalizadas",
+    "retry": "Tentar Novamente"
   },
   "share": {
-    "copy": "Copiar link",
+    "copy": "📋 Copiar Link",
     "copied": "Copiado!",
-    "twitterText": "Minha pontuação EQ é {score} ({grade})! Qual é a sua Inteligência Emocional?"
+    "twitterText": "Meu EQ: {score}/30 ({level})! Você consegue ler emoções melhor?"
   },
   "units": {
-    "points": "pts"
+    "pts": "pts"
   }
 }

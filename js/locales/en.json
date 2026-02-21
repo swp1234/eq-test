@@ -1,125 +1,168 @@
 {
   "meta": {
-    "title": "EQ Test | What's Your Emotional Intelligence Score? - DopaBrain",
-    "description": "Measure your Emotional Intelligence (EQ) with 40 questions across 5 dimensions: self-awareness, self-regulation, motivation, empathy, and social skills."
+    "title": "EQ Test | Emotion Reading Challenge - DopaBrain",
+    "description": "Read emotional scenes and test your empathy! 10 interactive scenarios measuring Self-Awareness, Empathy, Social Skills, and Emotional Regulation."
   },
   "accessibility": {
     "skipMain": "Skip to main content"
   },
   "app": {
     "title": "EQ Test",
-    "subtitle": "Emotional Intelligence Test",
-    "heroTitle": "What's Your EQ Score?"
+    "subtitle": "Emotion Reading Challenge",
+    "heroTitle": "Emotion Reading Challenge"
   },
   "dim": {
     "awareness": "Self-Awareness",
-    "awarenessDesc": "Recognizing your emotions and their impact",
-    "regulation": "Self-Regulation",
-    "regulationDesc": "Managing impulses and emotions constructively",
-    "motivation": "Motivation",
-    "motivationDesc": "Inner drive and passion toward your goals",
     "empathy": "Empathy",
-    "empathyDesc": "Understanding and caring for others' feelings",
     "social": "Social Skills",
-    "socialDesc": "Building relationships and wielding influence"
+    "regulation": "Regulation"
   },
   "intro": {
-    "desc": "Discover your emotional intelligence across 5 dimensions with 40 questions and receive personalized advice.",
-    "chip1": "40 Questions",
-    "chip2": "~8 Minutes",
-    "chip3": "5 Dimensions",
+    "desc": "Read emotional scenes, decode hidden feelings, and test your empathy through 10 interactive challenges.",
+    "chip1": "10 Rounds",
+    "chip2": "~3 min",
+    "chip3": "4 Dimensions",
     "disclaimer": "⚠️ This test is for self-understanding only and is not an official psychological assessment.",
-    "start": "Start the Test"
+    "start": "Start Challenge"
   },
-  "scale": {
-    "disagree": "Strongly\nDisagree",
-    "neither": "Neutral",
-    "agree": "Strongly\nAgree",
-    "hint": "1 = Strongly Disagree  |  5 = Strongly Agree"
+  "types": {
+    "decoder": "Emotion Decoder",
+    "decoderDesc": "Read emoji scenes and identify hidden emotions",
+    "decoderCount": "4 rounds",
+    "response": "Best Response",
+    "responseDesc": "Choose the most empathetic response",
+    "responseCount": "3 rounds",
+    "dilemma": "Social Dilemma",
+    "dilemmaDesc": "Navigate conflicts with emotional intelligence",
+    "dilemmaCount": "3 rounds"
   },
-  "quiz": {
-    "prev": "Previous",
-    "next": "Next",
-    "finish": "See Results"
+  "scene1": {
+    "context": "A woman gets angry at a man. He looks scared. Then she starts crying.",
+    "bubble": "\"You never listen to me...\"",
+    "question": "What is the woman REALLY feeling underneath her anger?",
+    "optA": "She's just angry and wants to fight",
+    "optB": "She feels unheard and emotionally neglected",
+    "optC": "She's trying to manipulate him with tears",
+    "optD": "She's frustrated but doesn't know why"
   },
-  "q1": "I can accurately identify the emotions I am feeling.",
-  "q2": "When I'm angry, I can clearly understand why.",
-  "q3": "I am aware of how my emotions influence my judgment and actions.",
-  "q4": "I can honestly assess my own strengths and weaknesses.",
-  "q5": "I have a clear understanding of my core values.",
-  "q6": "When under stress, I can quickly identify the source.",
-  "q7": "I use feedback from others to deepen my self-understanding.",
-  "q8": "I frequently check in with my emotional state throughout the day.",
-  "q9": "Even when angry, I avoid acting impulsively.",
-  "q10": "I maintain composure in difficult or stressful situations.",
-  "q11": "I recover quickly from negative emotions.",
-  "q12": "I can delay immediate gratification to prioritize long-term goals.",
-  "q13": "I can remain calm and rational even in conflict situations.",
-  "q14": "I avoid excessive self-blame when I make mistakes.",
-  "q15": "I strive to uphold my principles and values in any situation.",
-  "q16": "My mood is generally stable without extreme highs and lows.",
-  "q17": "I set goals and work persistently to achieve them.",
-  "q18": "I do not give up easily when faced with obstacles.",
-  "q19": "I have the resilience to bounce back after failure.",
-  "q20": "I bring passion to my work even without external rewards.",
-  "q21": "I constantly strive to improve and grow as a person.",
-  "q22": "I enjoy setting challenging and ambitious goals.",
-  "q23": "I am willing to make short-term sacrifices for long-term success.",
-  "q24": "I genuinely enjoy learning new skills and knowledge.",
-  "q25": "I can easily read the emotional state of others.",
-  "q26": "I make an effort to understand situations from others' perspectives.",
-  "q27": "I feel deeply moved when I see someone in pain or grief.",
-  "q28": "I can sense how someone is feeling even without them saying it.",
-  "q29": "I easily understand and respect people from different cultural backgrounds.",
-  "q30": "I immediately notice when someone is feeling uncomfortable.",
-  "q31": "I can look at problems from another person's point of view.",
-  "q32": "In conflict situations, I consider the other person's feelings first.",
-  "q33": "I can easily connect with new people.",
-  "q34": "I am effective at mediating conflicts peacefully.",
-  "q35": "I tend to bring out the best cooperation within a team.",
-  "q36": "I listen attentively and respond thoughtfully in conversations.",
-  "q37": "I am able to have a positive influence on the people around me.",
-  "q38": "I consider building trust to be very important in relationships.",
-  "q39": "I express myself clearly so others can easily understand.",
-  "q40": "I feel comfortable in a wide variety of social situations.",
-  "grade": {
-    "exceptional": "✨ Exceptional EQ",
-    "exceptionalDesc": "Your emotional intelligence is outstanding. You masterfully handle your own and others' emotions with great leadership.",
-    "excellent": "🌟 Excellent EQ",
-    "excellentDesc": "You have high emotional intelligence with strong interpersonal skills and excellent emotional regulation.",
-    "good": "💚 Good EQ",
-    "goodDesc": "Your emotional intelligence is solid. You handle emotions well in most situations with room for growth.",
-    "average": "💛 Average EQ",
-    "averageDesc": "Your emotional intelligence is at an average level. Focused practice in specific areas will help you grow quickly.",
-    "developing": "🔶 Developing EQ",
-    "developingDesc": "You have great opportunities to develop your emotional intelligence. Consistent practice can lead to significant improvement."
+  "scene2": {
+    "context": "A boy smiles when a girl gives him a gift. But then his expression goes blank.",
+    "bubble": "\"Oh... thanks...\"",
+    "question": "Why did the boy's expression change?",
+    "optA": "He doesn't like the gift and is rude",
+    "optB": "He's overwhelmed and processing his emotions",
+    "optC": "He feels guilty because he didn't get her anything",
+    "optD": "He's surprised and trying to hide excitement"
+  },
+  "scene3": {
+    "context": "A manager is smiling in a meeting. He checks his phone and suddenly looks frustrated. His colleague notices and looks worried.",
+    "bubble": "",
+    "question": "What's most likely happening with the manager?",
+    "optA": "He received bad news that disrupted his composed facade",
+    "optB": "He's angry at his colleague for no reason",
+    "optC": "He's just checking social media and got bored",
+    "optD": "He's struggling to maintain emotional control under professional pressure"
+  },
+  "scene4": {
+    "context": "A grandmother cheerfully visits her daughter. The daughter smiles nervously. The grandmother's expression saddens.",
+    "bubble": "\"I can tell you're not really okay, dear...\"",
+    "question": "What is the grandmother sensing?",
+    "optA": "Her daughter is hiding pain behind a fake smile, and grandma sees through it",
+    "optB": "The daughter is annoyed by the unexpected visit",
+    "optC": "The grandmother is imagining problems that aren't there",
+    "optD": "The daughter is nervous about something she needs to tell her mom"
+  },
+  "scene5": {
+    "context": "Your close friend just failed an important exam. They're sitting alone looking defeated.",
+    "bubble": "\"I studied so hard... I don't understand...\"",
+    "question": "What's the best way to respond?",
+    "optA": "\"Don't worry, it's just one test. You'll pass next time!\"",
+    "optB": "\"Maybe you should study differently next time.\"",
+    "optC": "\"That must be really frustrating. I'm here if you want to talk about it.\"",
+    "optD": "\"I know how hard you worked. It's okay to feel disappointed.\""
+  },
+  "scene6": {
+    "context": "Your colleague is crying in the break room after a breakup.",
+    "bubble": "\"Sorry, I can't stop crying...\"",
+    "question": "What's the most emotionally intelligent response?",
+    "optA": "\"You'll find someone better, don't cry!\"",
+    "optB": "\"Breakups are normal, everyone goes through this.\"",
+    "optC": "\"Do you want to take a walk? Sometimes fresh air helps.\"",
+    "optD": "\"It's okay to cry. I'm here with you, take your time.\""
+  },
+  "scene7": {
+    "context": "A new employee is visibly anxious before their first big presentation. They keep checking their notes nervously.",
+    "bubble": "\"What if I mess everything up?\"",
+    "question": "As their senior colleague, what do you say?",
+    "optA": "\"You'll be fine, don't overthink it.\"",
+    "optB": "\"I was nervous before my first presentation too. Let's go through your key points together.\"",
+    "optC": "\"If you're not prepared, maybe ask to reschedule.\"",
+    "optD": "\"Just imagine everyone in their underwear, haha.\""
+  },
+  "scene8": {
+    "context": "Your coworker takes credit for YOUR idea in a team meeting. Your boss loves it and praises them.",
+    "bubble": "",
+    "question": "What do you do?",
+    "optA": "Confront them angrily in front of everyone right now",
+    "optB": "Say nothing but silently resent them forever",
+    "optC": "After the meeting, privately talk to them about proper credit, then email your boss with your original notes",
+    "optD": "Mention casually 'I'm glad the team liked my original concept' to redirect credit"
+  },
+  "scene9": {
+    "context": "Two team members are having a heated argument about a project direction. Everyone else looks uncomfortable. You're the team lead.",
+    "bubble": "",
+    "question": "How do you handle this?",
+    "optA": "Pick the side you agree with to end the argument quickly",
+    "optB": "Tell them both to stop arguing and just follow your decision",
+    "optC": "Suggest a 5-minute break, then have each person explain their view calmly",
+    "optD": "Acknowledge both perspectives, find common ground, and guide toward a compromise that serves the project goals"
+  },
+  "scene10": {
+    "context": "You won an award but your close friend who also competed looks visibly upset. Others are congratulating you.",
+    "bubble": "",
+    "question": "What's the most emotionally intelligent way to handle this?",
+    "optA": "Celebrate loudly — you earned it and they should be happy for you",
+    "optB": "Downplay your win to avoid making them feel bad",
+    "optC": "Thank people graciously, then privately check on your friend later",
+    "optD": "Accept the award with gratitude, publicly acknowledge your friend's effort, and privately reach out with genuine empathy"
+  },
+  "feedback": {
+    "perfect": "Excellent emotional insight!",
+    "good": "Good reading!",
+    "okay": "Not bad, keep observing!",
+    "miss": "Tricky one!"
+  },
+  "level": {
+    "beginner": "🌱 EQ Beginner",
+    "beginnerDesc": "You're starting your emotional intelligence journey. With practice, you can dramatically improve how you read and respond to emotions.",
+    "learner": "📚 EQ Learner",
+    "learnerDesc": "You have a growing awareness of emotions. You sometimes catch the deeper feelings, and your empathy is developing well.",
+    "skilled": "🎯 EQ Skilled",
+    "skilledDesc": "You have solid emotional intelligence. You read most situations accurately and respond with genuine empathy.",
+    "master": "💫 EQ Master",
+    "masterDesc": "Your emotional intelligence is impressive. You naturally sense what others feel and respond with wisdom and care.",
+    "sage": "🧘 EQ Sage",
+    "sageDesc": "Exceptional emotional intelligence. You have a rare gift for understanding human emotions at the deepest level."
+  },
+  "tips": {
+    "awareness": "Practice a daily emotion check-in: pause 3 times a day and name exactly what you're feeling and why.",
+    "empathy": "When listening to someone, focus fully on understanding their feelings before forming your response.",
+    "social": "In conflicts, acknowledge the other person's perspective first before sharing your own view.",
+    "regulation": "When strong emotions arise, take 3 deep breaths before responding. This small pause changes everything.",
+    "general": "Read fiction regularly — studies show it significantly improves empathy and emotional understanding."
   },
   "result": {
-    "yourEQ": "Your EQ Score",
     "dimTitle": "Dimension Scores",
-    "adviceTitle": "Analysis & Advice",
-    "retry": "Take the Test Again"
-  },
-  "desc": {
-    "awareness": "Self-awareness is the ability to accurately understand your own emotions, strengths, weaknesses, and needs. Higher scores here mean you make wiser, more informed decisions.",
-    "regulation": "Self-regulation is the ability to constructively control disruptive emotions and impulses. Higher scores mean you stay calm and clear-headed even under pressure.",
-    "motivation": "Motivation is the inner drive to achieve. Higher scores mean you persevere through adversity and consistently move toward your goals with passion.",
-    "empathy": "Empathy is the ability to understand and share the feelings of others. Higher scores mean you build deeper relationships and support others effectively.",
-    "social": "Social skills involve adeptly managing relationships and inspiring cooperation. Higher scores mean strong teamwork, leadership, and networking abilities."
-  },
-  "advice": {
-    "awareness": "💡 Keep an emotion journal. Spend 5 minutes a day noting what you felt and why. Mindfulness meditation is also highly effective for building self-awareness.",
-    "regulation": "💡 Practice the 'stop and think' technique. When strong emotions arise, count to 10 and breathe deeply. Regular exercise and quality sleep are the foundation of emotional regulation.",
-    "motivation": "💡 Break big goals into small milestones. Experiencing small wins daily strengthens your intrinsic motivation. Write down your 'why' and revisit it often.",
-    "empathy": "💡 Practice listening without judgment when others speak. After conversations, ask yourself: 'How was the other person feeling?' Reading diverse fiction also effectively builds empathy.",
-    "social": "💡 Try to have one genuine conversation with someone new each week. In conflicts, practice acknowledging the other person's perspective before expressing your own."
+    "tipsTitle": "Growth Tips",
+    "personalTips": "Personalized Tips",
+    "retry": "Try Again"
   },
   "share": {
-    "copy": "Copy Link",
+    "copy": "📋 Copy Link",
     "copied": "Copied!",
-    "twitterText": "My EQ score is {score} ({grade})! What's your Emotional Intelligence?"
+    "twitterText": "My EQ Score: {score}/30 ({level})! Can you read emotions better?"
   },
   "units": {
-    "points": "pts"
+    "pts": "pts"
   }
 }

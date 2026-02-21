@@ -11,9 +11,9 @@
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
 
-  <title data-i18n="meta.title">EQ 감성지수 테스트 | 당신의 감성지능은 몇 점? - DopaBrain</title>
-  <meta name="description" data-i18n="meta.description" content="감성지능(EQ)을 40개 질문으로 측정하세요. 자기인식, 자기조절, 동기부여, 공감, 사회성 5가지 영역을 분석합니다.">
-  <meta name="keywords" content="EQ 테스트, 감성지능, 감성지수, EQ 측정, 공감 능력, 자기인식, 감정지능">
+  <title data-i18n="meta.title">EQ 감성지수 테스트 | 감정 읽기 챌린지 - DopaBrain</title>
+  <meta name="description" data-i18n="meta.description" content="감정 장면을 읽고 공감 능력을 측정하세요. 10가지 감정 시나리오로 자기인식, 공감, 사회성, 감정조절 4가지 EQ 영역을 분석합니다.">
+  <meta name="keywords" content="EQ test, emotional intelligence, empathy test, emotion reading, EQ score">
 
   <link rel="canonical" href="https://dopabrain.com/eq-test/">
   <meta name="theme-color" content="#00bcd4">
@@ -24,8 +24,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
 
-  <meta property="og:title" content="EQ 감성지수 테스트 - 당신의 감성지능은?">
-  <meta property="og:description" content="40개 질문으로 당신의 감성지능(EQ)을 측정하세요. 5가지 영역 분석 + 개인 맞춤 조언!">
+  <meta property="og:title" content="EQ Emotion Reading Challenge - Test Your Emotional Intelligence">
+  <meta property="og:description" content="Read emotional scenes and test your empathy! 10 interactive scenarios measuring 4 EQ dimensions.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dopabrain.com/eq-test/">
   <meta property="og:image" content="https://dopabrain.com/eq-test/icon-512.svg">
@@ -43,8 +43,8 @@
   <meta property="og:locale:alternate" content="fr_FR">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="EQ 감성지수 테스트 - DopaBrain">
-  <meta name="twitter:description" content="40개 질문으로 감성지능을 측정하세요!">
+  <meta name="twitter:title" content="EQ Emotion Reading Challenge - DopaBrain">
+  <meta name="twitter:description" content="Read emotional scenes and test your empathy!">
   <meta name="twitter:image" content="https://dopabrain.com/eq-test/icon-512.svg">
 
   <link rel="alternate" hreflang="ko" href="https://dopabrain.com/eq-test/">
@@ -65,8 +65,8 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "EQ Test - Emotional Intelligence Test",
-    "description": "Measure your emotional intelligence across 5 dimensions with 40 questions",
+    "name": "EQ Emotion Reading Challenge",
+    "description": "Read emotional scenes and test your empathy across 4 EQ dimensions with 10 interactive scenarios",
     "url": "https://dopabrain.com/eq-test/",
     "image": "https://dopabrain.com/eq-test/icon-512.svg",
     "applicationCategory": "LifestyleApplication",
@@ -100,10 +100,15 @@
 
       /* Dimension Colors */
       --dim-awareness: #ff6b9d;
-      --dim-regulation: #a78bfa;
-      --dim-motivation: #fbbf24;
       --dim-empathy: #34d399;
       --dim-social: #60a5fa;
+      --dim-regulation: #a78bfa;
+
+      /* Scene mood colors */
+      --mood-tense: rgba(255, 82, 82, 0.08);
+      --mood-warm: rgba(255, 183, 77, 0.08);
+      --mood-cool: rgba(66, 165, 245, 0.08);
+      --mood-neutral: rgba(255, 255, 255, 0.03);
     }
 
     [data-theme="light"] {
@@ -118,10 +123,13 @@
       --glass: rgba(255, 255, 255, 0.6);
       --glass-border: rgba(0, 0, 0, 0.07);
       --shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      --mood-tense: rgba(255, 82, 82, 0.06);
+      --mood-warm: rgba(255, 183, 77, 0.06);
+      --mood-cool: rgba(66, 165, 245, 0.06);
+      --mood-neutral: rgba(0, 0, 0, 0.02);
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -156,6 +164,7 @@
       z-index: 999;
       border-radius: 0 0 8px 0;
       font-weight: 600;
+      text-decoration: none;
     }
     .skip-link:focus { top: 0; }
 
@@ -167,7 +176,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 9999;
+      z-index: 10000;
       transition: opacity 0.4s, visibility 0.4s;
     }
     .app-loader.hidden { opacity: 0; visibility: hidden; }
@@ -228,7 +237,7 @@
       position: relative;
     }
     .icon-btn {
-      width: 40px; height: 40px;
+      width: 44px; height: 44px;
       border: 1px solid var(--border);
       background: var(--surface);
       border-radius: 10px;
@@ -275,7 +284,7 @@
 
     /* ===== Screen ===== */
     .screen { display: none; }
-    .screen.active { display: block; }
+    .screen.active { display: block; animation: fadeInUp 0.35s ease; }
 
     /* ===== Start Screen ===== */
     .start-hero {
@@ -300,7 +309,7 @@
     .hero-subtitle {
       font-size: 0.95rem;
       color: var(--text-muted);
-      max-width: 360px;
+      max-width: 380px;
       margin: 0 auto 24px;
     }
 
@@ -323,17 +332,69 @@
       gap: 6px;
     }
 
+    .challenge-types {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .challenge-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.2s;
+      backdrop-filter: blur(12px);
+    }
+    .challenge-card:hover {
+      background: var(--surface-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .challenge-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+    }
+    .challenge-info { flex: 1; }
+    .challenge-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+    .challenge-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .challenge-count {
+      font-size: 0.72rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
     .dimensions-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 10px;
       margin-bottom: 28px;
     }
     .dim-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 16px;
+      padding: 14px;
       text-align: center;
       transition: all 0.2s;
       backdrop-filter: blur(12px);
@@ -341,25 +402,13 @@
     .dim-card:hover {
       background: var(--surface-hover);
       transform: translateY(-2px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
-    .dim-card.full { grid-column: 1 / -1; }
-    .dim-icon { font-size: 1.6rem; margin-bottom: 8px; }
-    .dim-name {
-      font-size: 0.9rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .dim-desc {
-      font-size: 0.77rem;
-      color: var(--text-muted);
-      line-height: 1.4;
-    }
+    .dim-icon { font-size: 1.4rem; margin-bottom: 6px; }
+    .dim-name { font-size: 0.85rem; font-weight: 700; }
     .dim-card[data-dim="awareness"] .dim-name { color: var(--dim-awareness); }
-    .dim-card[data-dim="regulation"] .dim-name { color: var(--dim-regulation); }
-    .dim-card[data-dim="motivation"] .dim-name { color: var(--dim-motivation); }
     .dim-card[data-dim="empathy"] .dim-name { color: var(--dim-empathy); }
     .dim-card[data-dim="social"] .dim-name { color: var(--dim-social); }
+    .dim-card[data-dim="regulation"] .dim-name { color: var(--dim-regulation); }
 
     .disclaimer {
       font-size: 0.78rem;
@@ -406,10 +455,8 @@
     .btn-secondary:hover { background: var(--surface-hover); }
     .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
-    /* ===== Quiz Screen ===== */
-    .quiz-header {
-      margin-bottom: 20px;
-    }
+    /* ===== Scene Screen ===== */
+    .scene-header { margin-bottom: 20px; }
     .progress-info {
       display: flex;
       align-items: center;
@@ -421,7 +468,7 @@
       color: var(--text-muted);
     }
     .progress-count {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: var(--primary);
     }
@@ -438,109 +485,201 @@
       transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .dim-badge {
+    .type-badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 20px;
       font-size: 0.78rem;
       font-weight: 600;
       margin-bottom: 16px;
       border: 1px solid;
     }
-    .dim-badge[data-dim="awareness"] { color: var(--dim-awareness); border-color: var(--dim-awareness); background: rgba(255,107,157,0.1); }
-    .dim-badge[data-dim="regulation"] { color: var(--dim-regulation); border-color: var(--dim-regulation); background: rgba(167,139,250,0.1); }
-    .dim-badge[data-dim="motivation"] { color: var(--dim-motivation); border-color: var(--dim-motivation); background: rgba(251,191,36,0.1); }
-    .dim-badge[data-dim="empathy"] { color: var(--dim-empathy); border-color: var(--dim-empathy); background: rgba(52,211,153,0.1); }
-    .dim-badge[data-dim="social"] { color: var(--dim-social); border-color: var(--dim-social); background: rgba(96,165,250,0.1); }
+    .type-badge.decoder { color: var(--dim-awareness); border-color: var(--dim-awareness); background: rgba(255,107,157,0.1); }
+    .type-badge.response { color: var(--dim-empathy); border-color: var(--dim-empathy); background: rgba(52,211,153,0.1); }
+    .type-badge.dilemma { color: var(--dim-social); border-color: var(--dim-social); background: rgba(96,165,250,0.1); }
 
-    .question-card {
+    /* Emotion Theater */
+    .emotion-theater {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 24px;
-      margin-bottom: 24px;
+      padding: 28px 20px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(12px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.5s;
+    }
+    .emotion-theater.mood-tense { background: var(--mood-tense); }
+    .emotion-theater.mood-warm { background: var(--mood-warm); }
+    .emotion-theater.mood-cool { background: var(--mood-cool); }
+
+    .scene-emoji-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .scene-actor {
+      font-size: 3rem;
+      line-height: 1;
+      transition: transform 0.3s;
+      animation: actorBounce 0.5s ease backwards;
+    }
+    .scene-actor:nth-child(2) { animation-delay: 0.15s; }
+    .scene-actor:nth-child(3) { animation-delay: 0.3s; }
+    .scene-actor:nth-child(4) { animation-delay: 0.45s; }
+    .scene-actor:nth-child(5) { animation-delay: 0.6s; }
+    @keyframes actorBounce {
+      from { opacity: 0; transform: scale(0.5) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .scene-arrow {
+      font-size: 1.4rem;
+      color: var(--text-muted);
+      animation: actorBounce 0.5s ease backwards;
+    }
+
+    .scene-context {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 4px;
+      padding: 0 8px;
+    }
+    .scene-bubble {
+      display: inline-block;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px 16px 16px 4px;
+      padding: 10px 18px;
+      margin-top: 10px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-style: italic;
+      position: relative;
+    }
+
+    .scene-question {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-bottom: 16px;
       backdrop-filter: blur(12px);
     }
-    .question-number {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-    }
-    .question-text {
-      font-size: 1.1rem;
+    .scene-question-text {
+      font-size: 1.05rem;
       font-weight: 600;
       line-height: 1.5;
       color: var(--text);
     }
 
-    .likert-wrap {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
+    /* Option Cards */
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       margin-bottom: 20px;
-      backdrop-filter: blur(12px);
     }
-    .likert-labels {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 12px;
-      padding: 0 4px;
-    }
-    .likert-label {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      text-align: center;
-      max-width: 80px;
-      line-height: 1.3;
-    }
-    .likert-btns {
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-    }
-    .likert-btn {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      border: 2px solid var(--border);
+    .option-card {
       background: var(--surface);
-      color: var(--text);
-      font-size: 1rem;
-      font-weight: 700;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all 0.25s;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      backdrop-filter: blur(12px);
+      min-height: 52px;
+    }
+    .option-card:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-focus);
+      transform: translateX(4px);
+    }
+    .option-card.selected {
+      background: var(--primary-glow);
+      border-color: var(--primary);
+    }
+    .option-card.correct {
+      background: rgba(52, 211, 153, 0.15);
+      border-color: #34d399;
+    }
+    .option-card.wrong {
+      background: rgba(255, 82, 82, 0.1);
+      border-color: rgba(255, 82, 82, 0.4);
+    }
+    .option-letter {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: inherit;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      transition: all 0.25s;
     }
-    .likert-btn:hover {
-      border-color: var(--primary);
-      background: var(--primary-glow);
-      transform: scale(1.08);
-    }
-    .likert-btn.selected {
+    .option-card.selected .option-letter {
       background: var(--primary);
       border-color: var(--primary);
       color: #fff;
-      transform: scale(1.12);
-      box-shadow: 0 4px 16px var(--primary-glow);
     }
-    .likert-scale-hint {
-      text-align: center;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      margin-top: 10px;
+    .option-text {
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: var(--text);
+      padding-top: 2px;
     }
 
-    .quiz-nav {
-      display: flex;
-      gap: 12px;
+    /* Feedback toast */
+    .feedback-toast {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 32px;
+      text-align: center;
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+      backdrop-filter: blur(20px);
     }
-    .quiz-nav .btn { flex: 1; }
+    .feedback-toast.show {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+      pointer-events: auto;
+    }
+    .feedback-emoji { font-size: 2.5rem; margin-bottom: 8px; display: block; }
+    .feedback-points {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .feedback-points.high { color: #34d399; }
+    .feedback-points.mid { color: #fbbf24; }
+    .feedback-points.low { color: #ff6b9d; }
+    .feedback-msg {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
 
     /* ===== Result Screen ===== */
     .result-hero {
@@ -580,6 +719,11 @@
       background-clip: text;
       line-height: 1;
     }
+    .score-max {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
     .score-label {
       font-size: 0.82rem;
       color: var(--text-muted);
@@ -587,28 +731,35 @@
       text-transform: uppercase;
       letter-spacing: 1px;
     }
-    .grade-badge {
-      display: inline-block;
-      padding: 8px 24px;
+
+    .level-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 28px;
       border-radius: 30px;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 800;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       background: linear-gradient(135deg, var(--primary), var(--primary-dark));
       color: #fff;
       box-shadow: 0 4px 20px var(--primary-glow);
     }
-    .grade-desc-text {
-      font-size: 0.88rem;
+    .level-desc-text {
+      font-size: 0.9rem;
       color: var(--text-muted);
       margin-bottom: 4px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
     }
 
     .section-title {
       font-size: 1rem;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 14px;
+      margin: 24px 0 14px;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -621,8 +772,7 @@
     }
 
     /* Dimension bars */
-    .dim-bars { display: flex; flex-direction: column; gap: 16px; margin-bottom: 28px; }
-    .dim-bar-item { }
+    .dim-bars { display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px; }
     .dim-bar-header {
       display: flex;
       align-items: center;
@@ -657,54 +807,46 @@
       width: 0;
     }
 
-    /* Advice cards */
-    .advice-cards { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
-    .advice-card {
+    /* Tips card */
+    .tips-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 16px;
+      padding: 20px;
+      margin-bottom: 24px;
       backdrop-filter: blur(12px);
     }
-    .advice-card-header {
+    .tips-card-header {
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 8px;
-    }
-    .advice-card-icon { font-size: 1.1rem; }
-    .advice-card-name { font-size: 0.9rem; font-weight: 700; }
-    .advice-card-score {
-      margin-left: auto;
-      font-size: 0.82rem;
+      margin-bottom: 12px;
       font-weight: 700;
-      padding: 2px 10px;
-      border-radius: 12px;
-      background: var(--surface-hover);
+      font-size: 0.95rem;
     }
-    .advice-card-desc {
-      font-size: 0.82rem;
+    .tips-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .tips-list li {
+      font-size: 0.85rem;
       color: var(--text-muted);
       line-height: 1.5;
-      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
     }
-    .advice-card-tip {
-      font-size: 0.8rem;
-      line-height: 1.5;
-      padding: 8px 12px;
-      border-radius: var(--radius-sm);
-      border-left: 3px solid;
+    .tips-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
     }
-    .advice-card[data-dim="awareness"] .advice-card-name { color: var(--dim-awareness); }
-    .advice-card[data-dim="awareness"] .advice-card-tip { border-color: var(--dim-awareness); background: rgba(255,107,157,0.07); }
-    .advice-card[data-dim="regulation"] .advice-card-name { color: var(--dim-regulation); }
-    .advice-card[data-dim="regulation"] .advice-card-tip { border-color: var(--dim-regulation); background: rgba(167,139,250,0.07); }
-    .advice-card[data-dim="motivation"] .advice-card-name { color: var(--dim-motivation); }
-    .advice-card[data-dim="motivation"] .advice-card-tip { border-color: var(--dim-motivation); background: rgba(251,191,36,0.07); }
-    .advice-card[data-dim="empathy"] .advice-card-name { color: var(--dim-empathy); }
-    .advice-card[data-dim="empathy"] .advice-card-tip { border-color: var(--dim-empathy); background: rgba(52,211,153,0.07); }
-    .advice-card[data-dim="social"] .advice-card-name { color: var(--dim-social); }
-    .advice-card[data-dim="social"] .advice-card-tip { border-color: var(--dim-social); background: rgba(96,165,250,0.07); }
 
     /* Share */
     .share-row {
@@ -738,10 +880,9 @@
 
     /* ===== Responsive ===== */
     @media (max-width: 400px) {
-      .dimensions-grid { grid-template-columns: 1fr; }
-      .dim-card.full { grid-column: auto; }
-      .likert-btn { width: 44px; height: 44px; font-size: 0.9rem; }
+      .dimensions-grid { grid-template-columns: 1fr 1fr; }
       .hero-title { font-size: 1.5rem; }
+      .scene-actor { font-size: 2.4rem; }
     }
 
     /* ===== Animations ===== */
@@ -749,11 +890,26 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    .screen.active { animation: fadeInUp 0.35s ease; }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .option-card { animation: slideIn 0.3s ease backwards; }
+    .option-card:nth-child(1) { animation-delay: 0.05s; }
+    .option-card:nth-child(2) { animation-delay: 0.1s; }
+    .option-card:nth-child(3) { animation-delay: 0.15s; }
+    .option-card:nth-child(4) { animation-delay: 0.2s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
 <body>
-  <a href="#main" class="skip-link" data-i18n="accessibility.skipMain">메인으로 건너뛰기</a>
+  <a href="#main" class="skip-link" data-i18n="accessibility.skipMain">Skip to main content</a>
   <div class="app-loader" id="app-loader">
     <div class="loader-spinner"></div>
   </div>
@@ -767,24 +923,24 @@
     <header class="header">
       <div>
         <h1 class="app-title" data-i18n="app.title">EQ 감성지수 테스트</h1>
-        <p class="app-subtitle" data-i18n="app.subtitle">Emotional Intelligence Test</p>
+        <p class="app-subtitle" data-i18n="app.subtitle">Emotion Reading Challenge</p>
       </div>
       <div class="header-controls">
-        <button class="icon-btn" id="theme-btn" aria-label="Toggle theme">☀️</button>
-        <button class="icon-btn" id="lang-btn" aria-label="Language">🌐</button>
+        <button class="icon-btn" id="theme-btn" aria-label="Toggle theme">&#9728;&#65039;</button>
+        <button class="icon-btn" id="lang-btn" aria-label="Language">&#127760;</button>
         <div class="lang-menu hidden" id="lang-menu">
-          <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
-          <button class="lang-option" data-lang="en">🇺🇸 English</button>
-          <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
-          <button class="lang-option" data-lang="zh">🇨🇳 中文</button>
-          <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
-          <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
-          <button class="lang-option" data-lang="es">🇪🇸 Español</button>
-          <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
-          <button class="lang-option" data-lang="id">🇮🇩 Indonesia</button>
-          <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
-          <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
-          <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+          <button class="lang-option" data-lang="ko">&#127472;&#127479; &#54620;&#44397;&#50612;</button>
+          <button class="lang-option" data-lang="en">&#127482;&#127480; English</button>
+          <button class="lang-option" data-lang="ja">&#127471;&#127477; &#26085;&#26412;&#35486;</button>
+          <button class="lang-option" data-lang="zh">&#127464;&#127475; &#20013;&#25991;</button>
+          <button class="lang-option" data-lang="hi">&#127470;&#127475; &#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</button>
+          <button class="lang-option" data-lang="ru">&#127479;&#127482; &#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</button>
+          <button class="lang-option" data-lang="es">&#127466;&#127480; Espa&#241;ol</button>
+          <button class="lang-option" data-lang="pt">&#127463;&#127479; Portugu&#234;s</button>
+          <button class="lang-option" data-lang="id">&#127470;&#127465; Indonesia</button>
+          <button class="lang-option" data-lang="tr">&#127481;&#127479; T&#252;rk&#231;e</button>
+          <button class="lang-option" data-lang="de">&#127465;&#127466; Deutsch</button>
+          <button class="lang-option" data-lang="fr">&#127467;&#127479; Fran&#231;ais</button>
         </div>
       </div>
     </header>
@@ -792,91 +948,95 @@
     <!-- Screen: Start -->
     <section id="screen-start" class="screen active">
       <div class="start-hero">
-        <span class="hero-icon">💚</span>
-        <h2 class="hero-title" data-i18n="app.heroTitle">나의 감성지능은 몇 점?</h2>
-        <p class="hero-subtitle" data-i18n="intro.desc">40개 질문으로 5가지 감성지능 영역을 측정하고 맞춤 조언을 받아보세요.</p>
+        <span class="hero-icon">&#127917;</span>
+        <h2 class="hero-title" data-i18n="app.heroTitle">&#44048;&#51221; &#51069;&#44592; &#52308;&#47536;&#51648;</h2>
+        <p class="hero-subtitle" data-i18n="intro.desc">&#44048;&#51221; &#51109;&#47732;&#51012; &#51069;&#44256; &#44277;&#44048; &#45733;&#47141;&#51012; &#52769;&#51221;&#54616;&#49464;&#50836;.</p>
       </div>
 
       <div class="info-strip">
-        <div class="info-chip">📋 <span data-i18n="intro.chip1">40개 질문</span></div>
-        <div class="info-chip">⏱️ <span data-i18n="intro.chip2">약 8분 소요</span></div>
-        <div class="info-chip">🎯 <span data-i18n="intro.chip3">5가지 영역</span></div>
+        <div class="info-chip">&#127917; <span data-i18n="intro.chip1">10 Rounds</span></div>
+        <div class="info-chip">&#9201;&#65039; <span data-i18n="intro.chip2">~3 min</span></div>
+        <div class="info-chip">&#127919; <span data-i18n="intro.chip3">4 Dimensions</span></div>
+      </div>
+
+      <div class="challenge-types">
+        <div class="challenge-card">
+          <div class="challenge-icon">&#128270;</div>
+          <div class="challenge-info">
+            <div class="challenge-name" data-i18n="types.decoder">Emotion Decoder</div>
+            <div class="challenge-desc" data-i18n="types.decoderDesc">Read emoji scenes and identify hidden emotions</div>
+            <div class="challenge-count" data-i18n="types.decoderCount">4 rounds</div>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="challenge-icon">&#128156;</div>
+          <div class="challenge-info">
+            <div class="challenge-name" data-i18n="types.response">Best Response</div>
+            <div class="challenge-desc" data-i18n="types.responseDesc">Choose the most empathetic response</div>
+            <div class="challenge-count" data-i18n="types.responseCount">3 rounds</div>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="challenge-icon">&#9878;&#65039;</div>
+          <div class="challenge-info">
+            <div class="challenge-name" data-i18n="types.dilemma">Social Dilemma</div>
+            <div class="challenge-desc" data-i18n="types.dilemmaDesc">Navigate conflicts with emotional intelligence</div>
+            <div class="challenge-count" data-i18n="types.dilemmaCount">3 rounds</div>
+          </div>
+        </div>
       </div>
 
       <div class="dimensions-grid">
         <div class="dim-card" data-dim="awareness">
-          <div class="dim-icon">🔍</div>
-          <div class="dim-name" data-i18n="dim.awareness">자기인식</div>
-          <div class="dim-desc" data-i18n="dim.awarenessDesc">자신의 감정과 그 영향을 인식하는 능력</div>
-        </div>
-        <div class="dim-card" data-dim="regulation">
-          <div class="dim-icon">🧘</div>
-          <div class="dim-name" data-i18n="dim.regulation">자기조절</div>
-          <div class="dim-desc" data-i18n="dim.regulationDesc">충동을 다스리고 감정을 관리하는 능력</div>
-        </div>
-        <div class="dim-card" data-dim="motivation">
-          <div class="dim-icon">🚀</div>
-          <div class="dim-name" data-i18n="dim.motivation">동기부여</div>
-          <div class="dim-desc" data-i18n="dim.motivationDesc">목표를 향한 내적 동기와 열정</div>
+          <div class="dim-icon">&#128270;</div>
+          <div class="dim-name" data-i18n="dim.awareness">Self-Awareness</div>
         </div>
         <div class="dim-card" data-dim="empathy">
-          <div class="dim-icon">💛</div>
-          <div class="dim-name" data-i18n="dim.empathy">공감</div>
-          <div class="dim-desc" data-i18n="dim.empathyDesc">타인의 감정을 이해하고 배려하는 능력</div>
+          <div class="dim-icon">&#128154;</div>
+          <div class="dim-name" data-i18n="dim.empathy">Empathy</div>
         </div>
-        <div class="dim-card full" data-dim="social">
-          <div class="dim-icon">🤝</div>
-          <div class="dim-name" data-i18n="dim.social">사회성</div>
-          <div class="dim-desc" data-i18n="dim.socialDesc">관계를 구축하고 영향력을 발휘하는 능력</div>
+        <div class="dim-card" data-dim="social">
+          <div class="dim-icon">&#129309;</div>
+          <div class="dim-name" data-i18n="dim.social">Social Skills</div>
+        </div>
+        <div class="dim-card" data-dim="regulation">
+          <div class="dim-icon">&#129496;</div>
+          <div class="dim-name" data-i18n="dim.regulation">Regulation</div>
         </div>
       </div>
 
-      <p class="disclaimer" data-i18n="intro.disclaimer">⚠️ 이 테스트는 자기 이해를 돕기 위한 참고용이며, 공식 심리 진단이 아닙니다.</p>
-      <button class="btn btn-primary" id="btn-start" data-i18n="intro.start">테스트 시작하기</button>
+      <p class="disclaimer" data-i18n="intro.disclaimer">This test is for self-understanding only.</p>
+      <button class="btn btn-primary" id="btn-start" data-i18n="intro.start">Start Challenge</button>
     </section>
 
-    <!-- Screen: Quiz -->
-    <section id="screen-quiz" class="screen">
-      <div class="quiz-header">
+    <!-- Screen: Scene (Quiz) -->
+    <section id="screen-scene" class="screen">
+      <div class="scene-header">
         <div class="progress-info">
-          <span class="progress-label" id="progress-label">1 / 40</span>
-          <span class="progress-count" id="dim-progress-label"></span>
+          <span class="progress-label" id="progress-label">1 / 10</span>
+          <span class="progress-count" id="type-label"></span>
         </div>
         <div class="progress-bar-wrap">
           <div class="progress-fill" id="progress-fill"></div>
         </div>
       </div>
 
-      <div id="dim-badge" class="dim-badge" data-dim="awareness">
-        <span id="dim-badge-icon">🔍</span>
-        <span id="dim-badge-name" data-i18n="dim.awareness">자기인식</span>
+      <div id="type-badge" class="type-badge decoder">
+        <span id="type-badge-icon">&#128270;</span>
+        <span id="type-badge-name"></span>
       </div>
 
-      <div class="question-card">
-        <div class="question-number" id="q-number">Q1</div>
-        <div class="question-text" id="q-text"></div>
+      <div class="emotion-theater" id="emotion-theater">
+        <div class="scene-emoji-row" id="scene-emojis"></div>
+        <div class="scene-context" id="scene-context"></div>
+        <div class="scene-bubble" id="scene-bubble"></div>
       </div>
 
-      <div class="likert-wrap">
-        <div class="likert-labels">
-          <span class="likert-label" data-i18n="scale.disagree">전혀<br>아님</span>
-          <span class="likert-label" data-i18n="scale.neither">보통</span>
-          <span class="likert-label" data-i18n="scale.agree">매우<br>그렇다</span>
-        </div>
-        <div class="likert-btns" id="likert-btns">
-          <button class="likert-btn" data-score="1">1</button>
-          <button class="likert-btn" data-score="2">2</button>
-          <button class="likert-btn" data-score="3">3</button>
-          <button class="likert-btn" data-score="4">4</button>
-          <button class="likert-btn" data-score="5">5</button>
-        </div>
-        <p class="likert-scale-hint" data-i18n="scale.hint">1 = 전혀 아님 &nbsp;|&nbsp; 5 = 매우 그렇다</p>
+      <div class="scene-question">
+        <div class="scene-question-text" id="scene-question"></div>
       </div>
 
-      <div class="quiz-nav">
-        <button class="btn btn-secondary" id="btn-prev" data-i18n="quiz.prev">이전</button>
-        <button class="btn btn-primary" id="btn-next" data-i18n="quiz.next">다음</button>
-      </div>
+      <div class="options-list" id="options-list"></div>
     </section>
 
     <!-- Screen: Result -->
@@ -889,25 +1049,31 @@
           </svg>
           <div class="score-center">
             <span class="score-number" id="score-number">0</span>
-            <span class="score-label">EQ</span>
+            <span class="score-max" id="score-max">/ 30</span>
           </div>
         </div>
-        <div class="grade-badge" id="grade-badge"></div>
-        <p class="grade-desc-text" id="grade-desc"></p>
+        <div class="level-badge" id="level-badge"></div>
+        <p class="level-desc-text" id="level-desc"></p>
       </div>
 
-      <p class="section-title" data-i18n="result.dimTitle">영역별 점수</p>
+      <p class="section-title" data-i18n="result.dimTitle">Dimension Scores</p>
       <div class="dim-bars" id="dim-bars"></div>
 
-      <p class="section-title" data-i18n="result.adviceTitle">영역별 분석 & 조언</p>
-      <div class="advice-cards" id="advice-cards"></div>
-
-      <div class="share-row">
-        <button class="share-btn twitter" id="btn-twitter">𝕏 Twitter</button>
-        <button class="share-btn" id="btn-copy" data-i18n="share.copy">📋 링크 복사</button>
+      <p class="section-title" data-i18n="result.tipsTitle">Growth Tips</p>
+      <div class="tips-card" id="tips-card">
+        <div class="tips-card-header">
+          <span>&#128161;</span>
+          <span data-i18n="result.personalTips">Personalized Tips</span>
+        </div>
+        <ul class="tips-list" id="tips-list"></ul>
       </div>
 
-      <button class="btn btn-primary" id="btn-retry" data-i18n="result.retry">다시 테스트하기</button>
+      <div class="share-row">
+        <button class="share-btn twitter" id="btn-twitter">&#120143; Twitter</button>
+        <button class="share-btn" id="btn-copy" data-i18n="share.copy">Copy Link</button>
+      </div>
+
+      <button class="btn btn-primary" id="btn-retry" data-i18n="result.retry">Try Again</button>
     </section>
   </div>
 
@@ -915,78 +1081,116 @@
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="auto" data-ad-format="horizontal"></ins>
   </div>
 
+  <!-- Feedback Toast -->
+  <div class="feedback-toast" id="feedback-toast">
+    <span class="feedback-emoji" id="feedback-emoji"></span>
+    <div class="feedback-points" id="feedback-points"></div>
+    <div class="feedback-msg" id="feedback-msg"></div>
+  </div>
+
   <script src="js/i18n.js"></script>
   <script>
   (() => {
     'use strict';
 
-    // ===== Questions Data =====
-    const QUESTIONS = [
-      // Self-Awareness (q1-q8)
-      { id: 1, dim: 'awareness' },
-      { id: 2, dim: 'awareness' },
-      { id: 3, dim: 'awareness' },
-      { id: 4, dim: 'awareness' },
-      { id: 5, dim: 'awareness' },
-      { id: 6, dim: 'awareness' },
-      { id: 7, dim: 'awareness' },
-      { id: 8, dim: 'awareness' },
-      // Self-Regulation (q9-q16)
-      { id: 9, dim: 'regulation' },
-      { id: 10, dim: 'regulation' },
-      { id: 11, dim: 'regulation' },
-      { id: 12, dim: 'regulation' },
-      { id: 13, dim: 'regulation' },
-      { id: 14, dim: 'regulation' },
-      { id: 15, dim: 'regulation' },
-      { id: 16, dim: 'regulation' },
-      // Motivation (q17-q24)
-      { id: 17, dim: 'motivation' },
-      { id: 18, dim: 'motivation' },
-      { id: 19, dim: 'motivation' },
-      { id: 20, dim: 'motivation' },
-      { id: 21, dim: 'motivation' },
-      { id: 22, dim: 'motivation' },
-      { id: 23, dim: 'motivation' },
-      { id: 24, dim: 'motivation' },
-      // Empathy (q25-q32)
-      { id: 25, dim: 'empathy' },
-      { id: 26, dim: 'empathy' },
-      { id: 27, dim: 'empathy' },
-      { id: 28, dim: 'empathy' },
-      { id: 29, dim: 'empathy' },
-      { id: 30, dim: 'empathy' },
-      { id: 31, dim: 'empathy' },
-      { id: 32, dim: 'empathy' },
-      // Social Skills (q33-q40)
-      { id: 33, dim: 'social' },
-      { id: 34, dim: 'social' },
-      { id: 35, dim: 'social' },
-      { id: 36, dim: 'social' },
-      { id: 37, dim: 'social' },
-      { id: 38, dim: 'social' },
-      { id: 39, dim: 'social' },
-      { id: 40, dim: 'social' },
+    // ===== Scene Data =====
+    // type: 'decoder' | 'response' | 'dilemma'
+    // dims: which dimensions this round scores (primary)
+    // emojis: array of emoji actors for the theater
+    // mood: 'tense' | 'warm' | 'cool' | 'neutral'
+    // scores: [points for option A, B, C, D] (0-3 each)
+    // dimMap: which dimensions get the points [dim for A-best, etc.]
+    const SCENES = [
+      // === EMOTION DECODER (4 rounds) ===
+      {
+        id: 1, type: 'decoder', dims: ['awareness', 'empathy'],
+        emojis: ['👩😡', '→', '👨😰', '→', '👩😢'],
+        mood: 'tense',
+        scores: [1, 3, 0, 2] // B is best
+      },
+      {
+        id: 2, type: 'decoder', dims: ['awareness', 'empathy'],
+        emojis: ['👦😊', '→', '👧🎁', '→', '👦😶'],
+        mood: 'warm',
+        scores: [0, 2, 3, 1] // C is best
+      },
+      {
+        id: 3, type: 'decoder', dims: ['awareness'],
+        emojis: ['👨‍💼😊', '📱', '👨‍💼😤', '→', '👩‍💼😟'],
+        mood: 'tense',
+        scores: [2, 0, 1, 3] // D is best
+      },
+      {
+        id: 4, type: 'decoder', dims: ['empathy', 'awareness'],
+        emojis: ['👵😊', '→', '👩😅', '→', '👵😔'],
+        mood: 'warm',
+        scores: [3, 1, 0, 2] // A is best
+      },
+      // === BEST RESPONSE (3 rounds) ===
+      {
+        id: 5, type: 'response', dims: ['empathy', 'social'],
+        emojis: ['👫', '😔', '📝❌'],
+        mood: 'cool',
+        scores: [0, 1, 3, 2] // C is best
+      },
+      {
+        id: 6, type: 'response', dims: ['empathy', 'regulation'],
+        emojis: ['👩', '😭', '💔'],
+        mood: 'tense',
+        scores: [1, 0, 2, 3] // D is best
+      },
+      {
+        id: 7, type: 'response', dims: ['social', 'empathy'],
+        emojis: ['👨‍💼', '😰', '🏢', '📊'],
+        mood: 'cool',
+        scores: [2, 3, 0, 1] // B is best
+      },
+      // === SOCIAL DILEMMA (3 rounds) ===
+      {
+        id: 8, type: 'dilemma', dims: ['regulation', 'social'],
+        emojis: ['👤😤', '→', '👨‍💼😊', '→', '🏢'],
+        mood: 'tense',
+        scores: [0, 2, 3, 1] // C is best
+      },
+      {
+        id: 9, type: 'dilemma', dims: ['social', 'regulation'],
+        emojis: ['👥😠', '⚡', '👤😐'],
+        mood: 'tense',
+        scores: [1, 0, 2, 3] // D is best
+      },
+      {
+        id: 10, type: 'dilemma', dims: ['regulation', 'awareness'],
+        emojis: ['👤🏆', '→', '👥😒', '→', '👤😕'],
+        mood: 'cool',
+        scores: [2, 0, 1, 3] // D is best
+      }
     ];
 
     const DIMS = [
       { key: 'awareness', icon: '🔍', color: '#ff6b9d' },
-      { key: 'regulation', icon: '🧘', color: '#a78bfa' },
-      { key: 'motivation', icon: '🚀', color: '#fbbf24' },
-      { key: 'empathy', icon: '💛', color: '#34d399' },
+      { key: 'empathy', icon: '💚', color: '#34d399' },
       { key: 'social', icon: '🤝', color: '#60a5fa' },
+      { key: 'regulation', icon: '🧘', color: '#a78bfa' },
     ];
 
+    const TYPE_INFO = {
+      decoder: { css: 'decoder', icon: '🔍' },
+      response: { css: 'response', icon: '💜' },
+      dilemma: { css: 'dilemma', icon: '⚖️' },
+    };
+
     // ===== State =====
-    let answers = new Array(40).fill(0);
-    let currentIdx = 0;
+    let currentRound = 0;
+    let roundScores = []; // points earned per round
+    let dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
     let isDark = true;
+    let answered = false;
 
     // ===== DOM =====
     const $ = id => document.getElementById(id);
     const screens = {
       start: $('screen-start'),
-      quiz: $('screen-quiz'),
+      scene: $('screen-scene'),
       result: $('screen-result'),
     };
 
@@ -1012,109 +1216,170 @@
       applyTheme();
     });
 
-    // ===== Quiz Logic =====
-    function renderQuestion(idx) {
-      const q = QUESTIONS[idx];
-      const dim = DIMS.find(d => d.key === q.dim);
-      const total = QUESTIONS.length;
+    // ===== Scene Rendering =====
+    function renderScene(idx) {
+      answered = false;
+      const scene = SCENES[idx];
+      const total = SCENES.length;
+      const typeKey = scene.type;
+      const info = TYPE_INFO[typeKey];
 
       // Progress
       $('progress-label').textContent = `${idx + 1} / ${total}`;
       $('progress-fill').style.width = `${((idx + 1) / total) * 100}%`;
+      $('type-label').textContent = `${info.icon} ${i18n.t('types.' + typeKey)}`;
 
-      // Dimension sub-progress
-      const dimQs = QUESTIONS.filter(x => x.dim === q.dim);
-      const dimIdx = dimQs.findIndex(x => x.id === q.id);
-      $('dim-progress-label').textContent = `${dim.icon} ${dimIdx + 1}/${dimQs.length}`;
+      // Type badge
+      const badge = $('type-badge');
+      badge.className = 'type-badge ' + info.css;
+      $('type-badge-icon').textContent = info.icon;
+      $('type-badge-name').textContent = i18n.t('types.' + typeKey);
 
-      // Badge
-      const badge = $('dim-badge');
-      badge.setAttribute('data-dim', q.dim);
-      $('dim-badge-icon').textContent = dim.icon;
-      $('dim-badge-name').textContent = i18n.t(`dim.${q.dim}`);
+      // Emotion Theater
+      const theater = $('emotion-theater');
+      theater.className = 'emotion-theater';
+      theater.classList.add('mood-' + scene.mood);
+
+      // Emojis
+      const emojiRow = $('scene-emojis');
+      emojiRow.innerHTML = '';
+      scene.emojis.forEach(e => {
+        const span = document.createElement('span');
+        if (e === '→') {
+          span.className = 'scene-arrow';
+          span.textContent = '→';
+        } else {
+          span.className = 'scene-actor';
+          span.textContent = e;
+        }
+        emojiRow.appendChild(span);
+      });
+
+      // Context & bubble
+      $('scene-context').textContent = i18n.t('scene' + scene.id + '.context');
+      const bubbleText = i18n.t('scene' + scene.id + '.bubble');
+      const bubbleEl = $('scene-bubble');
+      if (bubbleText && bubbleText !== 'scene' + scene.id + '.bubble') {
+        bubbleEl.textContent = bubbleText;
+        bubbleEl.style.display = 'inline-block';
+      } else {
+        bubbleEl.style.display = 'none';
+      }
 
       // Question
-      $('q-number').textContent = `Q${q.id}`;
-      $('q-text').textContent = i18n.t(`q${q.id}`);
+      $('scene-question').textContent = i18n.t('scene' + scene.id + '.question');
 
-      // Likert buttons
-      document.querySelectorAll('.likert-btn').forEach(btn => {
-        const score = parseInt(btn.dataset.score);
-        btn.classList.toggle('selected', answers[idx] === score);
-      });
-
-      // Nav buttons
-      $('btn-prev').disabled = idx === 0;
-      $('btn-next').textContent = idx === total - 1
-        ? i18n.t('quiz.finish')
-        : i18n.t('quiz.next');
-    }
-
-    function selectScore(score) {
-      answers[currentIdx] = score;
-      document.querySelectorAll('.likert-btn').forEach(btn => {
-        btn.classList.toggle('selected', parseInt(btn.dataset.score) === score);
-      });
-      // Auto-advance after short delay
-      if (currentIdx < QUESTIONS.length - 1) {
-        setTimeout(() => {
-          currentIdx++;
-          renderQuestion(currentIdx);
-        }, 350);
+      // Options
+      const optionsList = $('options-list');
+      optionsList.innerHTML = '';
+      const letters = ['A', 'B', 'C', 'D'];
+      for (let oi = 0; oi < 4; oi++) {
+        const card = document.createElement('div');
+        card.className = 'option-card';
+        card.setAttribute('data-idx', oi);
+        card.innerHTML = `
+          <span class="option-letter">${letters[oi]}</span>
+          <span class="option-text">${i18n.t('scene' + scene.id + '.opt' + letters[oi])}</span>
+        `;
+        card.addEventListener('click', () => selectOption(idx, oi));
+        optionsList.appendChild(card);
       }
     }
 
-    document.querySelectorAll('.likert-btn').forEach(btn => {
-      btn.addEventListener('click', () => selectScore(parseInt(btn.dataset.score)));
-    });
+    function selectOption(roundIdx, optIdx) {
+      if (answered) return;
+      answered = true;
 
-    $('btn-prev').addEventListener('click', () => {
-      if (currentIdx > 0) {
-        currentIdx--;
-        renderQuestion(currentIdx);
-      }
-    });
+      const scene = SCENES[roundIdx];
+      const points = scene.scores[optIdx];
+      roundScores[roundIdx] = points;
 
-    $('btn-next').addEventListener('click', () => {
-      if (answers[currentIdx] === 0) {
-        $('q-text').style.animation = 'none';
-        setTimeout(() => { $('q-text').style.animation = ''; }, 10);
-        return;
-      }
-      if (currentIdx < QUESTIONS.length - 1) {
-        currentIdx++;
-        renderQuestion(currentIdx);
-      } else {
-        showResult();
-      }
-    });
+      // Add to dimension scores
+      scene.dims.forEach((dim, di) => {
+        // Primary dimension gets full points, secondary gets half (rounded)
+        const dimPts = di === 0 ? points : Math.round(points / 2);
+        dimScores[dim] = (dimScores[dim] || 0) + dimPts;
+      });
+
+      // Visual feedback on options
+      const cards = document.querySelectorAll('.option-card');
+      const bestIdx = scene.scores.indexOf(3);
+      cards.forEach((card, ci) => {
+        if (ci === optIdx) {
+          card.classList.add('selected');
+          if (points < 2) card.classList.add('wrong');
+        }
+        if (ci === bestIdx && ci !== optIdx) {
+          card.classList.add('correct');
+        }
+        card.style.pointerEvents = 'none';
+      });
+
+      // Show feedback toast
+      showFeedback(points);
+
+      // Auto-advance after delay
+      setTimeout(() => {
+        hideFeedback();
+        if (currentRound < SCENES.length - 1) {
+          currentRound++;
+          renderScene(currentRound);
+        } else {
+          showResult();
+        }
+      }, 1400);
+    }
+
+    function showFeedback(points) {
+      const toast = $('feedback-toast');
+      let emoji, cls, msgKey;
+      if (points === 3) { emoji = '🎯'; cls = 'high'; msgKey = 'feedback.perfect'; }
+      else if (points === 2) { emoji = '👍'; cls = 'mid'; msgKey = 'feedback.good'; }
+      else if (points === 1) { emoji = '🤔'; cls = 'low'; msgKey = 'feedback.okay'; }
+      else { emoji = '😬'; cls = 'low'; msgKey = 'feedback.miss'; }
+
+      $('feedback-emoji').textContent = emoji;
+      const fPoints = $('feedback-points');
+      fPoints.textContent = '+' + points + ' ' + i18n.t('units.pts');
+      fPoints.className = 'feedback-points ' + cls;
+      $('feedback-msg').textContent = i18n.t(msgKey);
+      toast.classList.add('show');
+    }
+
+    function hideFeedback() {
+      $('feedback-toast').classList.remove('show');
+    }
 
     // ===== Score Calculation =====
-    function calcScores() {
-      const scores = {};
-      DIMS.forEach(dim => {
-        const dimAnswers = QUESTIONS
-          .filter(q => q.dim === dim.key)
-          .map(q => answers[q.id - 1]);
-        const sum = dimAnswers.reduce((a, b) => a + b, 0);
-        scores[dim.key] = Math.round((sum / (dimAnswers.length * 5)) * 100);
-      });
-      const total = Math.round(Object.values(scores).reduce((a, b) => a + b, 0) / DIMS.length);
-      return { scores, total };
+    function calcTotal() {
+      return roundScores.reduce((a, b) => a + b, 0);
     }
 
-    function getGrade(total) {
-      if (total >= 90) return 'exceptional';
-      if (total >= 80) return 'excellent';
-      if (total >= 70) return 'good';
-      if (total >= 60) return 'average';
-      return 'developing';
+    function getLevel(total) {
+      if (total >= 28) return 'sage';
+      if (total >= 23) return 'master';
+      if (total >= 16) return 'skilled';
+      if (total >= 9) return 'learner';
+      return 'beginner';
+    }
+
+    // Max possible per dimension depends on how many scenes target it
+    function getDimMax(dimKey) {
+      let max = 0;
+      SCENES.forEach(scene => {
+        scene.dims.forEach((d, di) => {
+          if (d === dimKey) {
+            max += di === 0 ? 3 : Math.round(3 / 2);
+          }
+        });
+      });
+      return max;
     }
 
     // ===== Result Rendering =====
     function showResult() {
-      const { scores, total } = calcScores();
-      const grade = getGrade(total);
+      const total = calcTotal();
+      const level = getLevel(total);
 
       showScreen('result');
 
@@ -1124,93 +1389,93 @@
       arc.style.strokeDasharray = circumference;
       arc.style.strokeDashoffset = circumference;
 
-      // Animate score number
       let current = 0;
-      const target = total;
       const duration = 1500;
       const startTime = performance.now();
       function animateScore(now) {
         const elapsed = now - startTime;
         const progress = Math.min(elapsed / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3);
-        current = Math.round(eased * target);
+        current = Math.round(eased * total);
         $('score-number').textContent = current;
-        const offset = circumference - (eased * (total / 100) * circumference);
+        const offset = circumference - (eased * (total / 30) * circumference);
         arc.style.strokeDashoffset = offset;
         if (progress < 1) requestAnimationFrame(animateScore);
       }
       requestAnimationFrame(animateScore);
 
-      // Grade
-      $('grade-badge').textContent = i18n.t(`grade.${grade}`);
-      $('grade-desc').textContent = i18n.t(`grade.${grade}Desc`);
+      $('score-max').textContent = '/ 30';
+
+      // Level badge
+      $('level-badge').textContent = i18n.t('level.' + level);
+      $('level-desc').textContent = i18n.t('level.' + level + 'Desc');
 
       // Dimension bars
       const barsContainer = $('dim-bars');
       barsContainer.innerHTML = '';
       DIMS.forEach(dim => {
-        const score = scores[dim.key];
+        const score = dimScores[dim.key] || 0;
+        const max = getDimMax(dim.key);
+        const pct = max > 0 ? Math.round((score / max) * 100) : 0;
         const bar = document.createElement('div');
         bar.className = 'dim-bar-item';
         bar.innerHTML = `
           <div class="dim-bar-header">
             <div class="dim-bar-label">
               <div class="dim-bar-dot" style="background:${dim.color}"></div>
-              <span>${dim.icon} ${i18n.t(`dim.${dim.key}`)}</span>
+              <span>${dim.icon} ${i18n.t('dim.' + dim.key)}</span>
             </div>
-            <span class="dim-bar-score" style="color:${dim.color}">${score}</span>
+            <span class="dim-bar-score" style="color:${dim.color}">${pct}%</span>
           </div>
           <div class="dim-bar-track">
-            <div class="dim-bar-fill" style="background:${dim.color}" data-width="${score}"></div>
+            <div class="dim-bar-fill" style="background:${dim.color}" data-width="${pct}"></div>
           </div>
         `;
         barsContainer.appendChild(bar);
       });
 
-      // Animate bars
       requestAnimationFrame(() => {
         document.querySelectorAll('.dim-bar-fill').forEach(el => {
           el.style.width = el.dataset.width + '%';
         });
       });
 
-      // Advice cards
-      const adviceContainer = $('advice-cards');
-      adviceContainer.innerHTML = '';
-      DIMS.forEach(dim => {
-        const score = scores[dim.key];
-        const card = document.createElement('div');
-        card.className = 'advice-card';
-        card.setAttribute('data-dim', dim.key);
-        card.innerHTML = `
-          <div class="advice-card-header">
-            <span class="advice-card-icon">${dim.icon}</span>
-            <span class="advice-card-name">${i18n.t(`dim.${dim.key}`)}</span>
-            <span class="advice-card-score">${score}${window.i18n?.t('units.points') || '점'}</span>
-          </div>
-          <div class="advice-card-desc">${i18n.t(`desc.${dim.key}`)}</div>
-          <div class="advice-card-tip">${i18n.t(`advice.${dim.key}`)}</div>
-        `;
-        adviceContainer.appendChild(card);
+      // Growth tips - find lowest 2 dimensions
+      const dimEntries = DIMS.map(d => ({
+        key: d.key,
+        pct: getDimMax(d.key) > 0 ? (dimScores[d.key] || 0) / getDimMax(d.key) : 0
+      })).sort((a, b) => a.pct - b.pct);
+
+      const tipsList = $('tips-list');
+      tipsList.innerHTML = '';
+      // Always show 3 tips: 2 from weakest dims + 1 general
+      const weakDims = dimEntries.slice(0, 2);
+      weakDims.forEach(wd => {
+        const li = document.createElement('li');
+        li.textContent = i18n.t('tips.' + wd.key);
+        tipsList.appendChild(li);
       });
+      const generalLi = document.createElement('li');
+      generalLi.textContent = i18n.t('tips.general');
+      tipsList.appendChild(generalLi);
 
       // GA4 event
       if (typeof gtag !== 'undefined') {
         gtag('event', 'eq_test_complete', {
           eq_total: total,
-          eq_grade: grade,
+          eq_level: level,
         });
       }
     }
 
     // ===== Share =====
     $('btn-twitter').addEventListener('click', () => {
-      const { total } = calcScores();
-      const grade = i18n.t(`grade.${getGrade(total)}`);
+      const total = calcTotal();
+      const level = i18n.t('level.' + getLevel(total));
       const text = i18n.t('share.twitterText')
         .replace('{score}', total)
-        .replace('{grade}', grade);
-      window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text + ' ' + 'https://dopabrain.com/eq-test/')}`, '_blank');
+        .replace('{level}', level);
+      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text + ' https://dopabrain.com/eq-test/'), '_blank');
       if (typeof gtag !== 'undefined') gtag('event', 'share', { method: 'twitter' });
     });
 
@@ -1224,16 +1489,18 @@
 
     // ===== Navigation =====
     $('btn-start').addEventListener('click', () => {
-      answers = new Array(40).fill(0);
-      currentIdx = 0;
-      showScreen('quiz');
-      renderQuestion(0);
+      currentRound = 0;
+      roundScores = new Array(SCENES.length).fill(0);
+      dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
+      showScreen('scene');
+      renderScene(0);
       if (typeof gtag !== 'undefined') gtag('event', 'eq_test_start');
     });
 
     $('btn-retry').addEventListener('click', () => {
-      answers = new Array(40).fill(0);
-      currentIdx = 0;
+      currentRound = 0;
+      roundScores = new Array(SCENES.length).fill(0);
+      dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
       showScreen('start');
       if (typeof gtag !== 'undefined') gtag('event', 'eq_test_retry');
     });
@@ -1250,9 +1517,7 @@
         e.stopPropagation();
         await i18n.setLanguage(btn.dataset.lang);
         langMenu.classList.add('hidden');
-        // Re-render if on quiz screen
-        if (screens.quiz.classList.contains('active')) renderQuestion(currentIdx);
-        // Re-render result if on result screen
+        if (screens.scene.classList.contains('active')) renderScene(currentRound);
         if (screens.result.classList.contains('active')) showResult();
       });
     });

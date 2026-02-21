@@ -1,125 +1,168 @@
 {
   "meta": {
-    "title": "Tes EQ | Berapa Kecerdasan Emosional Anda? - DopaBrain",
-    "description": "Ukur Kecerdasan Emosional (EQ) Anda dengan 40 pertanyaan dalam 5 dimensi: kesadaran diri, regulasi diri, motivasi, empati, dan keterampilan sosial."
+    "title": "Tes EQ | Tantangan Membaca Emosi - DopaBrain",
+    "description": "Baca adegan emosional dan uji empati Anda! 10 skenario interaktif mengukur 4 dimensi EQ."
   },
   "accessibility": {
-    "skipMain": "Lewati ke konten utama"
+    "skipMain": "Langsung ke konten utama"
   },
   "app": {
     "title": "Tes EQ",
-    "subtitle": "Tes Kecerdasan Emosional",
-    "heroTitle": "Berapa Skor EQ Anda?"
+    "subtitle": "Tantangan Membaca Emosi",
+    "heroTitle": "Tantangan Membaca Emosi"
   },
   "dim": {
     "awareness": "Kesadaran Diri",
-    "awarenessDesc": "Mengenali emosi Anda dan dampaknya",
-    "regulation": "Regulasi Diri",
-    "regulationDesc": "Mengelola dorongan dan emosi secara konstruktif",
-    "motivation": "Motivasi",
-    "motivationDesc": "Dorongan batin dan semangat menuju tujuan",
     "empathy": "Empati",
-    "empathyDesc": "Memahami dan peduli terhadap perasaan orang lain",
     "social": "Keterampilan Sosial",
-    "socialDesc": "Membangun hubungan dan memberikan pengaruh"
+    "regulation": "Regulasi Emosi"
   },
   "intro": {
-    "desc": "Temukan kecerdasan emosional Anda di 5 dimensi dengan 40 pertanyaan dan dapatkan saran yang dipersonalisasi.",
-    "chip1": "40 Pertanyaan",
-    "chip2": "~8 Menit",
-    "chip3": "5 Dimensi",
+    "desc": "Baca adegan emosional, pecahkan perasaan tersembunyi, dan uji empati Anda melalui 10 tantangan interaktif.",
+    "chip1": "10 Ronde",
+    "chip2": "~3 menit",
+    "chip3": "4 Dimensi",
     "disclaimer": "⚠️ Tes ini hanya untuk pemahaman diri dan bukan penilaian psikologis resmi.",
-    "start": "Mulai Tes"
+    "start": "Mulai Tantangan"
   },
-  "scale": {
-    "disagree": "Sangat\nTidak Setuju",
-    "neither": "Netral",
-    "agree": "Sangat\nSetuju",
-    "hint": "1 = Sangat Tidak Setuju  |  5 = Sangat Setuju"
+  "types": {
+    "decoder": "Dekoder Emosi",
+    "decoderDesc": "Baca adegan emoji dan identifikasi emosi tersembunyi",
+    "decoderCount": "4 ronde",
+    "response": "Respons Terbaik",
+    "responseDesc": "Pilih respons yang paling empatik",
+    "responseCount": "3 ronde",
+    "dilemma": "Dilema Sosial",
+    "dilemmaDesc": "Navigasi konflik dengan kecerdasan emosional",
+    "dilemmaCount": "3 ronde"
   },
-  "quiz": {
-    "prev": "Sebelumnya",
-    "next": "Berikutnya",
-    "finish": "Lihat Hasil"
+  "scene1": {
+    "context": "Seorang wanita marah pada seorang pria. Pria itu terlihat takut. Kemudian wanita itu mulai menangis.",
+    "bubble": "\"Kamu tidak pernah mendengarkan aku...\"",
+    "question": "Apa yang sebenarnya dirasakan wanita itu di balik kemarahannya?",
+    "optA": "Dia hanya marah dan ingin bertengkar",
+    "optB": "Dia merasa tidak didengarkan dan diabaikan secara emosional",
+    "optC": "Dia mencoba memanipulasi dengan air mata",
+    "optD": "Dia frustrasi tapi tidak tahu kenapa"
   },
-  "q1": "Saya dapat mengidentifikasi dengan tepat emosi yang sedang saya rasakan.",
-  "q2": "Ketika saya marah, saya memahami dengan jelas alasannya.",
-  "q3": "Saya sadar bagaimana emosi saya memengaruhi penilaian dan tindakan saya.",
-  "q4": "Saya dapat menilai kekuatan dan kelemahan saya secara jujur.",
-  "q5": "Saya memiliki pemahaman yang jelas tentang nilai-nilai inti saya.",
-  "q6": "Ketika stres, saya dapat dengan cepat mengidentifikasi sumbernya.",
-  "q7": "Saya menggunakan umpan balik dari orang lain untuk memperdalam pemahaman diri.",
-  "q8": "Saya sering memeriksa kondisi emosional saya sepanjang hari.",
-  "q9": "Meski marah, saya menghindari bertindak secara impulsif.",
-  "q10": "Saya dapat menjaga ketenangan dalam situasi sulit atau penuh tekanan.",
-  "q11": "Saya pulih dengan cepat dari emosi negatif.",
-  "q12": "Saya dapat menunda kepuasan segera untuk memprioritaskan tujuan jangka panjang.",
-  "q13": "Saya dapat tetap tenang dan rasional bahkan dalam situasi konflik.",
-  "q14": "Saya menghindari menyalahkan diri secara berlebihan ketika membuat kesalahan.",
-  "q15": "Saya berusaha mempertahankan prinsip dan nilai saya dalam situasi apa pun.",
-  "q16": "Suasana hati saya umumnya stabil, tanpa perubahan ekstrem.",
-  "q17": "Saya menetapkan tujuan dan bekerja keras untuk mencapainya.",
-  "q18": "Saya tidak mudah menyerah ketika menghadapi hambatan.",
-  "q19": "Saya memiliki ketahanan untuk bangkit kembali setelah kegagalan.",
-  "q20": "Saya membawa semangat dalam pekerjaan meski tanpa penghargaan eksternal.",
-  "q21": "Saya terus-menerus berusaha untuk berkembang dan tumbuh sebagai pribadi.",
-  "q22": "Saya menikmati menetapkan tujuan yang menantang dan ambisius.",
-  "q23": "Saya bersedia melakukan pengorbanan jangka pendek demi kesuksesan jangka panjang.",
-  "q24": "Saya benar-benar menikmati belajar keterampilan dan pengetahuan baru.",
-  "q25": "Saya dapat dengan mudah membaca kondisi emosional orang lain.",
-  "q26": "Saya berusaha memahami situasi dari perspektif orang lain.",
-  "q27": "Saya merasa sangat tersentuh ketika melihat seseorang dalam kesedihan.",
-  "q28": "Saya dapat merasakan bagaimana perasaan seseorang meskipun mereka tidak mengatakannya.",
-  "q29": "Saya dengan mudah memahami dan menghormati orang dari latar belakang budaya yang berbeda.",
-  "q30": "Saya segera menyadari ketika seseorang merasa tidak nyaman.",
-  "q31": "Saya dapat melihat masalah dari sudut pandang orang lain.",
-  "q32": "Dalam situasi konflik, saya terlebih dahulu mempertimbangkan perasaan pihak lain.",
-  "q33": "Saya dapat dengan mudah terhubung dengan orang-orang baru.",
-  "q34": "Saya efektif dalam menengahi konflik secara damai.",
-  "q35": "Saya cenderung mendorong kerja sama terbaik dalam sebuah tim.",
-  "q36": "Saya mendengarkan dengan penuh perhatian dan merespons dengan bijaksana.",
-  "q37": "Saya mampu memberikan pengaruh positif pada orang-orang di sekitar saya.",
-  "q38": "Saya menganggap membangun kepercayaan dalam hubungan sangat penting.",
-  "q39": "Saya mengekspresikan diri dengan jelas agar orang lain mudah memahami.",
-  "q40": "Saya merasa nyaman dalam berbagai situasi sosial.",
-  "grade": {
-    "exceptional": "✨ EQ Luar Biasa",
-    "exceptionalDesc": "Kecerdasan emosional Anda sangat luar biasa. Anda dengan terampil mengelola emosi diri dan orang lain.",
-    "excellent": "🌟 EQ Sangat Baik",
-    "excellentDesc": "Anda memiliki kecerdasan emosional tinggi dengan keterampilan interpersonal yang kuat.",
-    "good": "💚 EQ Baik",
-    "goodDesc": "Kecerdasan emosional Anda solid. Anda mengelola emosi dengan baik di sebagian besar situasi.",
-    "average": "💛 EQ Rata-rata",
-    "averageDesc": "Kecerdasan emosional Anda di tingkat rata-rata. Latihan terfokus di area tertentu akan membantu pertumbuhan.",
-    "developing": "🔶 EQ Berkembang",
-    "developingDesc": "Anda memiliki banyak kesempatan untuk mengembangkan kecerdasan emosional. Latihan konsisten dapat membawa peningkatan signifikan."
+  "scene2": {
+    "context": "Seorang anak laki-laki tersenyum saat anak perempuan memberi hadiah. Tapi kemudian ekspresinya menjadi kosong.",
+    "bubble": "\"Oh... terima kasih...\"",
+    "question": "Mengapa ekspresi anak laki-laki itu berubah?",
+    "optA": "Dia tidak suka hadiahnya dan bersikap kasar",
+    "optB": "Dia kewalahan dan sedang memproses emosinya",
+    "optC": "Dia merasa bersalah karena tidak memberi apa-apa",
+    "optD": "Dia terkejut dan mencoba menyembunyikan kegembiraannya"
+  },
+  "scene3": {
+    "context": "Seorang manajer tersenyum dalam rapat. Dia memeriksa ponselnya dan tiba-tiba terlihat frustrasi. Rekannya memperhatikan dan terlihat khawatir.",
+    "bubble": "",
+    "question": "Apa yang paling mungkin terjadi pada manajer itu?",
+    "optA": "Dia menerima berita buruk yang meruntuhkan fasad tenangnya",
+    "optB": "Dia marah pada rekannya tanpa alasan",
+    "optC": "Dia hanya melihat media sosial dan bosan",
+    "optD": "Dia berjuang mempertahankan kontrol emosi di bawah tekanan profesional"
+  },
+  "scene4": {
+    "context": "Nenek dengan ceria mengunjungi putrinya. Putrinya tersenyum gugup. Ekspresi nenek menjadi sedih.",
+    "bubble": "\"Nenek tahu kamu sedang tidak baik-baik saja, sayang...\"",
+    "question": "Apa yang dirasakan nenek?",
+    "optA": "Putrinya menyembunyikan rasa sakit di balik senyum palsu, dan nenek melihat itu",
+    "optB": "Putrinya terganggu dengan kunjungan mendadak",
+    "optC": "Nenek membayangkan masalah yang tidak ada",
+    "optD": "Putrinya gugup karena ada sesuatu yang perlu disampaikan"
+  },
+  "scene5": {
+    "context": "Teman dekat Anda baru saja gagal ujian penting. Duduk sendirian terlihat terpuruk.",
+    "bubble": "\"Aku belajar sangat keras... Aku tidak mengerti...\"",
+    "question": "Apa respons terbaik?",
+    "optA": "\"Jangan khawatir, ini cuma satu ujian. Pasti lulus di kesempatan berikutnya!\"",
+    "optB": "\"Mungkin kamu harus belajar dengan cara berbeda.\"",
+    "optC": "\"Pasti sangat mengecewakan. Aku di sini kalau kamu mau cerita.\"",
+    "optD": "\"Aku tahu betapa kerasnya kamu belajar. Wajar kalau kecewa.\""
+  },
+  "scene6": {
+    "context": "Rekan kerja Anda menangis di ruang istirahat setelah putus cinta.",
+    "bubble": "\"Maaf, aku tidak bisa berhenti menangis...\"",
+    "question": "Apa respons yang paling cerdas secara emosional?",
+    "optA": "\"Kamu pasti ketemu yang lebih baik, jangan nangis!\"",
+    "optB": "\"Putus itu biasa, semua orang pernah mengalaminya.\"",
+    "optC": "\"Mau jalan-jalan? Udara segar kadang membantu.\"",
+    "optD": "\"Nggak apa-apa menangis. Aku di sini, pelan-pelan saja.\""
+  },
+  "scene7": {
+    "context": "Karyawan baru terlihat cemas sebelum presentasi besar pertamanya. Terus memeriksa catatannya.",
+    "bubble": "\"Bagaimana kalau aku mengacaukan semuanya?\"",
+    "question": "Sebagai rekan senior, apa yang Anda katakan?",
+    "optA": "\"Pasti lancar kok, jangan terlalu mikir.\"",
+    "optB": "\"Aku juga gugup saat presentasi pertama. Yuk kita review poin-poin pentingnya bareng.\"",
+    "optC": "\"Kalau belum siap, mungkin lebih baik dijadwal ulang.\"",
+    "optD": "\"Bayangkan saja semua orang pakai celana dalam, haha.\""
+  },
+  "scene8": {
+    "context": "Rekan kerja mengambil kredit atas ide ANDA dalam rapat tim. Bos menyukainya dan memuji dia.",
+    "bubble": "",
+    "question": "Apa yang Anda lakukan?",
+    "optA": "Langsung konfrontasi marah di depan semua orang",
+    "optB": "Diam saja tapi menyimpan dendam selamanya",
+    "optC": "Setelah rapat, bicara pribadi soal kredit, lalu email catatan asli ke bos",
+    "optD": "Dengan santai menyebut 'Senang tim menyukai konsep asli saya'"
+  },
+  "scene9": {
+    "context": "Dua anggota tim berdebat sengit soal arah proyek. Yang lain merasa tidak nyaman. Anda adalah pemimpin tim.",
+    "bubble": "",
+    "question": "Bagaimana Anda menangani ini?",
+    "optA": "Pilih pihak yang Anda setujui untuk mengakhiri perdebatan",
+    "optB": "Suruh keduanya berhenti berdebat dan ikuti keputusan Anda",
+    "optC": "Sarankan istirahat 5 menit, lalu minta masing-masing menjelaskan dengan tenang",
+    "optD": "Akui kedua perspektif, temukan kesamaan, dan arahkan ke kompromi yang melayani tujuan proyek"
+  },
+  "scene10": {
+    "context": "Anda menang penghargaan tapi teman dekat yang juga berkompetisi terlihat sedih. Orang-orang memberi selamat.",
+    "bubble": "",
+    "question": "Apa cara paling cerdas secara emosional?",
+    "optA": "Rayakan dengan meriah — Anda berhak dan teman harus ikut senang",
+    "optB": "Kecilkan kemenangan agar teman tidak sakit hati",
+    "optC": "Terima dengan anggun, lalu cek kondisi teman secara pribadi nanti",
+    "optD": "Terima dengan rasa syukur, akui usaha teman di depan umum, lalu hubungi dengan empati tulus secara pribadi"
+  },
+  "feedback": {
+    "perfect": "Wawasan emosional luar biasa!",
+    "good": "Bacaan bagus!",
+    "okay": "Lumayan, terus amati!",
+    "miss": "Pertanyaan tricky!"
+  },
+  "level": {
+    "beginner": "🌱 EQ Pemula",
+    "beginnerDesc": "Anda memulai perjalanan kecerdasan emosional. Dengan latihan, kemampuan membaca emosi Anda bisa meningkat drastis.",
+    "learner": "📚 EQ Pelajar",
+    "learnerDesc": "Kesadaran emosi Anda berkembang. Kadang menangkap perasaan mendalam dan empati Anda bertumbuh.",
+    "skilled": "🎯 EQ Terampil",
+    "skilledDesc": "Kecerdasan emosional Anda solid. Membaca sebagian besar situasi dengan akurat dan merespons dengan empati tulus.",
+    "master": "💫 EQ Master",
+    "masterDesc": "Kecerdasan emosional Anda mengesankan. Secara alami merasakan emosi orang lain dan merespons dengan bijak.",
+    "sage": "🧘 EQ Bijak",
+    "sageDesc": "Kecerdasan emosional luar biasa. Kemampuan langka memahami emosi manusia di level terdalam."
+  },
+  "tips": {
+    "awareness": "Latih cek emosi 3 kali sehari: berhenti dan sebutkan persis apa yang Anda rasakan dan mengapa.",
+    "empathy": "Saat mendengarkan seseorang, fokus memahami perasaan mereka sebelum menyusun respons.",
+    "social": "Dalam konflik, akui perspektif orang lain sebelum menyampaikan pandangan Anda.",
+    "regulation": "Saat emosi kuat muncul, tarik 3 napas dalam sebelum merespons. Jeda kecil ini mengubah segalanya.",
+    "general": "Baca fiksi secara rutin — penelitian menunjukkan ini meningkatkan empati dan pemahaman emosional secara signifikan."
   },
   "result": {
-    "yourEQ": "Skor EQ Anda",
     "dimTitle": "Skor per Dimensi",
-    "adviceTitle": "Analisis & Saran",
-    "retry": "Ikuti Tes Lagi"
-  },
-  "desc": {
-    "awareness": "Kesadaran diri adalah kemampuan memahami emosi, kekuatan, dan kelemahan Anda secara akurat. Skor lebih tinggi berarti keputusan yang lebih bijak dan terinformasi.",
-    "regulation": "Regulasi diri adalah kemampuan mengendalikan emosi dan dorongan yang mengganggu secara konstruktif. Skor lebih tinggi berarti tetap tenang di bawah tekanan.",
-    "motivation": "Motivasi adalah dorongan batin untuk mencapai tujuan. Skor lebih tinggi berarti teguh menghadapi kesulitan dan bergerak penuh semangat menuju tujuan.",
-    "empathy": "Empati adalah kemampuan memahami dan berbagi perasaan orang lain. Skor lebih tinggi berarti hubungan yang lebih dalam dan dukungan yang lebih efektif.",
-    "social": "Keterampilan sosial melibatkan mengelola hubungan dengan terampil dan menginspirasi kerja sama. Skor lebih tinggi berarti kerja tim, kepemimpinan, dan jaringan yang lebih baik."
-  },
-  "advice": {
-    "awareness": "💡 Simpan jurnal emosi. Luangkan 5 menit sehari untuk mencatat apa yang Anda rasakan dan mengapa. Meditasi mindfulness juga sangat efektif.",
-    "regulation": "💡 Latih teknik 'berhenti dan berpikir'. Saat emosi kuat muncul, hitung sampai 10 dan bernapas dalam-dalam. Olahraga teratur dan tidur berkualitas adalah fondasinya.",
-    "motivation": "💡 Pecah tujuan besar menjadi tonggak kecil. Mengalami keberhasilan kecil setiap hari memperkuat motivasi intrinsik. Tuliskan 'mengapa Anda' dan baca ulang sesering mungkin.",
-    "empathy": "💡 Latih mendengarkan tanpa menghakimi. Setelah percakapan, tanyakan pada diri sendiri: 'Bagaimana perasaan orang itu?' Membaca fiksi yang beragam juga efektif mengembangkan empati.",
-    "social": "💡 Coba lakukan percakapan tulus dengan seseorang yang baru setiap minggu. Dalam konflik, akui perspektif orang lain terlebih dahulu sebelum mengungkapkan milik Anda."
+    "tipsTitle": "Tips Pengembangan",
+    "personalTips": "Tips Personal",
+    "retry": "Coba Lagi"
   },
   "share": {
-    "copy": "Salin Tautan",
-    "copied": "Disalin!",
-    "twitterText": "Skor EQ saya adalah {score} ({grade})! Berapa Kecerdasan Emosional Anda?"
+    "copy": "📋 Salin Link",
+    "copied": "Tersalin!",
+    "twitterText": "EQ saya: {score}/30 ({level})! Bisakah kamu membaca emosi lebih baik?"
   },
   "units": {
-    "points": "poin"
+    "pts": "poin"
   }
 }

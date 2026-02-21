@@ -1,125 +1,168 @@
 {
   "meta": {
-    "title": "Test EQ | Quel est votre Quotient Émotionnel ? - DopaBrain",
-    "description": "Mesurez votre Intelligence Émotionnelle (EQ) avec 40 questions en 5 dimensions : conscience de soi, autorégulation, motivation, empathie et compétences sociales."
+    "title": "Test EQ | Défi de Lecture Émotionnelle - DopaBrain",
+    "description": "Lisez des scènes émotionnelles et testez votre empathie ! 10 scénarios interactifs mesurant 4 dimensions de votre QE."
   },
   "accessibility": {
     "skipMain": "Aller au contenu principal"
   },
   "app": {
     "title": "Test EQ",
-    "subtitle": "Test d'Intelligence Émotionnelle",
-    "heroTitle": "Quel est votre score EQ ?"
+    "subtitle": "Défi de Lecture Émotionnelle",
+    "heroTitle": "Défi de Lecture Émotionnelle"
   },
   "dim": {
     "awareness": "Conscience de soi",
-    "awarenessDesc": "Reconnaître vos émotions et leur impact",
-    "regulation": "Autorégulation",
-    "regulationDesc": "Gérer les impulsions et émotions de façon constructive",
-    "motivation": "Motivation",
-    "motivationDesc": "Élan intérieur et passion vers vos objectifs",
     "empathy": "Empathie",
-    "empathyDesc": "Comprendre et prendre soin des sentiments des autres",
-    "social": "Compétences Sociales",
-    "socialDesc": "Construire des relations et exercer une influence"
+    "social": "Compétences sociales",
+    "regulation": "Régulation émotionnelle"
   },
   "intro": {
-    "desc": "Découvrez votre intelligence émotionnelle en 5 dimensions avec 40 questions et recevez des conseils personnalisés.",
-    "chip1": "40 questions",
-    "chip2": "~8 minutes",
-    "chip3": "5 dimensions",
-    "disclaimer": "⚠️ Ce test est uniquement pour la compréhension de soi et n'est pas une évaluation psychologique officielle.",
-    "start": "Commencer le test"
+    "desc": "Lisez des scènes émotionnelles, déchiffrez les sentiments cachés et testez votre empathie à travers 10 défis interactifs.",
+    "chip1": "10 Rounds",
+    "chip2": "~3 min",
+    "chip3": "4 Dimensions",
+    "disclaimer": "⚠️ Ce test est uniquement pour la connaissance de soi et n'est pas une évaluation psychologique officielle.",
+    "start": "Commencer le défi"
   },
-  "scale": {
-    "disagree": "Pas du tout\nd'accord",
-    "neither": "Neutre",
-    "agree": "Tout à fait\nd'accord",
-    "hint": "1 = Pas du tout d'accord  |  5 = Tout à fait d'accord"
+  "types": {
+    "decoder": "Décodeur d'émotions",
+    "decoderDesc": "Lisez les scènes emoji et identifiez les émotions cachées",
+    "decoderCount": "4 rounds",
+    "response": "Meilleure réponse",
+    "responseDesc": "Choisissez la réponse la plus empathique",
+    "responseCount": "3 rounds",
+    "dilemma": "Dilemme social",
+    "dilemmaDesc": "Naviguez les conflits avec intelligence émotionnelle",
+    "dilemmaCount": "3 rounds"
   },
-  "quiz": {
-    "prev": "Précédent",
-    "next": "Suivant",
-    "finish": "Voir les résultats"
+  "scene1": {
+    "context": "Une femme se met en colère contre un homme. Il a l'air effrayé. Puis elle commence à pleurer.",
+    "bubble": "\"Tu ne m'écoutes jamais...\"",
+    "question": "Que ressent VRAIMENT la femme derrière sa colère ?",
+    "optA": "Elle est juste en colère et veut se disputer",
+    "optB": "Elle se sent ignorée et émotionnellement négligée",
+    "optC": "Elle essaie de le manipuler avec ses larmes",
+    "optD": "Elle est frustrée mais ne sait pas pourquoi"
   },
-  "q1": "Je peux identifier avec précision les émotions que je ressens.",
-  "q2": "Quand je suis en colère, je comprends clairement pourquoi.",
-  "q3": "Je suis conscient(e) de la façon dont mes émotions influencent mes jugements et actions.",
-  "q4": "Je peux évaluer honnêtement mes forces et mes faiblesses.",
-  "q5": "J'ai une compréhension claire de mes valeurs fondamentales.",
-  "q6": "Quand je suis sous stress, je peux rapidement en identifier la source.",
-  "q7": "J'utilise les retours des autres pour approfondir ma compréhension de moi-même.",
-  "q8": "Je vérifie fréquemment mon état émotionnel tout au long de la journée.",
-  "q9": "Même en colère, j'évite d'agir impulsivement.",
-  "q10": "Je maintiens mon calme dans les situations difficiles ou stressantes.",
-  "q11": "Je me remets rapidement des émotions négatives.",
-  "q12": "Je peux différer une gratification immédiate pour prioriser des objectifs à long terme.",
-  "q13": "Je peux rester calme et rationnel(le) même en situation de conflit.",
-  "q14": "J'évite de me blâmer excessivement quand je fais des erreurs.",
-  "q15": "Je m'efforce de maintenir mes principes et valeurs en toute circonstance.",
-  "q16": "Mon humeur est généralement stable, sans extrêmes.",
-  "q17": "Je fixe des objectifs et travaille avec persévérance pour les atteindre.",
-  "q18": "Je ne renonce pas facilement quand je rencontre des obstacles.",
-  "q19": "J'ai la résilience pour rebondir après un échec.",
-  "q20": "J'apporte de la passion à mon travail même sans récompenses extérieures.",
-  "q21": "Je m'efforce constamment de m'améliorer et de grandir en tant que personne.",
-  "q22": "J'aime me fixer des objectifs ambitieux et stimulants.",
-  "q23": "Je suis prêt(e) à faire des sacrifices à court terme pour le succès à long terme.",
-  "q24": "J'apprécie vraiment d'apprendre de nouvelles compétences et connaissances.",
-  "q25": "Je peux facilement lire l'état émotionnel des autres.",
-  "q26": "Je m'efforce de comprendre les situations du point de vue des autres.",
-  "q27": "Je suis profondément ému(e) quand je vois quelqu'un souffrir ou être triste.",
-  "q28": "Je peux sentir comment quelqu'un se sent même sans qu'il le dise.",
-  "q29": "Je comprends et respecte facilement des personnes d'horizons culturels différents.",
-  "q30": "Je remarque immédiatement quand quelqu'un se sent mal à l'aise.",
-  "q31": "Je peux voir les problèmes du point de vue d'une autre personne.",
-  "q32": "En situation de conflit, je considère d'abord les sentiments de l'autre partie.",
-  "q33": "Je peux facilement me connecter avec de nouvelles personnes.",
-  "q34": "Je suis efficace pour médiatiser les conflits de façon pacifique.",
-  "q35": "Je tends à favoriser la meilleure coopération au sein d'une équipe.",
-  "q36": "J'écoute attentivement et réponds de façon réfléchie dans les conversations.",
-  "q37": "Je suis capable d'avoir une influence positive sur les personnes autour de moi.",
-  "q38": "Je considère qu'il est très important de construire la confiance dans les relations.",
-  "q39": "Je m'exprime clairement pour que les autres puissent facilement me comprendre.",
-  "q40": "Je me sens à l'aise dans une grande variété de situations sociales.",
-  "grade": {
-    "exceptional": "✨ EQ Exceptionnel",
-    "exceptionalDesc": "Votre intelligence émotionnelle est remarquable. Vous gérez magistralement vos émotions et celles des autres.",
-    "excellent": "🌟 EQ Excellent",
-    "excellentDesc": "Vous avez une haute intelligence émotionnelle avec de fortes compétences interpersonnelles.",
-    "good": "💚 Bon EQ",
-    "goodDesc": "Votre intelligence émotionnelle est solide. Vous gérez bien les émotions dans la plupart des situations.",
-    "average": "💛 EQ Moyen",
-    "averageDesc": "Votre intelligence émotionnelle est à un niveau moyen. Une pratique ciblée dans des domaines spécifiques vous aidera à progresser.",
-    "developing": "🔶 EQ en Développement",
-    "developingDesc": "Vous avez de nombreuses opportunités pour développer votre intelligence émotionnelle. Une pratique cohérente peut conduire à des améliorations significatives."
+  "scene2": {
+    "context": "Un garçon sourit quand une fille lui offre un cadeau. Mais ensuite son expression devient vide.",
+    "bubble": "\"Oh... merci...\"",
+    "question": "Pourquoi l'expression du garçon a-t-elle changé ?",
+    "optA": "Il n'aime pas le cadeau et est impoli",
+    "optB": "Il est submergé et traite ses émotions",
+    "optC": "Il se sent coupable de ne rien avoir pour elle",
+    "optD": "Il est surpris et essaie de cacher son enthousiasme"
+  },
+  "scene3": {
+    "context": "Un manager sourit en réunion. Il vérifie son téléphone et semble soudain frustré. Sa collègue le remarque et paraît inquiète.",
+    "bubble": "",
+    "question": "Que se passe-t-il probablement avec le manager ?",
+    "optA": "De mauvaises nouvelles ont brisé sa façade calme",
+    "optB": "Il est en colère contre sa collègue sans raison",
+    "optC": "Il regardait les réseaux sociaux et s'est ennuyé",
+    "optD": "Il lutte pour maintenir son contrôle émotionnel sous la pression professionnelle"
+  },
+  "scene4": {
+    "context": "Une grand-mère rend visite joyeusement à sa fille. La fille sourit nerveusement. L'expression de la grand-mère s'attriste.",
+    "bubble": "\"Je vois que tu ne vas pas bien, ma chérie...\"",
+    "question": "Qu'a perçu la grand-mère ?",
+    "optA": "Sa fille cache sa douleur derrière un faux sourire, et grand-mère le voit",
+    "optB": "La fille est agacée par la visite imprévue",
+    "optC": "La grand-mère imagine des problèmes qui n'existent pas",
+    "optD": "La fille est nerveuse car elle doit dire quelque chose à sa mère"
+  },
+  "scene5": {
+    "context": "Votre ami proche vient d'échouer à un examen important. Il est assis seul, découragé.",
+    "bubble": "\"J'ai tellement étudié... Je ne comprends pas...\"",
+    "question": "Quelle est la meilleure réponse ?",
+    "optA": "\"Ne t'inquiète pas, ce n'est qu'un examen. Tu réussiras la prochaine fois !\"",
+    "optB": "\"Tu devrais peut-être étudier différemment.\"",
+    "optC": "\"Ça doit être vraiment frustrant. Je suis là si tu veux en parler.\"",
+    "optD": "\"Je sais à quel point tu as travaillé. C'est normal d'être déçu.\""
+  },
+  "scene6": {
+    "context": "Votre collègue pleure dans la salle de pause après une rupture.",
+    "bubble": "\"Pardon, je n'arrive pas à arrêter de pleurer...\"",
+    "question": "Quelle est la réponse la plus émotionnellement intelligente ?",
+    "optA": "\"Tu trouveras mieux, ne pleure pas !\"",
+    "optB": "\"Les ruptures sont normales, tout le monde passe par là.\"",
+    "optC": "\"Tu veux aller marcher ? L'air frais aide parfois.\"",
+    "optD": "\"C'est normal de pleurer. Je suis là, prends ton temps.\""
+  },
+  "scene7": {
+    "context": "Un nouvel employé est visiblement anxieux avant sa première grande présentation. Il vérifie constamment ses notes.",
+    "bubble": "\"Et si je gâche tout ?\"",
+    "question": "En tant que collègue senior, que dites-vous ?",
+    "optA": "\"Ça va aller, ne réfléchis pas trop.\"",
+    "optB": "\"J'étais aussi nerveux pour ma première présentation. Passons en revue tes points clés ensemble.\"",
+    "optC": "\"Si tu n'es pas prêt, tu devrais peut-être reporter.\"",
+    "optD": "\"Imagine tout le monde en sous-vêtements, haha.\""
+  },
+  "scene8": {
+    "context": "Votre collègue s'est attribué VOTRE idée lors d'une réunion d'équipe. Votre patron a adoré et l'a félicité.",
+    "bubble": "",
+    "question": "Que faites-vous ?",
+    "optA": "Le confronter avec colère devant tout le monde",
+    "optB": "Ne rien dire mais garder du ressentiment pour toujours",
+    "optC": "Après la réunion, discuter en privé du crédit, puis envoyer vos notes originales au patron",
+    "optD": "Mentionner naturellement 'Je suis content que l'équipe ait aimé mon concept original'"
+  },
+  "scene9": {
+    "context": "Deux membres de l'équipe se disputent vivement sur la direction du projet. Les autres sont mal à l'aise. Vous êtes le chef d'équipe.",
+    "bubble": "",
+    "question": "Comment gérez-vous cela ?",
+    "optA": "Choisir le côté avec lequel vous êtes d'accord pour finir vite",
+    "optB": "Leur dire d'arrêter de se disputer et de suivre votre décision",
+    "optC": "Suggérer une pause de 5 minutes, puis laisser chacun expliquer calmement son point de vue",
+    "optD": "Reconnaître les deux perspectives, trouver un terrain commun et guider vers un compromis servant les objectifs du projet"
+  },
+  "scene10": {
+    "context": "Vous avez gagné un prix mais votre ami proche qui a aussi participé est visiblement déçu. Les gens vous félicitent.",
+    "bubble": "",
+    "question": "Quelle est la façon la plus émotionnellement intelligente de réagir ?",
+    "optA": "Célébrer bruyamment — vous l'avez mérité et votre ami devrait être content",
+    "optB": "Minimiser votre victoire pour ne pas le blesser",
+    "optC": "Accepter avec gratitude, puis prendre des nouvelles de votre ami en privé",
+    "optD": "Accepter avec gratitude, reconnaître publiquement les efforts de votre ami, puis le contacter en privé avec une empathie sincère"
+  },
+  "feedback": {
+    "perfect": "Excellente perception émotionnelle !",
+    "good": "Bonne lecture !",
+    "okay": "Pas mal, continuez d'observer !",
+    "miss": "Question difficile !"
+  },
+  "level": {
+    "beginner": "🌱 QE Débutant",
+    "beginnerDesc": "Vous commencez votre voyage d'intelligence émotionnelle. Avec de la pratique, vous pouvez considérablement améliorer votre capacité à lire les émotions.",
+    "learner": "📚 QE Apprenant",
+    "learnerDesc": "Votre conscience émotionnelle grandit. Vous captez parfois des sentiments profonds et votre empathie se développe.",
+    "skilled": "🎯 QE Compétent",
+    "skilledDesc": "Vous avez une intelligence émotionnelle solide. Vous lisez la plupart des situations avec précision et répondez avec une empathie sincère.",
+    "master": "💫 QE Maître",
+    "masterDesc": "Votre intelligence émotionnelle est impressionnante. Vous ressentez naturellement les émotions des autres et répondez avec sagesse.",
+    "sage": "🧘 QE Sage",
+    "sageDesc": "Intelligence émotionnelle exceptionnelle. Vous avez un don rare pour comprendre les émotions humaines au niveau le plus profond."
+  },
+  "tips": {
+    "awareness": "Pratiquez un bilan émotionnel 3 fois par jour : faites une pause et nommez exactement ce que vous ressentez et pourquoi.",
+    "empathy": "En écoutant quelqu'un, concentrez-vous sur la compréhension de ses sentiments avant de formuler votre réponse.",
+    "social": "Dans les conflits, reconnaissez la perspective de l'autre avant de partager la vôtre.",
+    "regulation": "Quand des émotions fortes surgissent, prenez 3 respirations profondes avant de répondre. Cette petite pause change tout.",
+    "general": "Lisez régulièrement de la fiction — les études montrent que cela améliore considérablement l'empathie et la compréhension émotionnelle."
   },
   "result": {
-    "yourEQ": "Votre score EQ",
     "dimTitle": "Scores par dimension",
-    "adviceTitle": "Analyse & conseils",
-    "retry": "Reprendre le test"
-  },
-  "desc": {
-    "awareness": "La conscience de soi est la capacité de comprendre précisément vos propres émotions, forces et faiblesses. Un score plus élevé signifie des décisions plus sages et mieux informées.",
-    "regulation": "L'autorégulation est la capacité de contrôler de façon constructive les émotions et impulsions perturbateurs. Un score plus élevé signifie garder son calme sous pression.",
-    "motivation": "La motivation est l'élan intérieur vers la réussite. Un score plus élevé signifie persévérer dans l'adversité et avancer avec passion vers vos objectifs.",
-    "empathy": "L'empathie est la capacité de comprendre et de partager les sentiments des autres. Un score plus élevé signifie des relations plus profondes et un soutien plus efficace.",
-    "social": "Les compétences sociales impliquent de gérer habilement les relations et d'inspirer la coopération. Un score plus élevé signifie un meilleur travail d'équipe, leadership et réseau."
-  },
-  "advice": {
-    "awareness": "💡 Tenez un journal d'émotions. Consacrez 5 minutes par jour à noter ce que vous avez ressenti et pourquoi. La méditation de pleine conscience est également très efficace.",
-    "regulation": "💡 Pratiquez la technique 'stop et réfléchis'. Quand de fortes émotions surgissent, comptez jusqu'à 10 et respirez profondément. L'exercice régulier et le sommeil de qualité sont la base.",
-    "motivation": "💡 Divisez les grands objectifs en petites étapes. Vivre de petits succès quotidiens renforce la motivation intrinsèque. Écrivez votre 'pourquoi' et relisez-le souvent.",
-    "empathy": "💡 Pratiquez l'écoute sans jugement. Après les conversations, demandez-vous : 'Comment l'autre personne se sentait-elle ?' Lire de la fiction variée développe aussi l'empathie.",
-    "social": "💡 Essayez d'avoir une conversation sincère avec quelqu'un de nouveau chaque semaine. En cas de conflit, reconnaissez d'abord la perspective de l'autre avant d'exprimer la vôtre."
+    "tipsTitle": "Conseils de croissance",
+    "personalTips": "Conseils personnalisés",
+    "retry": "Réessayer"
   },
   "share": {
-    "copy": "Copier le lien",
+    "copy": "📋 Copier le lien",
     "copied": "Copié !",
-    "twitterText": "Mon score EQ est de {score} ({grade}) ! Quelle est votre intelligence émotionnelle ?"
+    "twitterText": "Mon QE : {score}/30 ({level}) ! Pouvez-vous mieux lire les émotions ?"
   },
   "units": {
-    "points": "pts"
+    "pts": "pts"
   }
 }
