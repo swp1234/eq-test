@@ -11,6 +11,6 @@
       <stop offset="100%" stop-color="#4dd0e1"/>
     </linearGradient>
   </defs>
-  <text x="256" y="310" font-size="220" text-anchor="middle" font-family="system-ui">=š</text>
+  <text x="256" y="310" font-size="220" text-anchor="middle" font-family="system-ui">=ï¿½</text>
   <text x="256" y="420" font-size="72" font-weight="800" text-anchor="middle" font-family="system-ui, sans-serif" fill="url(#g512)">EQ</text>
 </svg>
