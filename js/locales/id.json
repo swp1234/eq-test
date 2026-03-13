@@ -155,7 +155,9 @@
     "dimTitle": "Skor per Dimensi",
     "tipsTitle": "Tips Pengembangan",
     "personalTips": "Tips Personal",
-    "retry": "Coba Lagi"
+    "retry": "Coba Lagi",
+    "moreTests": "Jelajahi tes lainnya",
+    "percentileStat": "Hanya <strong>{percent}%</strong> peserta memiliki profil EQ yang sama"
   },
   "share": {
     "copy": "📋 Salin Link",
@@ -164,5 +166,11 @@
   },
   "units": {
     "pts": "poin"
+  },
+  "related": {
+    "hspTest": "Tes HSP",
+    "emotionIceberg": "Gunung Es Emosi",
+    "stressCheck": "Cek Stres",
+    "socialBattery": "Baterai Sosial"
   }
 }

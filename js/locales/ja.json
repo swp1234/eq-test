@@ -155,7 +155,9 @@
     "dimTitle": "次元別スコア",
     "tipsTitle": "成長のヒント",
     "personalTips": "パーソナライズされたアドバイス",
-    "retry": "もう一度挑戦"
+    "retry": "もう一度挑戦",
+    "moreTests": "もっとテストを見る",
+    "percentileStat": "参加者の<strong>{percent}%</strong>だけがあなたと同じEQプロフィールです"
   },
   "share": {
     "copy": "📋 リンクをコピー",
@@ -164,5 +166,11 @@
   },
   "units": {
     "pts": "点"
+  },
+  "related": {
+    "hspTest": "HSPテスト",
+    "emotionIceberg": "感情の氷山",
+    "stressCheck": "ストレスチェック",
+    "socialBattery": "ソーシャルバッテリー"
   }
 }

@@ -155,7 +155,9 @@
     "dimTitle": "Баллы по измерениям",
     "tipsTitle": "Советы для роста",
     "personalTips": "Персональные советы",
-    "retry": "Попробовать снова"
+    "retry": "Попробовать снова",
+    "moreTests": "Ещё тесты",
+    "percentileStat": "Только <strong>{percent}%</strong> участников имеют такой же профиль EQ"
   },
   "share": {
     "copy": "📋 Копировать ссылку",
@@ -164,5 +166,11 @@
   },
   "units": {
     "pts": "б."
+  },
+  "related": {
+    "hspTest": "HSP Тест",
+    "emotionIceberg": "Айсберг эмоций",
+    "stressCheck": "Проверка стресса",
+    "socialBattery": "Социальная батарея"
   }
 }

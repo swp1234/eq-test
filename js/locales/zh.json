@@ -155,7 +155,9 @@
     "dimTitle": "维度得分",
     "tipsTitle": "成长建议",
     "personalTips": "个性化建议",
-    "retry": "再次挑战"
+    "retry": "再次挑战",
+    "moreTests": "探索更多测试",
+    "percentileStat": "仅 <strong>{percent}%</strong> 的参与者拥有与你相同的EQ档案"
   },
   "share": {
     "copy": "📋 复制链接",
@@ -164,5 +166,11 @@
   },
   "units": {
     "pts": "分"
+  },
+  "related": {
+    "hspTest": "HSP测试",
+    "emotionIceberg": "情感冰山",
+    "stressCheck": "压力检测",
+    "socialBattery": "社交电量"
   }
 }

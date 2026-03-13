@@ -155,7 +155,9 @@
     "dimTitle": "Dimension Scores",
     "tipsTitle": "Growth Tips",
     "personalTips": "Personalized Tips",
-    "retry": "Try Again"
+    "retry": "Try Again",
+    "moreTests": "Explore More Tests",
+    "percentileStat": "Only <strong>{percent}%</strong> of participants share your EQ profile"
   },
   "share": {
     "copy": "📋 Copy Link",
@@ -164,5 +166,11 @@
   },
   "units": {
     "pts": "pts"
+  },
+  "related": {
+    "hspTest": "HSP Test",
+    "emotionIceberg": "Emotion Iceberg",
+    "stressCheck": "Stress Check",
+    "socialBattery": "Social Battery"
   }
 }

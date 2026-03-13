@@ -155,7 +155,9 @@
     "dimTitle": "Puntuación por Dimensión",
     "tipsTitle": "Consejos de Crecimiento",
     "personalTips": "Consejos Personalizados",
-    "retry": "Intentar de Nuevo"
+    "retry": "Intentar de Nuevo",
+    "moreTests": "Explorar más tests",
+    "percentileStat": "Solo el <strong>{percent}%</strong> comparten tu perfil de EQ"
   },
   "share": {
     "copy": "📋 Copiar Enlace",
@@ -164,5 +166,11 @@
   },
   "units": {
     "pts": "pts"
+  },
+  "related": {
+    "hspTest": "Test HSP",
+    "emotionIceberg": "Iceberg Emocional",
+    "stressCheck": "Control de Estrés",
+    "socialBattery": "Batería Social"
   }
 }

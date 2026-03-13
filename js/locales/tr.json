@@ -155,7 +155,9 @@
     "dimTitle": "Boyut Puanları",
     "tipsTitle": "Gelişim İpuçları",
     "personalTips": "Kişisel İpuçları",
-    "retry": "Tekrar Dene"
+    "retry": "Tekrar Dene",
+    "moreTests": "Daha fazla test keşfet",
+    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>''i senin EQ profiline sahip"
   },
   "share": {
     "copy": "📋 Bağlantıyı Kopyala",
@@ -164,5 +166,11 @@
   },
   "units": {
     "pts": "puan"
+  },
+  "related": {
+    "hspTest": "HSP Testi",
+    "emotionIceberg": "Duygu Buzdağı",
+    "stressCheck": "Stres Kontrolü",
+    "socialBattery": "Sosyal Batarya"
   }
 }

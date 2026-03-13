@@ -155,7 +155,9 @@
     "dimTitle": "영역별 점수",
     "tipsTitle": "성장 팁",
     "personalTips": "맞춤 조언",
-    "retry": "다시 도전하기"
+    "retry": "다시 도전하기",
+    "moreTests": "더 많은 테스트",
+    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 당신과 같은 EQ 프로필을 가지고 있습니다"
   },
   "share": {
     "copy": "📋 링크 복사",
@@ -164,5 +166,11 @@
   },
   "units": {
     "pts": "점"
+  },
+  "related": {
+    "hspTest": "HSP 테스트",
+    "emotionIceberg": "감정 빙산",
+    "stressCheck": "스트레스 체크",
+    "socialBattery": "소셜 배터리"
   }
 }

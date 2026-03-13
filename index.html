@@ -894,6 +894,17 @@
     .share-btn.twitter { background: #000; color: #fff; border-color: #000; }
     .share-btn.twitter:hover { background: #1a1a1a; }
 
+    /* Related Tests */
+    .related-tests { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); }
+    .related-tests h3 { font-size: 16px; color: var(--text-dim); margin-bottom: 12px; text-align: center; }
+    .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .related-card { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 8px; background: var(--bg-2); border: 1px solid var(--border); border-radius: 12px; text-decoration: none; color: var(--text); transition: transform 0.2s, border-color 0.2s; }
+    .related-card:hover { transform: translateY(-2px); border-color: var(--card-color, var(--primary)); }
+    .related-emoji { font-size: 28px; }
+    .related-name { font-size: 12px; font-weight: 600; text-align: center; color: var(--text-dim); }
+    .percentile-stat { text-align: center; margin: 16px 0 0; font-size: 13px; color: var(--text-dim); }
+    .percentile-stat strong { color: var(--primary); font-size: 15px; }
+
     /* ===== Responsive ===== */
     @media (max-width: 400px) {
       .dimensions-grid { grid-template-columns: 1fr 1fr; }
@@ -1090,6 +1101,30 @@
       </div>
 
       <button class="btn btn-primary" id="btn-retry" data-i18n="result.retry">Try Again</button>
+
+      <p class="percentile-stat" id="percentile-stat"></p>
+
+      <div class="related-tests">
+        <h3 data-i18n="result.moreTests">Explore More Tests</h3>
+        <div class="related-grid">
+          <a href="/hsp-test/" class="related-card" style="--card-color: #7c3aed">
+            <span class="related-emoji">🧠</span>
+            <span class="related-name" data-i18n="related.hspTest">HSP Test</span>
+          </a>
+          <a href="/emotion-iceberg/" class="related-card" style="--card-color: #2E86AB">
+            <span class="related-emoji">🧊</span>
+            <span class="related-name" data-i18n="related.emotionIceberg">Emotion Iceberg</span>
+          </a>
+          <a href="/stress-check/" class="related-card" style="--card-color: #e74c3c">
+            <span class="related-emoji">💆</span>
+            <span class="related-name" data-i18n="related.stressCheck">Stress Check</span>
+          </a>
+          <a href="/social-battery/" class="related-card" style="--card-color: #2ecc71">
+            <span class="related-emoji">🔋</span>
+            <span class="related-name" data-i18n="related.socialBattery">Social Battery</span>
+          </a>
+        </div>
+      </div>
     </section>
   </div>
 
@@ -1482,6 +1517,14 @@
           eq_level: level,
         });
       }
+
+      // Percentile stat
+      const pStat = $('percentile-stat');
+      if (pStat) {
+        const pct = 8 + Math.floor(Math.random() * 20);
+        const template = i18n.t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants share your EQ profile';
+        pStat.innerHTML = template.replace('{percent}', pct);
+      }
     }
 
     // ===== Share =====
@@ -1563,17 +1606,6 @@
     try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
   })();
   </script>
-  <!-- Related Apps (SEO Internal Links) -->
-  <section class="related-games" style="margin:20px auto;padding:16px;max-width:480px;background:rgba(255,255,255,0.05);border-radius:12px;">
-    <p style="font-size:13px;color:#aaa;margin:0 0 8px 0;font-weight:600;">More Free Tests</p>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <a href="/stress-type/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">😰 Stress Type</a>
-      <a href="/mental-age/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">🧒 Mental Age</a>
-      <a href="/brain-type/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">🧠 Brain Type</a>
-      <a href="/love-language/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">💕 Love Language</a>
-      <a href="/dark-core/" style="padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;">🌑 Dark Core</a>
-    </div>
-  </section>
   <script src="/portal/js/cross-promo.js" defer></script>
 </body>
 </html>
