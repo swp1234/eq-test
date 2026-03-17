@@ -173,6 +173,7 @@
     "stressCheck": "Control de Estrés",
     "socialBattery": "Batería Social",
     "burnoutTest": "Test de Burnout",
-    "stressResponse": "Respuesta al Estrés"
+    "stressResponse": "Respuesta al Estrés",
+    "anxietyType": "Tipo de Ansiedad"
   }
 }

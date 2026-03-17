@@ -173,6 +173,7 @@
     "stressCheck": "Cek Stres",
     "socialBattery": "Baterai Sosial",
     "burnoutTest": "Tes Burnout",
-    "stressResponse": "Respons Stres"
+    "stressResponse": "Respons Stres",
+    "anxietyType": "Tipe Kecemasan"
   }
 }
