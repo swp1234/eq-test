@@ -167,6 +167,25 @@
   "units": {
     "pts": "pts"
   },
+  "premium": {
+    "title": "Análise Profunda de QE",
+    "preview": "Obtenha uma análise detalhada dos seus padrões de inteligência emocional, dinâmica de relacionamentos e um roteiro de crescimento personalizado baseado no seu perfil único de pontuação.",
+    "unlock": "Desbloquear Análise Profunda 🔓"
+  },
+  "ai": {
+    "strengthsTitle": "Seus Pontos Fortes de QE",
+    "strengths": "Sua área mais forte é {dim} ({pct}%). Isso sugere que você se destaca naturalmente em compreender e navegar situações emocionais neste domínio. As pessoas provavelmente veem você como alguém particularmente sintonizado nesta área.",
+    "blindspotsTitle": "Oportunidades de Crescimento",
+    "blindspots": "Sua oportunidade de crescimento está em {dim} ({pct}%). Isso não significa fraqueza — significa potencial inexplorado. Prática pequena e consistente nesta área pode gerar melhorias significativas na sua inteligência emocional geral.",
+    "relTitle": "Padrões de Relacionamento",
+    "relConnector": "Nos relacionamentos, você tende a ser o conector — naturalmente sintonizando com as necessidades dos outros e criando harmonia. Cuidado para não dar demais ou negligenciar suas próprias necessidades emocionais.",
+    "relStable": "Nos relacionamentos, você proporciona estabilidade e calma durante conflitos. Outros confiam na sua compostura. Considere se abrir mais emocionalmente para aprofundar a intimidade.",
+    "relReflective": "Nos relacionamentos, sua autoconsciência ajuda a comunicar suas necessidades com clareza. Você entende bem seus gatilhos, o que previne conflitos desnecessários.",
+    "growthTitle": "Roteiro de Crescimento Personalizado",
+    "growthHigh": "Com seu alto QE, foque em mentorar outros e aplicar inteligência emocional na liderança. Considere explorar práticas avançadas de empatia como a tomada de perspectiva em contextos culturais diversos.",
+    "growthMid": "Você tem uma base sólida de QE. Para evoluir, pratique rotulagem diária de emoções (nomeie 3 emoções que sente cada dia), escuta ativa sem planejar sua resposta e meditação mindfulness para regulação emocional.",
+    "growthLow": "Sua jornada de QE está apenas começando — e isso é empolgante! Comece com identificação básica de emoções: pause 3 vezes ao dia e pergunte \"O que estou sentindo agora?\" Escreva um diário sobre experiências emocionais para construir autoconsciência."
+  },
   "related": {
     "hspTest": "Teste HSP",
     "emotionIceberg": "Iceberg Emocional",
@@ -174,6 +193,7 @@
     "socialBattery": "Bateria Social",
     "burnoutTest": "Teste de Burnout",
     "stressResponse": "Resposta ao Estresse",
-    "anxietyType": "Tipo de Ansiedade"
+    "anxietyType": "Tipo de Ansiedade",
+    "attachmentStyle": "Estilo de Apego"
   }
 }

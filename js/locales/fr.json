@@ -167,6 +167,25 @@
   "units": {
     "pts": "pts"
   },
+  "premium": {
+    "title": "Analyse Approfondie du QE",
+    "preview": "Obtenez une analyse détaillée de vos schémas d'intelligence émotionnelle, de la dynamique de vos relations et une feuille de route de croissance personnalisée basée sur votre profil de score unique.",
+    "unlock": "Débloquer l'Analyse Approfondie 🔓"
+  },
+  "ai": {
+    "strengthsTitle": "Vos Forces en QE",
+    "strengths": "Votre domaine le plus fort est {dim} ({pct}%). Cela suggère que vous excellez naturellement à comprendre et naviguer les situations émotionnelles dans ce domaine. Les gens vous voient probablement comme quelqu'un de particulièrement sensible dans ce domaine.",
+    "blindspotsTitle": "Opportunités de Croissance",
+    "blindspots": "Votre opportunité de croissance se trouve dans {dim} ({pct}%). Ce n'est pas une faiblesse — c'est un potentiel inexploité. Une pratique petite mais constante dans ce domaine peut apporter des améliorations significatives à votre intelligence émotionnelle globale.",
+    "relTitle": "Schémas Relationnels",
+    "relConnector": "Dans les relations, vous avez tendance à être le connecteur — vous vous accordez naturellement aux besoins des autres et créez l'harmonie. Attention à ne pas trop donner ou négliger vos propres besoins émotionnels.",
+    "relStable": "Dans les relations, vous apportez stabilité et calme pendant les conflits. Les autres comptent sur votre sang-froid. Envisagez de vous ouvrir davantage émotionnellement pour approfondir l'intimité.",
+    "relReflective": "Dans les relations, votre conscience de soi vous aide à communiquer vos besoins clairement. Vous comprenez bien vos déclencheurs, ce qui prévient les conflits inutiles.",
+    "growthTitle": "Feuille de Route de Croissance Personnalisée",
+    "growthHigh": "Avec votre QE élevé, concentrez-vous sur le mentorat des autres et l'application de l'intelligence émotionnelle dans le leadership. Explorez des pratiques d'empathie avancées comme la prise de perspective dans des contextes culturels diversifiés.",
+    "growthMid": "Vous avez une base solide en QE. Pour progresser, pratiquez l'étiquetage quotidien des émotions (nommez 3 émotions par jour), l'écoute active sans préparer votre réponse, et la méditation de pleine conscience pour la régulation émotionnelle.",
+    "growthLow": "Votre voyage QE ne fait que commencer — et c'est passionnant ! Commencez par l'identification basique des émotions : faites une pause 3 fois par jour et demandez-vous « Qu'est-ce que je ressens en ce moment ? » Tenez un journal des expériences émotionnelles pour développer la conscience de soi."
+  },
   "related": {
     "hspTest": "Test HSP",
     "emotionIceberg": "Iceberg Émotionnel",
@@ -174,6 +193,7 @@
     "socialBattery": "Batterie Sociale",
     "burnoutTest": "Test de Burnout",
     "stressResponse": "Réponse au Stress",
-    "anxietyType": "Type d'Anxiété"
+    "anxietyType": "Type d'Anxiété",
+    "attachmentStyle": "Style d'Attachement"
   }
 }

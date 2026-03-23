@@ -167,6 +167,25 @@
   "units": {
     "pts": "puan"
   },
+  "premium": {
+    "title": "EQ Derinlemesine Analiz",
+    "preview": "Benzersiz puan profilinize dayalı olarak duygusal zeka kalıplarınızın, ilişki dinamiklerinizin ve kişiselleştirilmiş gelişim yol haritanızın detaylı analizini alın.",
+    "unlock": "Derin Analizi Aç 🔓"
+  },
+  "ai": {
+    "strengthsTitle": "EQ Güçlü Yönleriniz",
+    "strengths": "En güçlü alanınız {dim} ({pct}%). Bu, bu alanda duygusal durumları anlamakta ve yönetmekte doğal olarak üstün olduğunuzu gösterir. İnsanlar muhtemelen sizi bu alanda özellikle duyarlı biri olarak görüyor.",
+    "blindspotsTitle": "Gelişim Fırsatları",
+    "blindspots": "Gelişim fırsatınız {dim} ({pct}%) alanında. Bu bir zayıflık değil — henüz kullanılmamış potansiyel demektir. Bu alanda küçük ama tutarlı pratik, genel duygusal zekanızda önemli gelişmeler sağlayabilir.",
+    "relTitle": "İlişki Kalıpları",
+    "relConnector": "İlişkilerde bağlayıcı rolü üstlenme eğilimindesiniz — doğal olarak başkalarının ihtiyaçlarına uyum sağlar ve uyum yaratırsınız. Aşırı vericilik veya kendi duygusal ihtiyaçlarınızı ihmal etmeye dikkat edin.",
+    "relStable": "İlişkilerde çatışma sırasında istikrar ve sakinlik sağlarsınız. Başkaları soğukkanlılığınıza güvenir. Yakınlığı derinleştirmek için duygusal olarak daha açık olmayı düşünün.",
+    "relReflective": "İlişkilerde öz farkındalığınız ihtiyaçlarınızı net bir şekilde iletmenize yardımcı olur. Tetikleyicilerinizi iyi anlarsınız, bu da gereksiz çatışmaları önler.",
+    "growthTitle": "Kişiselleştirilmiş Gelişim Yol Haritası",
+    "growthHigh": "Yüksek EQ'nuzla başkalarına mentorluk yapmaya ve liderlikte duygusal zekayı uygulamaya odaklanın. Farklı kültürel bağlamlarda perspektif değiştirme gibi ileri düzey empati uygulamalarını keşfedin.",
+    "growthMid": "Sağlam bir EQ temeliniz var. Seviye atlamak için günlük duygu etiketleme (her gün 3 duyguya isim verin), yanıt planlamadan aktif dinleme ve duygusal düzenleme için farkındalık meditasyonu pratik yapın.",
+    "growthLow": "EQ yolculuğunuz yeni başlıyor — ve bu heyecan verici! Temel duygu tanımlamayla başlayın: günde 3 kez durun ve \"Şu anda ne hissediyorum?\" diye sorun. Öz farkındalık oluşturmak için duygusal deneyimlerinizi günlüğe yazın."
+  },
   "related": {
     "hspTest": "HSP Testi",
     "emotionIceberg": "Duygu Buzdağı",
@@ -174,6 +193,7 @@
     "socialBattery": "Sosyal Batarya",
     "burnoutTest": "Tükenmişlik Testi",
     "stressResponse": "Stres Tepkisi",
-    "anxietyType": "Kaygı Tipi"
+    "anxietyType": "Kaygı Tipi",
+    "attachmentStyle": "Bağlanma Stili"
   }
 }

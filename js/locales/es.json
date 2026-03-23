@@ -167,6 +167,25 @@
   "units": {
     "pts": "pts"
   },
+  "premium": {
+    "title": "Análisis Profundo de EQ",
+    "preview": "Obtén un desglose detallado de tus patrones de inteligencia emocional, dinámica de relaciones y una hoja de ruta de crecimiento personalizada basada en tu perfil único de puntuación.",
+    "unlock": "Desbloquear Análisis Profundo 🔓"
+  },
+  "ai": {
+    "strengthsTitle": "Tus Fortalezas de EQ",
+    "strengths": "Tu área más fuerte es {dim} ({pct}%). Esto sugiere que sobresales naturalmente en comprender y navegar situaciones emocionales en este ámbito. Es probable que las personas te vean como alguien especialmente sintonizado en esta área.",
+    "blindspotsTitle": "Oportunidades de Crecimiento",
+    "blindspots": "Tu oportunidad de crecimiento está en {dim} ({pct}%). Esto no significa debilidad — significa potencial sin explotar. La práctica pequeña y constante en esta área puede generar mejoras significativas en tu inteligencia emocional general.",
+    "relTitle": "Patrones de Relación",
+    "relConnector": "En las relaciones, tiendes a ser el conector — sintonizando naturalmente con las necesidades de otros y creando armonía. Cuidado con dar demasiado o descuidar tus propias necesidades emocionales.",
+    "relStable": "En las relaciones, proporcionas estabilidad y calma durante los conflictos. Otros confían en tu compostura. Considera abrirte más emocionalmente para profundizar la intimidad.",
+    "relReflective": "En las relaciones, tu autoconciencia te ayuda a comunicar tus necesidades con claridad. Entiendes bien tus detonantes, lo que previene conflictos innecesarios.",
+    "growthTitle": "Hoja de Ruta de Crecimiento Personalizada",
+    "growthHigh": "Con tu alto EQ, enfócate en ser mentor de otros y aplicar la inteligencia emocional en el liderazgo. Considera explorar prácticas avanzadas de empatía como la toma de perspectiva en contextos culturales diversos.",
+    "growthMid": "Tienes una base sólida de EQ. Para subir de nivel, practica el etiquetado diario de emociones (nombra 3 emociones que sientes cada día), la escucha activa sin planear tu respuesta y la meditación mindfulness para la regulación emocional.",
+    "growthLow": "Tu viaje de EQ apenas comienza — ¡y eso es emocionante! Empieza con la identificación básica de emociones: haz una pausa 3 veces al día y pregúntate \"¿Qué estoy sintiendo ahora?\" Escribe un diario sobre experiencias emocionales para construir autoconciencia."
+  },
   "related": {
     "hspTest": "Test HSP",
     "emotionIceberg": "Iceberg Emocional",
@@ -174,6 +193,7 @@
     "socialBattery": "Batería Social",
     "burnoutTest": "Test de Burnout",
     "stressResponse": "Respuesta al Estrés",
-    "anxietyType": "Tipo de Ansiedad"
+    "anxietyType": "Tipo de Ansiedad",
+    "attachmentStyle": "Estilo de Apego"
   }
 }

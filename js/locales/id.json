@@ -167,6 +167,25 @@
   "units": {
     "pts": "poin"
   },
+  "premium": {
+    "title": "Analisis EQ Mendalam",
+    "preview": "Dapatkan analisis detail pola kecerdasan emosional Anda, dinamika hubungan, dan peta jalan pertumbuhan yang dipersonalisasi berdasarkan profil skor unik Anda.",
+    "unlock": "Buka Analisis Mendalam 🔓"
+  },
+  "ai": {
+    "strengthsTitle": "Kekuatan EQ Anda",
+    "strengths": "Area terkuat Anda adalah {dim} ({pct}%). Ini menunjukkan bahwa Anda secara alami unggul dalam memahami dan menavigasi situasi emosional di bidang ini. Orang-orang kemungkinan melihat Anda sebagai seseorang yang sangat peka di area ini.",
+    "blindspotsTitle": "Peluang Pertumbuhan",
+    "blindspots": "Peluang pertumbuhan Anda ada di {dim} ({pct}%). Ini bukan kelemahan — ini adalah potensi yang belum tersentuh. Latihan kecil tapi konsisten di area ini dapat menghasilkan peningkatan signifikan dalam kecerdasan emosional Anda secara keseluruhan.",
+    "relTitle": "Pola Hubungan",
+    "relConnector": "Dalam hubungan, Anda cenderung menjadi penghubung — secara alami menyelaraskan dengan kebutuhan orang lain dan menciptakan harmoni. Waspadai memberi terlalu banyak atau mengabaikan kebutuhan emosional Anda sendiri.",
+    "relStable": "Dalam hubungan, Anda memberikan stabilitas dan ketenangan saat konflik. Orang lain mengandalkan ketenangan Anda. Pertimbangkan untuk lebih terbuka secara emosional untuk memperdalam keintiman.",
+    "relReflective": "Dalam hubungan, kesadaran diri Anda membantu mengkomunikasikan kebutuhan dengan jelas. Anda memahami pemicu Anda dengan baik, yang mencegah konflik yang tidak perlu.",
+    "growthTitle": "Peta Jalan Pertumbuhan Personal",
+    "growthHigh": "Dengan EQ tinggi Anda, fokus pada membimbing orang lain dan menerapkan kecerdasan emosional dalam kepemimpinan. Pertimbangkan untuk mengeksplorasi praktik empati lanjutan seperti pengambilan perspektif dalam konteks budaya yang beragam.",
+    "growthMid": "Anda memiliki fondasi EQ yang solid. Untuk naik level, praktikkan pelabelan emosi harian (beri nama 3 emosi yang Anda rasakan setiap hari), mendengarkan aktif tanpa merencanakan respons, dan meditasi mindfulness untuk regulasi emosi.",
+    "growthLow": "Perjalanan EQ Anda baru saja dimulai — dan itu mengasyikkan! Mulai dengan identifikasi emosi dasar: berhenti 3 kali sehari dan tanyakan \"Apa yang saya rasakan sekarang?\" Tulis jurnal tentang pengalaman emosional untuk membangun kesadaran diri."
+  },
   "related": {
     "hspTest": "Tes HSP",
     "emotionIceberg": "Gunung Es Emosi",
@@ -174,6 +193,7 @@
     "socialBattery": "Baterai Sosial",
     "burnoutTest": "Tes Burnout",
     "stressResponse": "Respons Stres",
-    "anxietyType": "Tipe Kecemasan"
+    "anxietyType": "Tipe Kecemasan",
+    "attachmentStyle": "Gaya Kelekatan"
   }
 }

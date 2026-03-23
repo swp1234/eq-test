@@ -167,6 +167,25 @@
   "units": {
     "pts": "Pkt"
   },
+  "premium": {
+    "title": "EQ Tiefenanalyse",
+    "preview": "Erhalten Sie eine detaillierte Aufschlüsselung Ihrer emotionalen Intelligenzmuster, Beziehungsdynamiken und einen personalisierten Wachstumsfahrplan basierend auf Ihrem einzigartigen Punkteprofil.",
+    "unlock": "Tiefenanalyse freischalten 🔓"
+  },
+  "ai": {
+    "strengthsTitle": "Ihre EQ-Stärken",
+    "strengths": "Ihr stärkster Bereich ist {dim} ({pct}%). Dies deutet darauf hin, dass Sie von Natur aus hervorragend darin sind, emotionale Situationen in diesem Bereich zu verstehen und zu navigieren. Menschen sehen Sie wahrscheinlich als besonders einfühlsam in diesem Bereich.",
+    "blindspotsTitle": "Wachstumschancen",
+    "blindspots": "Ihre Wachstumschance liegt in {dim} ({pct}%). Das bedeutet keine Schwäche — es bedeutet ungenutztes Potenzial. Kleine, konsequente Übung in diesem Bereich kann zu erheblichen Verbesserungen Ihrer gesamten emotionalen Intelligenz führen.",
+    "relTitle": "Beziehungsmuster",
+    "relConnector": "In Beziehungen neigen Sie dazu, der Verbinder zu sein — sich natürlich auf die Bedürfnisse anderer einstimmend und Harmonie schaffend. Achten Sie darauf, nicht zu viel zu geben oder Ihre eigenen emotionalen Bedürfnisse zu vernachlässigen.",
+    "relStable": "In Beziehungen bieten Sie Stabilität und Ruhe während Konflikten. Andere verlassen sich auf Ihre Gelassenheit. Erwägen Sie, sich emotional mehr zu öffnen, um die Intimität zu vertiefen.",
+    "relReflective": "In Beziehungen hilft Ihnen Ihre Selbstwahrnehmung, Ihre Bedürfnisse klar zu kommunizieren. Sie verstehen Ihre Auslöser gut, was unnötige Konflikte verhindert.",
+    "growthTitle": "Personalisierter Wachstumsfahrplan",
+    "growthHigh": "Mit Ihrem hohen EQ konzentrieren Sie sich auf das Mentoring anderer und die Anwendung emotionaler Intelligenz in der Führung. Erkunden Sie fortgeschrittene Empathie-Praktiken wie Perspektivenwechsel in verschiedenen kulturellen Kontexten.",
+    "growthMid": "Sie haben ein solides EQ-Fundament. Um aufzusteigen, üben Sie tägliche Emotionskennzeichnung (benennen Sie 3 Emotionen pro Tag), aktives Zuhören ohne Antwortplanung und Achtsamkeitsmeditation zur Emotionsregulation.",
+    "growthLow": "Ihre EQ-Reise beginnt gerade erst — und das ist aufregend! Beginnen Sie mit grundlegender Emotionserkennung: Halten Sie 3-mal täglich inne und fragen Sie sich \"Was fühle ich gerade?\" Schreiben Sie ein Tagebuch über emotionale Erfahrungen, um Selbstwahrnehmung aufzubauen."
+  },
   "related": {
     "hspTest": "HSP-Test",
     "emotionIceberg": "Emotions-Eisberg",
@@ -174,6 +193,7 @@
     "socialBattery": "Soziale Batterie",
     "burnoutTest": "Burnout-Test",
     "stressResponse": "Stressreaktion",
-    "anxietyType": "Angsttyp"
+    "anxietyType": "Angsttyp",
+    "attachmentStyle": "Bindungsstil"
   }
 }

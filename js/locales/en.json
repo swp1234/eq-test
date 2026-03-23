@@ -193,6 +193,7 @@
     "socialBattery": "Social Battery",
     "burnoutTest": "Burnout Test",
     "stressResponse": "Stress Response",
-    "anxietyType": "Anxiety Type"
+    "anxietyType": "Anxiety Type",
+    "attachmentStyle": "Attachment Style"
   }
 }
