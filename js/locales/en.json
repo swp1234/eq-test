@@ -167,6 +167,25 @@
   "units": {
     "pts": "pts"
   },
+  "premium": {
+    "title": "Deep EQ Analysis",
+    "preview": "Get a detailed breakdown of your emotional intelligence patterns, relationship dynamics, and a personalized growth roadmap based on your unique score profile.",
+    "unlock": "Unlock Deep Analysis \uD83D\uDD13"
+  },
+  "ai": {
+    "strengthsTitle": "Your EQ Strengths",
+    "strengths": "Your strongest area is {dim} ({pct}%). This suggests you naturally excel at understanding and navigating emotional situations in this domain. People likely see you as someone who is particularly attuned in this area.",
+    "blindspotsTitle": "Growth Opportunities",
+    "blindspots": "Your growth opportunity lies in {dim} ({pct}%). This doesn't mean weakness — it means untapped potential. Small, consistent practice in this area can yield significant improvements in your overall emotional intelligence.",
+    "relTitle": "Relationship Patterns",
+    "relConnector": "In relationships, you tend to be the connector — naturally attuning to others' needs and creating harmony. Watch for over-giving or neglecting your own emotional needs.",
+    "relStable": "In relationships, you provide stability and calm during conflicts. Others rely on your composure. Consider opening up more emotionally to deepen intimacy.",
+    "relReflective": "In relationships, your self-awareness helps you communicate your needs clearly. You understand your triggers well, which prevents unnecessary conflicts.",
+    "growthTitle": "Personalized Growth Roadmap",
+    "growthHigh": "With your high EQ, focus on mentoring others and applying emotional intelligence in leadership. Consider exploring advanced empathy practices like perspective-taking in diverse cultural contexts.",
+    "growthMid": "You have a solid EQ foundation. To level up, practice daily emotion labeling (name 3 emotions you feel each day), active listening without planning your response, and mindfulness meditation for emotional regulation.",
+    "growthLow": "Your EQ journey is just beginning — and that's exciting! Start with basic emotion identification: pause 3 times daily and ask \"What am I feeling right now?\" Journal about emotional experiences to build self-awareness."
+  },
   "related": {
     "hspTest": "HSP Test",
     "emotionIceberg": "Emotion Iceberg",

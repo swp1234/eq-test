@@ -988,6 +988,18 @@
     .percentile-stat { text-align: center; margin: 16px 0 0; font-size: 13px; color: var(--text-dim); }
     .percentile-stat strong { color: var(--primary); font-size: 15px; }
 
+    /* AI Deep Analysis */
+    .ai-analysis-card { margin: 24px 0; background: linear-gradient(135deg, rgba(0,188,212,0.08), rgba(124,58,237,0.08)); border: 1.5px solid rgba(0,188,212,0.25); border-radius: 16px; padding: 20px; overflow: hidden; }
+    .ai-analysis-header { display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 14px; }
+    .ai-badge { background: linear-gradient(135deg, #00bcd4, #7c3aed); color: #fff; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 800; letter-spacing: 1px; }
+    .ai-preview-text { font-size: 14px; color: var(--text-dim); line-height: 1.6; margin-bottom: 14px; }
+    .btn-ai-unlock { width: 100%; padding: 14px; background: linear-gradient(135deg, #00bcd4, #7c3aed); color: #fff; border: none; border-radius: 12px; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.3s; min-height: 48px; }
+    .btn-ai-unlock:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,188,212,0.3); }
+    .ai-analysis-content { margin-top: 16px; }
+    .ai-section { margin-bottom: 16px; padding: 14px; background: var(--bg-2, rgba(255,255,255,0.04)); border-radius: 10px; }
+    .ai-section h4 { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+    .ai-section p { font-size: 13px; color: var(--text-dim); line-height: 1.7; margin: 0; }
+
     /* ===== Responsive ===== */
     @media (max-width: 400px) {
       .dimensions-grid { grid-template-columns: 1fr 1fr; }
@@ -1176,6 +1188,24 @@
           <span data-i18n="result.personalTips">Personalized Tips</span>
         </div>
         <ul class="tips-list" id="tips-list"></ul>
+      </div>
+
+      <!-- AI Deep Analysis (Premium Experiment) -->
+      <div class="ai-analysis-card" id="ai-analysis-card">
+        <div class="ai-analysis-header">
+          <span class="ai-badge">&#x2728; AI</span>
+          <span data-i18n="premium.title">Deep EQ Analysis</span>
+        </div>
+        <div class="ai-analysis-preview" id="ai-preview">
+          <p class="ai-preview-text" data-i18n="premium.preview">Get a detailed breakdown of your emotional intelligence profile including strengths, blind spots, relationship patterns, and personalized growth roadmap.</p>
+          <button class="btn-ai-unlock" id="btn-ai-unlock" data-i18n="premium.unlock">Unlock Deep Analysis &#x1F513;</button>
+        </div>
+        <div class="ai-analysis-content hidden" id="ai-content">
+          <div class="ai-section" id="ai-strengths"></div>
+          <div class="ai-section" id="ai-blindspots"></div>
+          <div class="ai-section" id="ai-relationships"></div>
+          <div class="ai-section" id="ai-growth"></div>
+        </div>
       </div>
 
       <div class="share-row">
@@ -1640,6 +1670,60 @@
         const template = i18n.t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants share your EQ profile';
         pStat.innerHTML = template.replace('{percent}', pct);
       }
+
+      // AI Deep Analysis - generate content based on scores
+      generateAIAnalysis(total, level, dimEntries);
+    }
+
+    function generateAIAnalysis(total, level, dimEntries) {
+      const strongest = dimEntries[dimEntries.length - 1];
+      const weakest = dimEntries[0];
+      const dimLabels = { self: 'Self-Awareness', empathy: 'Empathy', social: 'Social Skills', regulation: 'Emotional Regulation' };
+
+      var sLabel = i18n.t('dim.' + strongest.key) || dimLabels[strongest.key] || strongest.key;
+      var wLabel = i18n.t('dim.' + weakest.key) || dimLabels[weakest.key] || weakest.key;
+
+      var strengthsText = (i18n.t('ai.strengths') || 'Your strongest area is {dim} ({pct}%). This suggests you naturally excel at understanding and navigating emotional situations in this domain. People likely see you as someone who is particularly attuned in this area.')
+        .replace('{dim}', sLabel).replace('{pct}', Math.round(strongest.pct * 100));
+
+      var blindspotsText = (i18n.t('ai.blindspots') || 'Your growth opportunity lies in {dim} ({pct}%). This doesn\'t mean weakness — it means untapped potential. Small, consistent practice in this area can yield significant improvements in your overall emotional intelligence.')
+        .replace('{dim}', wLabel).replace('{pct}', Math.round(weakest.pct * 100));
+
+      var relText = '';
+      if (strongest.key === 'empathy' || strongest.key === 'social') {
+        relText = i18n.t('ai.relConnector') || 'In relationships, you tend to be the connector — naturally attuning to others\' needs and creating harmony. Watch for over-giving or neglecting your own emotional needs.';
+      } else if (strongest.key === 'regulation') {
+        relText = i18n.t('ai.relStable') || 'In relationships, you provide stability and calm during conflicts. Others rely on your composure. Consider opening up more emotionally to deepen intimacy.';
+      } else {
+        relText = i18n.t('ai.relReflective') || 'In relationships, your self-awareness helps you communicate your needs clearly. You understand your triggers well, which prevents unnecessary conflicts.';
+      }
+
+      var growthText = '';
+      if (total >= 23) {
+        growthText = i18n.t('ai.growthHigh') || 'With your high EQ, focus on mentoring others and applying emotional intelligence in leadership. Consider exploring advanced empathy practices like perspective-taking in diverse cultural contexts.';
+      } else if (total >= 16) {
+        growthText = i18n.t('ai.growthMid') || 'You have a solid EQ foundation. To level up, practice daily emotion labeling (name 3 emotions you feel each day), active listening without planning your response, and mindfulness meditation for emotional regulation.';
+      } else {
+        growthText = i18n.t('ai.growthLow') || 'Your EQ journey is just beginning — and that\'s exciting! Start with basic emotion identification: pause 3 times daily and ask "What am I feeling right now?" Journal about emotional experiences to build self-awareness.';
+      }
+
+      var sTitle = i18n.t('ai.strengthsTitle') || 'Your EQ Strengths';
+      var bTitle = i18n.t('ai.blindspotsTitle') || 'Growth Opportunities';
+      var rTitle = i18n.t('ai.relTitle') || 'Relationship Patterns';
+      var gTitle = i18n.t('ai.growthTitle') || 'Personalized Growth Roadmap';
+
+      $('ai-strengths').innerHTML = '<h4>' + sTitle + '</h4><p>' + strengthsText + '</p>';
+      $('ai-blindspots').innerHTML = '<h4>' + bTitle + '</h4><p>' + blindspotsText + '</p>';
+      $('ai-relationships').innerHTML = '<h4>' + rTitle + '</h4><p>' + relText + '</p>';
+      $('ai-growth').innerHTML = '<h4>' + gTitle + '</h4><p>' + growthText + '</p>';
+
+      $('btn-ai-unlock').addEventListener('click', function() {
+        $('ai-preview').classList.add('hidden');
+        $('ai-content').classList.remove('hidden');
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'ai_analysis_unlock', { eq_total: total, eq_level: level });
+        }
+      });
     }
 
     // ===== Share =====
