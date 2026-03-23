@@ -1209,6 +1209,7 @@
       </div>
 
       <div class="share-row">
+        <button class="share-btn" id="btn-save-card" style="background:var(--primary);color:#fff;border-color:var(--primary)">&#128248; Save Result</button>
         <button class="share-btn twitter" id="btn-twitter">&#120143; Twitter</button>
         <button class="share-btn" id="btn-copy" data-i18n="share.copy">Copy Link</button>
       </div>
@@ -1739,6 +1740,35 @@
     }
 
     // ===== Share =====
+    $('btn-save-card').addEventListener('click', function() {
+      if (typeof ResultCard === 'undefined') return;
+      var btn = this;
+      btn.textContent = '⏳...';
+      btn.disabled = true;
+      var total = calcTotal();
+      var level = getLevel(total);
+      var levelName = i18n.t('level.' + level);
+      var cardDims = DIMS.map(function(dim) {
+        var score = dimScores[dim.key] || 0;
+        var max = getDimMax(dim.key);
+        var pct = max > 0 ? Math.round((score / max) * 100) : 0;
+        return { label: i18n.t('dim.' + dim.key), pct: pct, color: dim.color };
+      });
+      ResultCard.download({
+        appName: 'EQ Test',
+        typeName: levelName,
+        typeEmoji: '🧠',
+        score: total + '/30',
+        dimensions: cardDims,
+        primaryColor: '#00bcd4',
+        tagline: 'dopabrain.com/eq-test',
+        ctaText: i18n.t('start.btn') || 'Take the Test →',
+      }, 'eq-test-result.png').then(function() {
+        btn.textContent = '✅ Saved!';
+        setTimeout(function() { btn.textContent = '📸 Save Result'; btn.disabled = false; }, 2000);
+      });
+    });
+
     $('btn-twitter').addEventListener('click', () => {
       const total = calcTotal();
       const level = i18n.t('level.' + getLevel(total));
@@ -1817,6 +1847,7 @@
     try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
   })();
   </script>
+  <script src="/portal/js/result-card.js" defer></script>
   <script src="/portal/js/cross-promo.js" defer></script>
 </body>
 </html>
