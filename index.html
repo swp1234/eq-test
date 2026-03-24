@@ -1190,17 +1190,17 @@
         <ul class="tips-list" id="tips-list"></ul>
       </div>
 
-      <!-- AI Deep Analysis (Premium Experiment) -->
+      <!-- AI Deep Analysis -->
       <div class="ai-analysis-card" id="ai-analysis-card">
         <div class="ai-analysis-header">
           <span class="ai-badge">&#x2728; AI</span>
           <span data-i18n="premium.title">Deep EQ Analysis</span>
         </div>
-        <div class="ai-analysis-preview" id="ai-preview">
+        <div class="ai-analysis-preview hidden" id="ai-preview">
           <p class="ai-preview-text" data-i18n="premium.preview">Get a detailed breakdown of your emotional intelligence profile including strengths, blind spots, relationship patterns, and personalized growth roadmap.</p>
-          <button class="btn-ai-unlock" id="btn-ai-unlock" data-i18n="premium.unlock">Unlock Deep Analysis &#x1F513;</button>
+          <button class="btn-ai-unlock hidden" id="btn-ai-unlock" data-i18n="premium.unlock">Unlock Deep Analysis &#x1F513;</button>
         </div>
-        <div class="ai-analysis-content hidden" id="ai-content">
+        <div class="ai-analysis-content" id="ai-content">
           <div class="ai-section" id="ai-strengths"></div>
           <div class="ai-section" id="ai-blindspots"></div>
           <div class="ai-section" id="ai-relationships"></div>
@@ -1730,13 +1730,10 @@
       $('ai-relationships').innerHTML = '<h4>' + rTitle + '</h4><p>' + relText + '</p>';
       $('ai-growth').innerHTML = '<h4>' + gTitle + '</h4><p>' + growthText + '</p>';
 
-      $('btn-ai-unlock').addEventListener('click', function() {
-        $('ai-preview').classList.add('hidden');
-        $('ai-content').classList.remove('hidden');
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'ai_analysis_unlock', { eq_total: total, eq_level: level });
-        }
-      });
+      // Auto-reveal AI analysis (no gating)
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'ai_analysis_view', { eq_total: total, eq_level: level });
+      }
     }
 
     // ===== Share =====
