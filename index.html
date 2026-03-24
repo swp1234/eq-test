@@ -1828,6 +1828,13 @@
       });
     });
 
+    // Engagement tracking (false bounce prevention)
+    setTimeout(() => {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'page_engage', { event_category: 'eq_test', engagement_time_msec: 5000 });
+      }
+    }, 5000);
+
     // Hide loader
     window.addEventListener('load', () => {
       setTimeout(() => {
