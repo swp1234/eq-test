@@ -987,6 +987,8 @@
     .related-name { font-size: 12px; font-weight: 600; text-align: center; color: var(--text-dim); }
     .percentile-stat { text-align: center; margin: 16px 0 0; font-size: 13px; color: var(--text-dim); }
     .percentile-stat strong { color: var(--primary); font-size: 15px; }
+    .result-ad-slot { margin: 20px 0 6px; padding: 12px; background: var(--bg-2); border: 1px solid var(--border); border-radius: 14px; }
+    .result-ad-slot ins { display: block !important; min-height: 250px; }
 
     /* AI Deep Analysis */
     .ai-analysis-card { margin: 24px 0; background: linear-gradient(135deg, rgba(0,188,212,0.08), rgba(124,58,237,0.08)); border: 1.5px solid rgba(0,188,212,0.25); border-radius: 16px; padding: 20px; overflow: hidden; }
@@ -995,6 +997,7 @@
     .ai-preview-text { font-size: 14px; color: var(--text-dim); line-height: 1.6; margin-bottom: 14px; }
     .btn-ai-unlock { width: 100%; padding: 14px; background: linear-gradient(135deg, #00bcd4, #7c3aed); color: #fff; border: none; border-radius: 12px; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.3s; min-height: 48px; }
     .btn-ai-unlock:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,188,212,0.3); }
+    .btn-ai-unlock:disabled { opacity: 0.78; cursor: wait; transform: none; box-shadow: none; }
     .ai-analysis-content { margin-top: 16px; }
     .ai-section { margin-bottom: 16px; padding: 14px; background: var(--bg-2, rgba(255,255,255,0.04)); border-radius: 10px; }
     .ai-section h4 { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
@@ -1198,6 +1201,7 @@
         </div>
         <div class="ai-analysis-preview hidden" id="ai-preview">
           <p class="ai-preview-text" data-i18n="premium.preview">Get a detailed breakdown of your emotional intelligence profile including strengths, blind spots, relationship patterns, and personalized growth roadmap.</p>
+          <p class="ai-preview-text">Unlock the fuller report to see your blind spots, relationship triggers, and next-growth plan.</p>
           <button class="btn-ai-unlock hidden" id="btn-ai-unlock" data-i18n="premium.unlock">Unlock Deep Analysis &#x1F513;</button>
         </div>
         <div class="ai-analysis-content" id="ai-content">
@@ -1218,6 +1222,15 @@
 
       <p class="percentile-stat" id="percentile-stat"></p>
 
+      <div class="result-ad-slot" id="result-inline-ad" aria-label="Sponsored">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3600813755953882"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+
       <div class="related-tests">
         <h3 data-i18n="result.moreTests">Explore More Tests</h3>
         <div class="related-grid">
@@ -1236,6 +1249,10 @@
           <a href="/attachment-style/" class="related-card" style="--card-color: #e879a0">
             <span class="related-emoji">💕</span>
             <span class="related-name" data-i18n="related.attachmentStyle">Attachment Style</span>
+          </a>
+          <a href="/blood-type/" class="related-card" style="--card-color: #e74c3c">
+            <span class="related-emoji">&#129656;</span>
+            <span class="related-name">Blood Type Personality</span>
           </a>
           <a href="/dopamine-type/" class="related-card" style="--card-color: #f59e0b">
             <span class="related-emoji">&#9889;</span>
@@ -1269,9 +1286,9 @@
             <span class="related-emoji">&#128161;</span>
             <span class="related-name">How to Improve EQ</span>
           </a>
-          <a href="/shadow-work/" class="related-card" style="--card-color: #7c3aed">
-            <span class="related-emoji">&#x1F311;</span>
-            <span class="related-name">Shadow Work Quiz</span>
+          <a href="/mbti-love/" class="related-card" style="--card-color: #ff6b9d">
+            <span class="related-emoji">&#128149;</span>
+            <span class="related-name">MBTI Love Match</span>
           </a>
           <a href="/inner-child-test/" class="related-card" style="--card-color: #f9a8d4">
             <span class="related-emoji">&#x1F9F8;</span>
@@ -1394,6 +1411,8 @@
     let dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
     let isDark = true;
     let answered = false;
+    let premiumUnlocked = false;
+    let resultAdInitialized = false;
 
     // ===== DOM =====
     const $ = id => document.getElementById(id);
@@ -1585,12 +1604,83 @@
       return max;
     }
 
+    function resetPremiumTeaser(total, level) {
+      premiumUnlocked = false;
+      var aiPreview = $('ai-preview');
+      var aiContent = $('ai-content');
+      var aiUnlock = $('btn-ai-unlock');
+
+      if (aiPreview) aiPreview.classList.remove('hidden');
+      if (aiContent) aiContent.style.display = 'none';
+      if (aiUnlock) {
+        aiUnlock.classList.remove('hidden');
+        aiUnlock.disabled = false;
+        aiUnlock.textContent = i18n.t('premium.unlock') || 'Unlock Deep Analysis';
+      }
+
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'premium_cta_view', {
+          eq_total: total,
+          eq_level: level
+        });
+      }
+    }
+
+    function initResultAd() {
+      if (resultAdInitialized) return;
+      const ad = document.querySelector('#result-inline-ad .adsbygoogle');
+      if (!ad) return;
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        resultAdInitialized = true;
+      } catch (e) {}
+    }
+
+    function unlockAIAnalysis() {
+      if (premiumUnlocked) return;
+
+      const total = calcTotal();
+      const level = getLevel(total);
+      const aiPreview = $('ai-preview');
+      const aiContent = $('ai-content');
+      const aiUnlock = $('btn-ai-unlock');
+      if (!aiContent || !aiUnlock) return;
+
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'premium_unlock_click', {
+          eq_total: total,
+          eq_level: level
+        });
+      }
+
+      aiUnlock.disabled = true;
+      aiUnlock.textContent = 'Preparing Deep Analysis...';
+
+      setTimeout(() => {
+        premiumUnlocked = true;
+        if (aiPreview) aiPreview.classList.add('hidden');
+        aiContent.style.display = 'block';
+
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'premium_unlock_complete', {
+            eq_total: total,
+            eq_level: level
+          });
+          gtag('event', 'ai_analysis_view', {
+            eq_total: total,
+            eq_level: level
+          });
+        }
+      }, 1200);
+    }
+
     // ===== Result Rendering =====
     function showResult() {
       const total = calcTotal();
       const level = getLevel(total);
 
       showScreen('result');
+      initResultAd();
 
       // Score ring animation
       const arc = $('score-arc');
@@ -1686,6 +1776,7 @@
 
       // AI Deep Analysis - generate content based on scores
       generateAIAnalysis(total, level, dimEntries);
+      resetPremiumTeaser(total, level);
     }
 
     function generateAIAnalysis(total, level, dimEntries) {
@@ -1730,10 +1821,6 @@
       $('ai-relationships').innerHTML = '<h4>' + rTitle + '</h4><p>' + relText + '</p>';
       $('ai-growth').innerHTML = '<h4>' + gTitle + '</h4><p>' + growthText + '</p>';
 
-      // Auto-reveal AI analysis (no gating)
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'ai_analysis_view', { eq_total: total, eq_level: level });
-      }
     }
 
     // ===== Share =====
@@ -1782,6 +1869,20 @@
         setTimeout(() => { this.textContent = '📋 ' + i18n.t('share.copy'); }, 2000);
       });
       if (typeof gtag !== 'undefined') gtag('event', 'share', { method: 'url_copy' });
+    });
+
+    $('btn-ai-unlock').addEventListener('click', unlockAIAnalysis);
+
+    document.querySelectorAll('.related-card').forEach(card => {
+      card.addEventListener('click', function() {
+        if (typeof gtag !== 'undefined') {
+          const label = this.querySelector('.related-name');
+          gtag('event', 'eq_related_click', {
+            destination: this.getAttribute('href') || '',
+            target_label: label ? label.textContent.trim() : this.textContent.trim()
+          });
+        }
+      });
     });
 
     // ===== Navigation =====
@@ -1848,7 +1949,9 @@
     }
 
     // AdSense
-    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+    document.querySelectorAll('.ad-banner .adsbygoogle').forEach(() => {
+      try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+    });
   })();
   </script>
   <script src="/portal/js/result-card.js" defer></script>
