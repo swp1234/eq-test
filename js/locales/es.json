@@ -1,199 +1,205 @@
-{
-  "meta": {
-    "title": "Test EQ | Desafío de Lectura Emocional - DopaBrain",
-    "description": "Lee escenas emocionales y pon a prueba tu empatía. 10 escenarios interactivos que miden 4 dimensiones de tu EQ."
-  },
-  "accessibility": {
-    "skipMain": "Ir al contenido principal"
-  },
-  "app": {
-    "title": "Test EQ",
-    "subtitle": "Desafío de Lectura Emocional",
-    "heroTitle": "Desafío de Lectura Emocional"
-  },
-  "dim": {
-    "awareness": "Autoconciencia",
-    "empathy": "Empatía",
-    "social": "Habilidades Sociales",
-    "regulation": "Regulación Emocional"
-  },
-  "intro": {
-    "desc": "Lee escenas emocionales, descifra sentimientos ocultos y pon a prueba tu empatía con 10 desafíos interactivos.",
-    "chip1": "10 Rondas",
-    "chip2": "~3 min",
-    "chip3": "4 Dimensiones",
-    "disclaimer": "⚠️ Este test es solo para autoconocimiento y no es una evaluación psicológica oficial.",
-    "start": "Iniciar Desafío"
-  },
-  "types": {
-    "decoder": "Decodificador de Emociones",
-    "decoderDesc": "Lee escenas con emojis e identifica emociones ocultas",
-    "decoderCount": "4 rondas",
-    "response": "Mejor Respuesta",
-    "responseDesc": "Elige la respuesta más empática",
-    "responseCount": "3 rondas",
-    "dilemma": "Dilema Social",
-    "dilemmaDesc": "Navega conflictos con inteligencia emocional",
-    "dilemmaCount": "3 rondas"
-  },
-  "scene1": {
-    "context": "Una mujer se enoja con un hombre. Él se ve asustado. Entonces ella comienza a llorar.",
-    "bubble": "\"Nunca me escuchas...\"",
-    "question": "¿Qué está sintiendo realmente la mujer detrás de su enojo?",
-    "optA": "Solo está enojada y quiere pelear",
-    "optB": "Se siente ignorada y emocionalmente descuidada",
-    "optC": "Intenta manipularlo con lágrimas",
-    "optD": "Está frustrada pero no sabe por qué"
-  },
-  "scene2": {
-    "context": "Un chico sonríe cuando una chica le da un regalo. Pero luego su expresión se queda en blanco.",
-    "bubble": "\"Oh... gracias...\"",
-    "question": "¿Por qué cambió la expresión del chico?",
-    "optA": "No le gustó el regalo y es grosero",
-    "optB": "Está abrumado y procesando sus emociones",
-    "optC": "Se siente culpable porque no le dio nada a ella",
-    "optD": "Está sorprendido e intenta ocultar su emoción"
-  },
-  "scene3": {
-    "context": "Un gerente sonríe en una reunión. Revisa su teléfono y de repente se ve frustrado. Su colega lo nota y se preocupa.",
-    "bubble": "",
-    "question": "¿Qué es lo más probable que le esté pasando al gerente?",
-    "optA": "Recibió malas noticias que rompieron su fachada tranquila",
-    "optB": "Está enojado con su colega sin razón",
-    "optC": "Solo estaba viendo redes sociales y se aburrió",
-    "optD": "Lucha por mantener el control emocional bajo presión profesional"
-  },
-  "scene4": {
-    "context": "Una abuela visita alegremente a su hija. La hija sonríe nerviosa. La expresión de la abuela se entristece.",
-    "bubble": "\"Puedo ver que no estás bien, hija...\"",
-    "question": "¿Qué percibió la abuela?",
-    "optA": "Su hija esconde dolor detrás de una sonrisa falsa, y la abuela lo ve",
-    "optB": "La hija está molesta por la visita inesperada",
-    "optC": "La abuela imagina problemas que no existen",
-    "optD": "La hija está nerviosa por algo que necesita contarle"
-  },
-  "scene5": {
-    "context": "Tu amigo cercano acaba de reprobar un examen importante. Está sentado solo, derrotado.",
-    "bubble": "\"Estudié tanto... No entiendo...\"",
-    "question": "¿Cuál es la mejor respuesta?",
-    "optA": "\"No te preocupes, es solo un examen. ¡La próxima vez aprobarás!\"",
-    "optB": "\"Quizás deberías estudiar diferente la próxima vez.\"",
-    "optC": "\"Debe ser muy frustrante. Estoy aquí si quieres hablar.\"",
-    "optD": "\"Sé lo mucho que te esforzaste. Está bien sentirse decepcionado.\""
-  },
-  "scene6": {
-    "context": "Tu colega está llorando en la sala de descanso después de una ruptura.",
-    "bubble": "\"Perdón, no puedo dejar de llorar...\"",
-    "question": "¿Cuál es la respuesta más emocionalmente inteligente?",
-    "optA": "\"¡Encontrarás a alguien mejor, no llores!\"",
-    "optB": "\"Las rupturas son normales, todos pasan por esto.\"",
-    "optC": "\"¿Quieres dar un paseo? A veces el aire fresco ayuda.\"",
-    "optD": "\"Está bien llorar. Estoy aquí contigo, tómate tu tiempo.\""
-  },
-  "scene7": {
-    "context": "Un empleado nuevo está visiblemente ansioso antes de su primera presentación importante. No para de revisar sus notas.",
-    "bubble": "\"¿Y si arruino todo?\"",
-    "question": "Como colega senior, ¿qué le dices?",
-    "optA": "\"Estarás bien, no lo pienses tanto.\"",
-    "optB": "\"Yo también estaba nervioso en mi primera presentación. Repasemos juntos los puntos clave.\"",
-    "optC": "\"Si no estás preparado, quizás deberías pedir reprogramar.\"",
-    "optD": "\"Imagina que todos están en ropa interior, jaja.\""
-  },
-  "scene8": {
-    "context": "Tu compañero se atribuyó TU idea en una reunión de equipo. Tu jefe la adoró y lo elogió.",
-    "bubble": "",
-    "question": "¿Qué haces?",
-    "optA": "Confrontarlo enojado frente a todos ahora mismo",
-    "optB": "No decir nada pero guardar resentimiento para siempre",
-    "optC": "Después de la reunión, hablar en privado sobre el crédito y enviar tus notas originales al jefe",
-    "optD": "Mencionar casualmente 'Me alegra que al equipo le gustó mi concepto original'"
-  },
-  "scene9": {
-    "context": "Dos miembros del equipo discuten acaloradamente sobre la dirección del proyecto. Todos los demás se sienten incómodos. Tú eres el líder.",
-    "bubble": "",
-    "question": "¿Cómo manejas esto?",
-    "optA": "Elegir el lado con el que estás de acuerdo para terminar rápido",
-    "optB": "Decirles a ambos que dejen de discutir y sigan tu decisión",
-    "optC": "Sugerir un descanso de 5 minutos, luego que cada uno explique su punto calmamente",
-    "optD": "Reconocer ambas perspectivas, encontrar puntos en común y guiar hacia un compromiso que sirva al proyecto"
-  },
-  "scene10": {
-    "context": "Ganaste un premio pero tu amigo cercano que también compitió está visiblemente triste. Otros te felicitan.",
-    "bubble": "",
-    "question": "¿Cuál es la forma más emocionalmente inteligente de actuar?",
-    "optA": "Celebrar a lo grande — te lo ganaste y tu amigo debería alegrarse",
-    "optB": "Minimizar tu victoria para no hacerlo sentir mal",
-    "optC": "Agradecer con gracia, luego hablar con tu amigo en privado",
-    "optD": "Aceptar con gratitud, reconocer públicamente el esfuerzo de tu amigo, y luego acercarte con empatía genuina"
-  },
-  "feedback": {
-    "perfect": "¡Excelente percepción emocional!",
-    "good": "¡Buena lectura!",
-    "okay": "¡No está mal, sigue observando!",
-    "miss": "¡Pregunta difícil!"
-  },
-  "level": {
-    "beginner": "🌱 EQ Principiante",
-    "beginnerDesc": "Estás comenzando tu viaje de inteligencia emocional. Con práctica, puedes mejorar enormemente.",
-    "learner": "📚 EQ Aprendiz",
-    "learnerDesc": "Tu conciencia emocional está creciendo. A veces captas sentimientos profundos y tu empatía se desarrolla.",
-    "skilled": "🎯 EQ Competente",
-    "skilledDesc": "Tienes una inteligencia emocional sólida. Lees la mayoría de situaciones con precisión y respondes con empatía genuina.",
-    "master": "💫 EQ Maestro",
-    "masterDesc": "Tu inteligencia emocional es impresionante. Sientes naturalmente lo que otros sienten y respondes con sabiduría.",
-    "sage": "🧘 EQ Sabio",
-    "sageDesc": "Inteligencia emocional excepcional. Tienes un don raro para comprender las emociones humanas al nivel más profundo."
-  },
-  "tips": {
-    "awareness": "Practica un chequeo emocional 3 veces al día: pausa y nombra exactamente lo que sientes y por qué.",
-    "empathy": "Al escuchar a alguien, enfócate en entender sus sentimientos antes de formular tu respuesta.",
-    "social": "En conflictos, reconoce la perspectiva del otro antes de compartir la tuya.",
-    "regulation": "Cuando surjan emociones fuertes, toma 3 respiraciones profundas antes de responder. Esa pequeña pausa lo cambia todo.",
-    "general": "Lee ficción regularmente — los estudios muestran que mejora significativamente la empatía y la comprensión emocional."
-  },
-  "result": {
-    "dimTitle": "Puntuación por Dimensión",
-    "tipsTitle": "Consejos de Crecimiento",
-    "personalTips": "Consejos Personalizados",
-    "retry": "Intentar de Nuevo",
-    "moreTests": "Explorar más tests",
-    "percentileStat": "Solo el <strong>{percent}%</strong> comparten tu perfil de EQ"
-  },
-  "share": {
-    "copy": "📋 Copiar Enlace",
-    "copied": "¡Copiado!",
-    "twitterText": "Mi EQ: {score}/30 ({level}). ¿Puedes leer mejor las emociones?"
-  },
-  "units": {
-    "pts": "pts"
-  },
-  "premium": {
-    "title": "Análisis Profundo de EQ",
-    "preview": "Obtén un desglose detallado de tus patrones de inteligencia emocional, dinámica de relaciones y una hoja de ruta de crecimiento personalizada basada en tu perfil único de puntuación.",
-    "unlock": "Desbloquear Análisis Profundo 🔓"
-  },
-  "ai": {
-    "strengthsTitle": "Tus Fortalezas de EQ",
-    "strengths": "Tu área más fuerte es {dim} ({pct}%). Esto sugiere que sobresales naturalmente en comprender y navegar situaciones emocionales en este ámbito. Es probable que las personas te vean como alguien especialmente sintonizado en esta área.",
-    "blindspotsTitle": "Oportunidades de Crecimiento",
-    "blindspots": "Tu oportunidad de crecimiento está en {dim} ({pct}%). Esto no significa debilidad — significa potencial sin explotar. La práctica pequeña y constante en esta área puede generar mejoras significativas en tu inteligencia emocional general.",
-    "relTitle": "Patrones de Relación",
-    "relConnector": "En las relaciones, tiendes a ser el conector — sintonizando naturalmente con las necesidades de otros y creando armonía. Cuidado con dar demasiado o descuidar tus propias necesidades emocionales.",
-    "relStable": "En las relaciones, proporcionas estabilidad y calma durante los conflictos. Otros confían en tu compostura. Considera abrirte más emocionalmente para profundizar la intimidad.",
-    "relReflective": "En las relaciones, tu autoconciencia te ayuda a comunicar tus necesidades con claridad. Entiendes bien tus detonantes, lo que previene conflictos innecesarios.",
-    "growthTitle": "Hoja de Ruta de Crecimiento Personalizada",
-    "growthHigh": "Con tu alto EQ, enfócate en ser mentor de otros y aplicar la inteligencia emocional en el liderazgo. Considera explorar prácticas avanzadas de empatía como la toma de perspectiva en contextos culturales diversos.",
-    "growthMid": "Tienes una base sólida de EQ. Para subir de nivel, practica el etiquetado diario de emociones (nombra 3 emociones que sientes cada día), la escucha activa sin planear tu respuesta y la meditación mindfulness para la regulación emocional.",
-    "growthLow": "Tu viaje de EQ apenas comienza — ¡y eso es emocionante! Empieza con la identificación básica de emociones: haz una pausa 3 veces al día y pregúntate \"¿Qué estoy sintiendo ahora?\" Escribe un diario sobre experiencias emocionales para construir autoconciencia."
-  },
-  "related": {
-    "hspTest": "Test HSP",
-    "emotionIceberg": "Iceberg Emocional",
-    "stressCheck": "Control de Estrés",
-    "socialBattery": "Batería Social",
-    "burnoutTest": "Test de Burnout",
-    "stressResponse": "Respuesta al Estrés",
-    "anxietyType": "Tipo de Ansiedad",
-    "attachmentStyle": "Estilo de Apego"
-  }
+﻿{
+    "meta":  {
+                 "title":  "Test EQ | Desafío de Lectura Emocional - DopaBrain",
+                 "description":  "Lee escenas emocionales y pon a prueba tu empatía. 10 escenarios interactivos que miden 4 dimensiones de tu EQ."
+             },
+    "accessibility":  {
+                          "skipMain":  "Ir al contenido principal"
+                      },
+    "app":  {
+                "title":  "Test EQ",
+                "subtitle":  "Desafío de Lectura Emocional",
+                "heroTitle":  "Desafío de Lectura Emocional"
+            },
+    "dim":  {
+                "awareness":  "Autoconciencia",
+                "empathy":  "Empatía",
+                "social":  "Habilidades Sociales",
+                "regulation":  "Regulación Emocional"
+            },
+    "intro":  {
+                  "desc":  "Lee escenas emocionales, descifra sentimientos ocultos y pon a prueba tu empatía con 10 desafíos interactivos.",
+                  "chip1":  "10 Rondas",
+                  "chip2":  "~3 min",
+                  "chip3":  "4 Dimensiones",
+                  "disclaimer":  "⚠️ Este test es solo para autoconocimiento y no es una evaluación psicológica oficial.",
+                  "start":  "Iniciar Desafío"
+              },
+    "types":  {
+                  "decoder":  "Decodificador de Emociones",
+                  "decoderDesc":  "Lee escenas con emojis e identifica emociones ocultas",
+                  "decoderCount":  "4 rondas",
+                  "response":  "Mejor Respuesta",
+                  "responseDesc":  "Elige la respuesta más empática",
+                  "responseCount":  "3 rondas",
+                  "dilemma":  "Dilema Social",
+                  "dilemmaDesc":  "Navega conflictos con inteligencia emocional",
+                  "dilemmaCount":  "3 rondas"
+              },
+    "scene1":  {
+                   "context":  "Una mujer se enoja con un hombre. Él se ve asustado. Entonces ella comienza a llorar.",
+                   "bubble":  "\"Nunca me escuchas...\"",
+                   "question":  "¿Qué está sintiendo realmente la mujer detrás de su enojo?",
+                   "optA":  "Solo está enojada y quiere pelear",
+                   "optB":  "Se siente ignorada y emocionalmente descuidada",
+                   "optC":  "Intenta manipularlo con lágrimas",
+                   "optD":  "Está frustrada pero no sabe por qué"
+               },
+    "scene2":  {
+                   "context":  "Un chico sonríe cuando una chica le da un regalo. Pero luego su expresión se queda en blanco.",
+                   "bubble":  "\"Oh... gracias...\"",
+                   "question":  "¿Por qué cambió la expresión del chico?",
+                   "optA":  "No le gustó el regalo y es grosero",
+                   "optB":  "Está abrumado y procesando sus emociones",
+                   "optC":  "Se siente culpable porque no le dio nada a ella",
+                   "optD":  "Está sorprendido e intenta ocultar su emoción"
+               },
+    "scene3":  {
+                   "context":  "Un gerente sonríe en una reunión. Revisa su teléfono y de repente se ve frustrado. Su colega lo nota y se preocupa.",
+                   "bubble":  "",
+                   "question":  "¿Qué es lo más probable que le esté pasando al gerente?",
+                   "optA":  "Recibió malas noticias que rompieron su fachada tranquila",
+                   "optB":  "Está enojado con su colega sin razón",
+                   "optC":  "Solo estaba viendo redes sociales y se aburrió",
+                   "optD":  "Lucha por mantener el control emocional bajo presión profesional"
+               },
+    "scene4":  {
+                   "context":  "Una abuela visita alegremente a su hija. La hija sonríe nerviosa. La expresión de la abuela se entristece.",
+                   "bubble":  "\"Puedo ver que no estás bien, hija...\"",
+                   "question":  "¿Qué percibió la abuela?",
+                   "optA":  "Su hija esconde dolor detrás de una sonrisa falsa, y la abuela lo ve",
+                   "optB":  "La hija está molesta por la visita inesperada",
+                   "optC":  "La abuela imagina problemas que no existen",
+                   "optD":  "La hija está nerviosa por algo que necesita contarle"
+               },
+    "scene5":  {
+                   "context":  "Tu amigo cercano acaba de reprobar un examen importante. Está sentado solo, derrotado.",
+                   "bubble":  "\"Estudié tanto... No entiendo...\"",
+                   "question":  "¿Cuál es la mejor respuesta?",
+                   "optA":  "\"No te preocupes, es solo un examen. ¡La próxima vez aprobarás!\"",
+                   "optB":  "\"Quizás deberías estudiar diferente la próxima vez.\"",
+                   "optC":  "\"Debe ser muy frustrante. Estoy aquí si quieres hablar.\"",
+                   "optD":  "\"Sé lo mucho que te esforzaste. Está bien sentirse decepcionado.\""
+               },
+    "scene6":  {
+                   "context":  "Tu colega está llorando en la sala de descanso después de una ruptura.",
+                   "bubble":  "\"Perdón, no puedo dejar de llorar...\"",
+                   "question":  "¿Cuál es la respuesta más emocionalmente inteligente?",
+                   "optA":  "\"¡Encontrarás a alguien mejor, no llores!\"",
+                   "optB":  "\"Las rupturas son normales, todos pasan por esto.\"",
+                   "optC":  "\"¿Quieres dar un paseo? A veces el aire fresco ayuda.\"",
+                   "optD":  "\"Está bien llorar. Estoy aquí contigo, tómate tu tiempo.\""
+               },
+    "scene7":  {
+                   "context":  "Un empleado nuevo está visiblemente ansioso antes de su primera presentación importante. No para de revisar sus notas.",
+                   "bubble":  "\"¿Y si arruino todo?\"",
+                   "question":  "Como colega senior, ¿qué le dices?",
+                   "optA":  "\"Estarás bien, no lo pienses tanto.\"",
+                   "optB":  "\"Yo también estaba nervioso en mi primera presentación. Repasemos juntos los puntos clave.\"",
+                   "optC":  "\"Si no estás preparado, quizás deberías pedir reprogramar.\"",
+                   "optD":  "\"Imagina que todos están en ropa interior, jaja.\""
+               },
+    "scene8":  {
+                   "context":  "Tu compañero se atribuyó TU idea en una reunión de equipo. Tu jefe la adoró y lo elogió.",
+                   "bubble":  "",
+                   "question":  "¿Qué haces?",
+                   "optA":  "Confrontarlo enojado frente a todos ahora mismo",
+                   "optB":  "No decir nada pero guardar resentimiento para siempre",
+                   "optC":  "Después de la reunión, hablar en privado sobre el crédito y enviar tus notas originales al jefe",
+                   "optD":  "Mencionar casualmente \u0027Me alegra que al equipo le gustó mi concepto original\u0027"
+               },
+    "scene9":  {
+                   "context":  "Dos miembros del equipo discuten acaloradamente sobre la dirección del proyecto. Todos los demás se sienten incómodos. Tú eres el líder.",
+                   "bubble":  "",
+                   "question":  "¿Cómo manejas esto?",
+                   "optA":  "Elegir el lado con el que estás de acuerdo para terminar rápido",
+                   "optB":  "Decirles a ambos que dejen de discutir y sigan tu decisión",
+                   "optC":  "Sugerir un descanso de 5 minutos, luego que cada uno explique su punto calmamente",
+                   "optD":  "Reconocer ambas perspectivas, encontrar puntos en común y guiar hacia un compromiso que sirva al proyecto"
+               },
+    "scene10":  {
+                    "context":  "Ganaste un premio pero tu amigo cercano que también compitió está visiblemente triste. Otros te felicitan.",
+                    "bubble":  "",
+                    "question":  "¿Cuál es la forma más emocionalmente inteligente de actuar?",
+                    "optA":  "Celebrar a lo grande — te lo ganaste y tu amigo debería alegrarse",
+                    "optB":  "Minimizar tu victoria para no hacerlo sentir mal",
+                    "optC":  "Agradecer con gracia, luego hablar con tu amigo en privado",
+                    "optD":  "Aceptar con gratitud, reconocer públicamente el esfuerzo de tu amigo, y luego acercarte con empatía genuina"
+                },
+    "feedback":  {
+                     "perfect":  "¡Excelente percepción emocional!",
+                     "good":  "¡Buena lectura!",
+                     "okay":  "¡No está mal, sigue observando!",
+                     "miss":  "¡Pregunta difícil!"
+                 },
+    "level":  {
+                  "beginner":  "🌱 EQ Principiante",
+                  "beginnerDesc":  "Estás comenzando tu viaje de inteligencia emocional. Con práctica, puedes mejorar enormemente.",
+                  "learner":  "📚 EQ Aprendiz",
+                  "learnerDesc":  "Tu conciencia emocional está creciendo. A veces captas sentimientos profundos y tu empatía se desarrolla.",
+                  "skilled":  "🎯 EQ Competente",
+                  "skilledDesc":  "Tienes una inteligencia emocional sólida. Lees la mayoría de situaciones con precisión y respondes con empatía genuina.",
+                  "master":  "💫 EQ Maestro",
+                  "masterDesc":  "Tu inteligencia emocional es impresionante. Sientes naturalmente lo que otros sienten y respondes con sabiduría.",
+                  "sage":  "🧘 EQ Sabio",
+                  "sageDesc":  "Inteligencia emocional excepcional. Tienes un don raro para comprender las emociones humanas al nivel más profundo."
+              },
+    "tips":  {
+                 "awareness":  "Practica un chequeo emocional 3 veces al día: pausa y nombra exactamente lo que sientes y por qué.",
+                 "empathy":  "Al escuchar a alguien, enfócate en entender sus sentimientos antes de formular tu respuesta.",
+                 "social":  "En conflictos, reconoce la perspectiva del otro antes de compartir la tuya.",
+                 "regulation":  "Cuando surjan emociones fuertes, toma 3 respiraciones profundas antes de responder. Esa pequeña pausa lo cambia todo.",
+                 "general":  "Lee ficción regularmente — los estudios muestran que mejora significativamente la empatía y la comprensión emocional."
+             },
+    "result":  {
+                   "dimTitle":  "Puntuación por Dimensión",
+                   "tipsTitle":  "Consejos de Crecimiento",
+                   "personalTips":  "Consejos Personalizados",
+                   "retry":  "Intentar de Nuevo",
+                   "moreTests":  "Explorar más tests",
+                   "percentileStat":  "Solo el \u003cstrong\u003e{percent}%\u003c/strong\u003e comparten tu perfil de EQ"
+               },
+    "share":  {
+                  "copy":  "📋 Copiar Enlace",
+                  "copied":  "¡Copiado!",
+                  "twitterText":  "Mi EQ: {score}/30 ({level}). ¿Puedes leer mejor las emociones?"
+              },
+    "units":  {
+                  "pts":  "pts"
+              },
+    "premium":  {
+                    "title":  "Análisis Profundo de EQ",
+                    "preview":  "Obtén un desglose detallado de tus patrones de inteligencia emocional, dinámica de relaciones y una hoja de ruta de crecimiento personalizada basada en tu perfil único de puntuación.",
+                    "unlock":  "Desbloquear mi ruta de EQ",
+                    "previewSecondary":  "Descubre tus puntos ciegos, detonantes relacionales y el hábito de crecimiento que más rápido puede impulsar tu EQ.",
+                    "teaserNote":  "Desbloquéalo justo después de tu puntuación para obtener un siguiente paso claro."
+                },
+    "ai":  {
+               "strengthsTitle":  "Tus Fortalezas de EQ",
+               "strengths":  "Tu área más fuerte es {dim} ({pct}%). Esto sugiere que sobresales naturalmente en comprender y navegar situaciones emocionales en este ámbito. Es probable que las personas te vean como alguien especialmente sintonizado en esta área.",
+               "blindspotsTitle":  "Oportunidades de Crecimiento",
+               "blindspots":  "Tu oportunidad de crecimiento está en {dim} ({pct}%). Esto no significa debilidad — significa potencial sin explotar. La práctica pequeña y constante en esta área puede generar mejoras significativas en tu inteligencia emocional general.",
+               "relTitle":  "Patrones de Relación",
+               "relConnector":  "En las relaciones, tiendes a ser el conector — sintonizando naturalmente con las necesidades de otros y creando armonía. Cuidado con dar demasiado o descuidar tus propias necesidades emocionales.",
+               "relStable":  "En las relaciones, proporcionas estabilidad y calma durante los conflictos. Otros confían en tu compostura. Considera abrirte más emocionalmente para profundizar la intimidad.",
+               "relReflective":  "En las relaciones, tu autoconciencia te ayuda a comunicar tus necesidades con claridad. Entiendes bien tus detonantes, lo que previene conflictos innecesarios.",
+               "growthTitle":  "Hoja de Ruta de Crecimiento Personalizada",
+               "growthHigh":  "Con tu alto EQ, enfócate en ser mentor de otros y aplicar la inteligencia emocional en el liderazgo. Considera explorar prácticas avanzadas de empatía como la toma de perspectiva en contextos culturales diversos.",
+               "growthMid":  "Tienes una base sólida de EQ. Para subir de nivel, practica el etiquetado diario de emociones (nombra 3 emociones que sientes cada día), la escucha activa sin planear tu respuesta y la meditación mindfulness para la regulación emocional.",
+               "growthLow":  "Tu viaje de EQ apenas comienza — ¡y eso es emocionante! Empieza con la identificación básica de emociones: haz una pausa 3 veces al día y pregúntate \"¿Qué estoy sintiendo ahora?\" Escribe un diario sobre experiencias emocionales para construir autoconciencia."
+           },
+    "related":  {
+                    "hspTest":  "Test HSP",
+                    "emotionIceberg":  "Iceberg Emocional",
+                    "stressCheck":  "Control de Estrés",
+                    "socialBattery":  "Batería Social",
+                    "burnoutTest":  "Test de Burnout",
+                    "stressResponse":  "Respuesta al Estrés",
+                    "anxietyType":  "Tipo de Ansiedad",
+                    "attachmentStyle":  "Estilo de Apego",
+                    "digitalDetoxGuide":  "Guía de Detox Digital",
+                    "habitBuildingGuide":  "Guía de Hábitos",
+                    "stressManagementGuide":  "Guía de Manejo del Estrés",
+                    "bloodTypeGuide":  "Guía de Tipo de Sangre"
+                }
 }

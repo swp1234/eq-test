@@ -1,199 +1,205 @@
-{
-  "meta": {
-    "title": "EQ Testi | Duygu Okuma Meydan Okuması - DopaBrain",
-    "description": "Duygusal sahneleri okuyun ve empati yeteneğinizi test edin! 4 EQ boyutunu ölçen 10 interaktif senaryo."
-  },
-  "accessibility": {
-    "skipMain": "Ana içeriğe geç"
-  },
-  "app": {
-    "title": "EQ Testi",
-    "subtitle": "Duygu Okuma Meydan Okuması",
-    "heroTitle": "Duygu Okuma Meydan Okuması"
-  },
-  "dim": {
-    "awareness": "Öz-Farkındalık",
-    "empathy": "Empati",
-    "social": "Sosyal Beceriler",
-    "regulation": "Duygu Düzenleme"
-  },
-  "intro": {
-    "desc": "Duygusal sahneleri okuyun, gizli duyguları çözün ve 10 interaktif meydan okumayla empati yeteneğinizi test edin.",
-    "chip1": "10 Tur",
-    "chip2": "~3 dk",
-    "chip3": "4 Boyut",
-    "disclaimer": "⚠️ Bu test yalnızca kendini anlama amaçlıdır ve resmi bir psikolojik değerlendirme değildir.",
-    "start": "Meydan Okumayı Başlat"
-  },
-  "types": {
-    "decoder": "Duygu Çözücü",
-    "decoderDesc": "Emoji sahnelerini okuyun ve gizli duyguları belirleyin",
-    "decoderCount": "4 tur",
-    "response": "En İyi Yanıt",
-    "responseDesc": "En empatik yanıtı seçin",
-    "responseCount": "3 tur",
-    "dilemma": "Sosyal İkilem",
-    "dilemmaDesc": "Duygusal zekayla çatışmaları yönetin",
-    "dilemmaCount": "3 tur"
-  },
-  "scene1": {
-    "context": "Bir kadın erkeğe kızar. Adam korkmuş görünür. Sonra kadın ağlamaya başlar.",
-    "bubble": "\"Beni hiç dinlemiyorsun...\"",
-    "question": "Kadın öfkesinin altında gerçekte ne hissediyor?",
-    "optA": "Sadece kızgın ve kavga etmek istiyor",
-    "optB": "Duyulmadığını ve duygusal olarak ihmal edildiğini hissediyor",
-    "optC": "Gözyaşlarıyla onu manipüle etmeye çalışıyor",
-    "optD": "Hayal kırıklığı yaşıyor ama nedenini bilmiyor"
-  },
-  "scene2": {
-    "context": "Kız hediye verince erkek çocuk gülümser. Ama sonra ifadesi boşalır.",
-    "bubble": "\"Ah... teşekkürler...\"",
-    "question": "Erkek çocuğun ifadesi neden değişti?",
-    "optA": "Hediyeyi beğenmedi ve kaba davranıyor",
-    "optB": "Duygularla boğulmuş ve işliyor",
-    "optC": "Ona bir şey almadığı için suçlu hissediyor",
-    "optD": "Şaşırmış ve heyecanını gizlemeye çalışıyor"
-  },
-  "scene3": {
-    "context": "Bir yönetici toplantıda gülümsüyor. Telefonunu kontrol eder ve aniden sinirli görünür. Meslektaşı fark eder ve endişeli görünür.",
-    "bubble": "",
-    "question": "Yöneticiye ne oluyor olabilir?",
-    "optA": "Kötü haberler sakin görünümünü bozdu",
-    "optB": "Nedensiz yere meslektaşına kızgın",
-    "optC": "Sadece sosyal medyaya bakıyordu ve sıkıldı",
-    "optD": "Profesyonel baskı altında duygusal kontrolü sürdürmekte zorlanıyor"
-  },
-  "scene4": {
-    "context": "Büyükanne neşeyle kızını ziyaret eder. Kızı gergin bir şekilde gülümser. Büyükannenin yüzü hüzünlenir.",
-    "bubble": "\"İyi olmadığını görebiliyorum, canım...\"",
-    "question": "Büyükanne ne hissetti?",
-    "optA": "Kızı sahte gülümsemenin ardında acı saklıyor ve büyükanne bunu görüyor",
-    "optB": "Kızı beklenmedik ziyaretten rahatsız oldu",
-    "optC": "Büyükanne olmayan sorunlar hayal ediyor",
-    "optD": "Kızı annesine söylemesi gereken bir şey olduğu için gergin"
-  },
-  "scene5": {
-    "context": "Yakın arkadaşınız önemli bir sınavda başarısız oldu. Yenilmiş bir şekilde yalnız oturuyor.",
-    "bubble": "\"Çok çalıştım... Anlamıyorum...\"",
-    "question": "En iyi yanıt nedir?",
-    "optA": "\"Endişelenme, sadece bir sınav. Bir dahakine geçersin!\"",
-    "optB": "\"Belki farklı bir şekilde çalışmalısın.\"",
-    "optC": "\"Çok sinir bozucu olmalı. Konuşmak istersen buradayım.\"",
-    "optD": "\"Ne kadar çok çalıştığını biliyorum. Hayal kırıklığı hissetmen normal.\""
-  },
-  "scene6": {
-    "context": "İş arkadaşınız bir ayrılığın ardından dinlenme odasında ağlıyor.",
-    "bubble": "\"Özür dilerim, gözyaşlarımı durduramıyorum...\"",
-    "question": "Duygusal olarak en zeki yanıt hangisi?",
-    "optA": "\"Daha iyisini bulursun, ağlama!\"",
-    "optB": "\"Ayrılıklar normal, herkes yaşar.\"",
-    "optC": "\"Yürüyüşe çıkmak ister misin? Bazen temiz hava iyi gelir.\"",
-    "optD": "\"Ağlamak normal. Yanındayım, acele etme.\""
-  },
-  "scene7": {
-    "context": "Yeni çalışan ilk büyük sunumundan önce belirgin şekilde tedirgin. Sürekli notlarını kontrol ediyor.",
-    "bubble": "\"Ya her şeyi mahvedersem?\"",
-    "question": "Kıdemli meslektaş olarak ne dersiniz?",
-    "optA": "\"İyi olacaksın, fazla düşünme.\"",
-    "optB": "\"Ben de ilk sunumumda gerginim. Gel birlikte ana noktaları gözden geçirelim.\"",
-    "optC": "\"Hazır değilsen belki ertelemeyi isteyebilirsin.\"",
-    "optD": "\"Herkesin iç çamaşırlarıyla oturduğunu hayal et, haha.\""
-  },
-  "scene8": {
-    "context": "İş arkadaşınız ekip toplantısında SİZİN fikrinizi kendisininmiş gibi sundu. Patronunuz çok beğendi.",
-    "bubble": "",
-    "question": "Ne yaparsınız?",
-    "optA": "Herkesin önünde öfkeyle yüzleşmek",
-    "optB": "Hiçbir şey söylememek ama içten içe kin beslemek",
-    "optC": "Toplantıdan sonra özel olarak kredi konusunu konuşmak, ardından orijinal notları patrona e-posta ile göndermek",
-    "optD": "Doğal bir şekilde 'Ekibin orijinal konseptimi beğenmesine sevindim' demek"
-  },
-  "scene9": {
-    "context": "İki ekip üyesi proje yönü hakkında sert tartışıyor. Diğerleri rahatsız. Siz ekip lidersiniz.",
-    "bubble": "",
-    "question": "Bunu nasıl ele alırsınız?",
-    "optA": "Katıldığınız tarafı seçip tartışmayı hızla bitirmek",
-    "optB": "İkisine de tartışmayı bırakmalarını ve kararınıza uymalarını söylemek",
-    "optC": "5 dakikalık mola önermek, sonra herkesin sakin bir şekilde görüşünü açıklamasını sağlamak",
-    "optD": "Her iki bakış açısını kabul etmek, ortak nokta bulmak ve projeye hizmet eden bir uzlaşıya yönlendirmek"
-  },
-  "scene10": {
-    "context": "Ödül kazandınız ama yarışan yakın arkadaşınız üzgün görünüyor. Herkes sizi tebrik ediyor.",
-    "bubble": "",
-    "question": "Duygusal olarak en zeki davranış nedir?",
-    "optA": "Coşkuyla kutlamak — hak ettiniz ve arkadaşınız mutlu olmalı",
-    "optB": "Arkadaşınızı üzmemek için kazancınızı küçümsemek",
-    "optC": "Nezaketle kabul etmek, sonra arkadaşınızı özel olarak kontrol etmek",
-    "optD": "Minnetle kabul etmek, arkadaşınızın çabasını alenen takdir etmek ve özel olarak içten empati göstermek"
-  },
-  "feedback": {
-    "perfect": "Mükemmel duygusal içgörü!",
-    "good": "İyi okuma!",
-    "okay": "Fena değil, gözlemlemeye devam!",
-    "miss": "Zor bir soruydu!"
-  },
-  "level": {
-    "beginner": "🌱 EQ Başlangıç",
-    "beginnerDesc": "Duygusal zeka yolculuğunuza başlıyorsunuz. Pratikle duygu okuma yeteneğiniz büyük ölçüde gelişebilir.",
-    "learner": "📚 EQ Öğrenci",
-    "learnerDesc": "Duygu farkındalığınız büyüyor. Bazen derin duyguları yakalıyorsunuz ve empatiniz gelişiyor.",
-    "skilled": "🎯 EQ Yetenekli",
-    "skilledDesc": "Sağlam bir duygusal zekaya sahipsiniz. Çoğu durumu doğru okuyup gerçek empatiyle yanıt veriyorsunuz.",
-    "master": "💫 EQ Usta",
-    "masterDesc": "Duygusal zekanız etkileyici. Doğal olarak başkalarının duygularını hissedip bilgelikle yanıt veriyorsunuz.",
-    "sage": "🧘 EQ Bilge",
-    "sageDesc": "Olağanüstü duygusal zeka. İnsan duygularını en derin düzeyde anlama konusunda nadir bir yeteneğe sahipsiniz."
-  },
-  "tips": {
-    "awareness": "Günde 3 kez duygu kontrolü yapın: durun ve tam olarak ne hissettiğinizi ve nedenini adlandırın.",
-    "empathy": "Birini dinlerken, yanıtınızı oluşturmadan önce duygularını anlamaya odaklanın.",
-    "social": "Çatışmalarda kendi görüşünüzü paylaşmadan önce karşı tarafın bakış açısını kabul edin.",
-    "regulation": "Güçlü duygular yükseldiğinde yanıt vermeden önce 3 derin nefes alın. Bu küçük duraklama her şeyi değiştirir.",
-    "general": "Düzenli olarak kurgu okuyun — araştırmalar empati ve duygusal anlayışı önemli ölçüde geliştirdiğini gösteriyor."
-  },
-  "result": {
-    "dimTitle": "Boyut Puanları",
-    "tipsTitle": "Gelişim İpuçları",
-    "personalTips": "Kişisel İpuçları",
-    "retry": "Tekrar Dene",
-    "moreTests": "Daha fazla test keşfet",
-    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>''i senin EQ profiline sahip"
-  },
-  "share": {
-    "copy": "📋 Bağlantıyı Kopyala",
-    "copied": "Kopyalandı!",
-    "twitterText": "EQ'm: {score}/30 ({level})! Duyguları daha iyi okuyabilir misin?"
-  },
-  "units": {
-    "pts": "puan"
-  },
-  "premium": {
-    "title": "EQ Derinlemesine Analiz",
-    "preview": "Benzersiz puan profilinize dayalı olarak duygusal zeka kalıplarınızın, ilişki dinamiklerinizin ve kişiselleştirilmiş gelişim yol haritanızın detaylı analizini alın.",
-    "unlock": "Derin Analizi Aç 🔓"
-  },
-  "ai": {
-    "strengthsTitle": "EQ Güçlü Yönleriniz",
-    "strengths": "En güçlü alanınız {dim} ({pct}%). Bu, bu alanda duygusal durumları anlamakta ve yönetmekte doğal olarak üstün olduğunuzu gösterir. İnsanlar muhtemelen sizi bu alanda özellikle duyarlı biri olarak görüyor.",
-    "blindspotsTitle": "Gelişim Fırsatları",
-    "blindspots": "Gelişim fırsatınız {dim} ({pct}%) alanında. Bu bir zayıflık değil — henüz kullanılmamış potansiyel demektir. Bu alanda küçük ama tutarlı pratik, genel duygusal zekanızda önemli gelişmeler sağlayabilir.",
-    "relTitle": "İlişki Kalıpları",
-    "relConnector": "İlişkilerde bağlayıcı rolü üstlenme eğilimindesiniz — doğal olarak başkalarının ihtiyaçlarına uyum sağlar ve uyum yaratırsınız. Aşırı vericilik veya kendi duygusal ihtiyaçlarınızı ihmal etmeye dikkat edin.",
-    "relStable": "İlişkilerde çatışma sırasında istikrar ve sakinlik sağlarsınız. Başkaları soğukkanlılığınıza güvenir. Yakınlığı derinleştirmek için duygusal olarak daha açık olmayı düşünün.",
-    "relReflective": "İlişkilerde öz farkındalığınız ihtiyaçlarınızı net bir şekilde iletmenize yardımcı olur. Tetikleyicilerinizi iyi anlarsınız, bu da gereksiz çatışmaları önler.",
-    "growthTitle": "Kişiselleştirilmiş Gelişim Yol Haritası",
-    "growthHigh": "Yüksek EQ'nuzla başkalarına mentorluk yapmaya ve liderlikte duygusal zekayı uygulamaya odaklanın. Farklı kültürel bağlamlarda perspektif değiştirme gibi ileri düzey empati uygulamalarını keşfedin.",
-    "growthMid": "Sağlam bir EQ temeliniz var. Seviye atlamak için günlük duygu etiketleme (her gün 3 duyguya isim verin), yanıt planlamadan aktif dinleme ve duygusal düzenleme için farkındalık meditasyonu pratik yapın.",
-    "growthLow": "EQ yolculuğunuz yeni başlıyor — ve bu heyecan verici! Temel duygu tanımlamayla başlayın: günde 3 kez durun ve \"Şu anda ne hissediyorum?\" diye sorun. Öz farkındalık oluşturmak için duygusal deneyimlerinizi günlüğe yazın."
-  },
-  "related": {
-    "hspTest": "HSP Testi",
-    "emotionIceberg": "Duygu Buzdağı",
-    "stressCheck": "Stres Kontrolü",
-    "socialBattery": "Sosyal Batarya",
-    "burnoutTest": "Tükenmişlik Testi",
-    "stressResponse": "Stres Tepkisi",
-    "anxietyType": "Kaygı Tipi",
-    "attachmentStyle": "Bağlanma Stili"
-  }
+﻿{
+    "meta":  {
+                 "title":  "EQ Testi | Duygu Okuma Meydan Okuması - DopaBrain",
+                 "description":  "Duygusal sahneleri okuyun ve empati yeteneğinizi test edin! 4 EQ boyutunu ölçen 10 interaktif senaryo."
+             },
+    "accessibility":  {
+                          "skipMain":  "Ana içeriğe geç"
+                      },
+    "app":  {
+                "title":  "EQ Testi",
+                "subtitle":  "Duygu Okuma Meydan Okuması",
+                "heroTitle":  "Duygu Okuma Meydan Okuması"
+            },
+    "dim":  {
+                "awareness":  "Öz-Farkındalık",
+                "empathy":  "Empati",
+                "social":  "Sosyal Beceriler",
+                "regulation":  "Duygu Düzenleme"
+            },
+    "intro":  {
+                  "desc":  "Duygusal sahneleri okuyun, gizli duyguları çözün ve 10 interaktif meydan okumayla empati yeteneğinizi test edin.",
+                  "chip1":  "10 Tur",
+                  "chip2":  "~3 dk",
+                  "chip3":  "4 Boyut",
+                  "disclaimer":  "⚠️ Bu test yalnızca kendini anlama amaçlıdır ve resmi bir psikolojik değerlendirme değildir.",
+                  "start":  "Meydan Okumayı Başlat"
+              },
+    "types":  {
+                  "decoder":  "Duygu Çözücü",
+                  "decoderDesc":  "Emoji sahnelerini okuyun ve gizli duyguları belirleyin",
+                  "decoderCount":  "4 tur",
+                  "response":  "En İyi Yanıt",
+                  "responseDesc":  "En empatik yanıtı seçin",
+                  "responseCount":  "3 tur",
+                  "dilemma":  "Sosyal İkilem",
+                  "dilemmaDesc":  "Duygusal zekayla çatışmaları yönetin",
+                  "dilemmaCount":  "3 tur"
+              },
+    "scene1":  {
+                   "context":  "Bir kadın erkeğe kızar. Adam korkmuş görünür. Sonra kadın ağlamaya başlar.",
+                   "bubble":  "\"Beni hiç dinlemiyorsun...\"",
+                   "question":  "Kadın öfkesinin altında gerçekte ne hissediyor?",
+                   "optA":  "Sadece kızgın ve kavga etmek istiyor",
+                   "optB":  "Duyulmadığını ve duygusal olarak ihmal edildiğini hissediyor",
+                   "optC":  "Gözyaşlarıyla onu manipüle etmeye çalışıyor",
+                   "optD":  "Hayal kırıklığı yaşıyor ama nedenini bilmiyor"
+               },
+    "scene2":  {
+                   "context":  "Kız hediye verince erkek çocuk gülümser. Ama sonra ifadesi boşalır.",
+                   "bubble":  "\"Ah... teşekkürler...\"",
+                   "question":  "Erkek çocuğun ifadesi neden değişti?",
+                   "optA":  "Hediyeyi beğenmedi ve kaba davranıyor",
+                   "optB":  "Duygularla boğulmuş ve işliyor",
+                   "optC":  "Ona bir şey almadığı için suçlu hissediyor",
+                   "optD":  "Şaşırmış ve heyecanını gizlemeye çalışıyor"
+               },
+    "scene3":  {
+                   "context":  "Bir yönetici toplantıda gülümsüyor. Telefonunu kontrol eder ve aniden sinirli görünür. Meslektaşı fark eder ve endişeli görünür.",
+                   "bubble":  "",
+                   "question":  "Yöneticiye ne oluyor olabilir?",
+                   "optA":  "Kötü haberler sakin görünümünü bozdu",
+                   "optB":  "Nedensiz yere meslektaşına kızgın",
+                   "optC":  "Sadece sosyal medyaya bakıyordu ve sıkıldı",
+                   "optD":  "Profesyonel baskı altında duygusal kontrolü sürdürmekte zorlanıyor"
+               },
+    "scene4":  {
+                   "context":  "Büyükanne neşeyle kızını ziyaret eder. Kızı gergin bir şekilde gülümser. Büyükannenin yüzü hüzünlenir.",
+                   "bubble":  "\"İyi olmadığını görebiliyorum, canım...\"",
+                   "question":  "Büyükanne ne hissetti?",
+                   "optA":  "Kızı sahte gülümsemenin ardında acı saklıyor ve büyükanne bunu görüyor",
+                   "optB":  "Kızı beklenmedik ziyaretten rahatsız oldu",
+                   "optC":  "Büyükanne olmayan sorunlar hayal ediyor",
+                   "optD":  "Kızı annesine söylemesi gereken bir şey olduğu için gergin"
+               },
+    "scene5":  {
+                   "context":  "Yakın arkadaşınız önemli bir sınavda başarısız oldu. Yenilmiş bir şekilde yalnız oturuyor.",
+                   "bubble":  "\"Çok çalıştım... Anlamıyorum...\"",
+                   "question":  "En iyi yanıt nedir?",
+                   "optA":  "\"Endişelenme, sadece bir sınav. Bir dahakine geçersin!\"",
+                   "optB":  "\"Belki farklı bir şekilde çalışmalısın.\"",
+                   "optC":  "\"Çok sinir bozucu olmalı. Konuşmak istersen buradayım.\"",
+                   "optD":  "\"Ne kadar çok çalıştığını biliyorum. Hayal kırıklığı hissetmen normal.\""
+               },
+    "scene6":  {
+                   "context":  "İş arkadaşınız bir ayrılığın ardından dinlenme odasında ağlıyor.",
+                   "bubble":  "\"Özür dilerim, gözyaşlarımı durduramıyorum...\"",
+                   "question":  "Duygusal olarak en zeki yanıt hangisi?",
+                   "optA":  "\"Daha iyisini bulursun, ağlama!\"",
+                   "optB":  "\"Ayrılıklar normal, herkes yaşar.\"",
+                   "optC":  "\"Yürüyüşe çıkmak ister misin? Bazen temiz hava iyi gelir.\"",
+                   "optD":  "\"Ağlamak normal. Yanındayım, acele etme.\""
+               },
+    "scene7":  {
+                   "context":  "Yeni çalışan ilk büyük sunumundan önce belirgin şekilde tedirgin. Sürekli notlarını kontrol ediyor.",
+                   "bubble":  "\"Ya her şeyi mahvedersem?\"",
+                   "question":  "Kıdemli meslektaş olarak ne dersiniz?",
+                   "optA":  "\"İyi olacaksın, fazla düşünme.\"",
+                   "optB":  "\"Ben de ilk sunumumda gerginim. Gel birlikte ana noktaları gözden geçirelim.\"",
+                   "optC":  "\"Hazır değilsen belki ertelemeyi isteyebilirsin.\"",
+                   "optD":  "\"Herkesin iç çamaşırlarıyla oturduğunu hayal et, haha.\""
+               },
+    "scene8":  {
+                   "context":  "İş arkadaşınız ekip toplantısında SİZİN fikrinizi kendisininmiş gibi sundu. Patronunuz çok beğendi.",
+                   "bubble":  "",
+                   "question":  "Ne yaparsınız?",
+                   "optA":  "Herkesin önünde öfkeyle yüzleşmek",
+                   "optB":  "Hiçbir şey söylememek ama içten içe kin beslemek",
+                   "optC":  "Toplantıdan sonra özel olarak kredi konusunu konuşmak, ardından orijinal notları patrona e-posta ile göndermek",
+                   "optD":  "Doğal bir şekilde \u0027Ekibin orijinal konseptimi beğenmesine sevindim\u0027 demek"
+               },
+    "scene9":  {
+                   "context":  "İki ekip üyesi proje yönü hakkında sert tartışıyor. Diğerleri rahatsız. Siz ekip lidersiniz.",
+                   "bubble":  "",
+                   "question":  "Bunu nasıl ele alırsınız?",
+                   "optA":  "Katıldığınız tarafı seçip tartışmayı hızla bitirmek",
+                   "optB":  "İkisine de tartışmayı bırakmalarını ve kararınıza uymalarını söylemek",
+                   "optC":  "5 dakikalık mola önermek, sonra herkesin sakin bir şekilde görüşünü açıklamasını sağlamak",
+                   "optD":  "Her iki bakış açısını kabul etmek, ortak nokta bulmak ve projeye hizmet eden bir uzlaşıya yönlendirmek"
+               },
+    "scene10":  {
+                    "context":  "Ödül kazandınız ama yarışan yakın arkadaşınız üzgün görünüyor. Herkes sizi tebrik ediyor.",
+                    "bubble":  "",
+                    "question":  "Duygusal olarak en zeki davranış nedir?",
+                    "optA":  "Coşkuyla kutlamak — hak ettiniz ve arkadaşınız mutlu olmalı",
+                    "optB":  "Arkadaşınızı üzmemek için kazancınızı küçümsemek",
+                    "optC":  "Nezaketle kabul etmek, sonra arkadaşınızı özel olarak kontrol etmek",
+                    "optD":  "Minnetle kabul etmek, arkadaşınızın çabasını alenen takdir etmek ve özel olarak içten empati göstermek"
+                },
+    "feedback":  {
+                     "perfect":  "Mükemmel duygusal içgörü!",
+                     "good":  "İyi okuma!",
+                     "okay":  "Fena değil, gözlemlemeye devam!",
+                     "miss":  "Zor bir soruydu!"
+                 },
+    "level":  {
+                  "beginner":  "🌱 EQ Başlangıç",
+                  "beginnerDesc":  "Duygusal zeka yolculuğunuza başlıyorsunuz. Pratikle duygu okuma yeteneğiniz büyük ölçüde gelişebilir.",
+                  "learner":  "📚 EQ Öğrenci",
+                  "learnerDesc":  "Duygu farkındalığınız büyüyor. Bazen derin duyguları yakalıyorsunuz ve empatiniz gelişiyor.",
+                  "skilled":  "🎯 EQ Yetenekli",
+                  "skilledDesc":  "Sağlam bir duygusal zekaya sahipsiniz. Çoğu durumu doğru okuyup gerçek empatiyle yanıt veriyorsunuz.",
+                  "master":  "💫 EQ Usta",
+                  "masterDesc":  "Duygusal zekanız etkileyici. Doğal olarak başkalarının duygularını hissedip bilgelikle yanıt veriyorsunuz.",
+                  "sage":  "🧘 EQ Bilge",
+                  "sageDesc":  "Olağanüstü duygusal zeka. İnsan duygularını en derin düzeyde anlama konusunda nadir bir yeteneğe sahipsiniz."
+              },
+    "tips":  {
+                 "awareness":  "Günde 3 kez duygu kontrolü yapın: durun ve tam olarak ne hissettiğinizi ve nedenini adlandırın.",
+                 "empathy":  "Birini dinlerken, yanıtınızı oluşturmadan önce duygularını anlamaya odaklanın.",
+                 "social":  "Çatışmalarda kendi görüşünüzü paylaşmadan önce karşı tarafın bakış açısını kabul edin.",
+                 "regulation":  "Güçlü duygular yükseldiğinde yanıt vermeden önce 3 derin nefes alın. Bu küçük duraklama her şeyi değiştirir.",
+                 "general":  "Düzenli olarak kurgu okuyun — araştırmalar empati ve duygusal anlayışı önemli ölçüde geliştirdiğini gösteriyor."
+             },
+    "result":  {
+                   "dimTitle":  "Boyut Puanları",
+                   "tipsTitle":  "Gelişim İpuçları",
+                   "personalTips":  "Kişisel İpuçları",
+                   "retry":  "Tekrar Dene",
+                   "moreTests":  "Daha fazla test keşfet",
+                   "percentileStat":  "Katılımcıların sadece \u003cstrong\u003e{percent}%\u003c/strong\u003e\u0027\u0027i senin EQ profiline sahip"
+               },
+    "share":  {
+                  "copy":  "📋 Bağlantıyı Kopyala",
+                  "copied":  "Kopyalandı!",
+                  "twitterText":  "EQ\u0027m: {score}/30 ({level})! Duyguları daha iyi okuyabilir misin?"
+              },
+    "units":  {
+                  "pts":  "puan"
+              },
+    "premium":  {
+                    "title":  "EQ Derinlemesine Analiz",
+                    "preview":  "Benzersiz puan profilinize dayalı olarak duygusal zeka kalıplarınızın, ilişki dinamiklerinizin ve kişiselleştirilmiş gelişim yol haritanızın detaylı analizini alın.",
+                    "unlock":  "EQ yol haritamı aç",
+                    "previewSecondary":  "Kör noktalarınızı, ilişki tetikleyicilerinizi ve EQ\u0027nuzu en hızlı ileri taşıyacak tek gelişim alışkanlığını görün.",
+                    "teaserNote":  "Puanınız çıkar çıkmaz açın ve net bir sonraki adımı hemen görün."
+                },
+    "ai":  {
+               "strengthsTitle":  "EQ Güçlü Yönleriniz",
+               "strengths":  "En güçlü alanınız {dim} ({pct}%). Bu, bu alanda duygusal durumları anlamakta ve yönetmekte doğal olarak üstün olduğunuzu gösterir. İnsanlar muhtemelen sizi bu alanda özellikle duyarlı biri olarak görüyor.",
+               "blindspotsTitle":  "Gelişim Fırsatları",
+               "blindspots":  "Gelişim fırsatınız {dim} ({pct}%) alanında. Bu bir zayıflık değil — henüz kullanılmamış potansiyel demektir. Bu alanda küçük ama tutarlı pratik, genel duygusal zekanızda önemli gelişmeler sağlayabilir.",
+               "relTitle":  "İlişki Kalıpları",
+               "relConnector":  "İlişkilerde bağlayıcı rolü üstlenme eğilimindesiniz — doğal olarak başkalarının ihtiyaçlarına uyum sağlar ve uyum yaratırsınız. Aşırı vericilik veya kendi duygusal ihtiyaçlarınızı ihmal etmeye dikkat edin.",
+               "relStable":  "İlişkilerde çatışma sırasında istikrar ve sakinlik sağlarsınız. Başkaları soğukkanlılığınıza güvenir. Yakınlığı derinleştirmek için duygusal olarak daha açık olmayı düşünün.",
+               "relReflective":  "İlişkilerde öz farkındalığınız ihtiyaçlarınızı net bir şekilde iletmenize yardımcı olur. Tetikleyicilerinizi iyi anlarsınız, bu da gereksiz çatışmaları önler.",
+               "growthTitle":  "Kişiselleştirilmiş Gelişim Yol Haritası",
+               "growthHigh":  "Yüksek EQ\u0027nuzla başkalarına mentorluk yapmaya ve liderlikte duygusal zekayı uygulamaya odaklanın. Farklı kültürel bağlamlarda perspektif değiştirme gibi ileri düzey empati uygulamalarını keşfedin.",
+               "growthMid":  "Sağlam bir EQ temeliniz var. Seviye atlamak için günlük duygu etiketleme (her gün 3 duyguya isim verin), yanıt planlamadan aktif dinleme ve duygusal düzenleme için farkındalık meditasyonu pratik yapın.",
+               "growthLow":  "EQ yolculuğunuz yeni başlıyor — ve bu heyecan verici! Temel duygu tanımlamayla başlayın: günde 3 kez durun ve \"Şu anda ne hissediyorum?\" diye sorun. Öz farkındalık oluşturmak için duygusal deneyimlerinizi günlüğe yazın."
+           },
+    "related":  {
+                    "hspTest":  "HSP Testi",
+                    "emotionIceberg":  "Duygu Buzdağı",
+                    "stressCheck":  "Stres Kontrolü",
+                    "socialBattery":  "Sosyal Batarya",
+                    "burnoutTest":  "Tükenmişlik Testi",
+                    "stressResponse":  "Stres Tepkisi",
+                    "anxietyType":  "Kaygı Tipi",
+                    "attachmentStyle":  "Bağlanma Stili",
+                    "digitalDetoxGuide":  "Dijital Detoks Rehberi",
+                    "habitBuildingGuide":  "Alışkanlık Kurma Rehberi",
+                    "stressManagementGuide":  "Stres Yönetimi Rehberi",
+                    "bloodTypeGuide":  "Kan Grubu Rehberi"
+                }
 }

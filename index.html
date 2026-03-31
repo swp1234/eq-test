@@ -995,6 +995,7 @@
     .ai-analysis-header { display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 14px; }
     .ai-badge { background: linear-gradient(135deg, #00bcd4, #7c3aed); color: #fff; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 800; letter-spacing: 1px; }
     .ai-preview-text { font-size: 14px; color: var(--text-dim); line-height: 1.6; margin-bottom: 14px; }
+    .ai-preview-note { font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 4px; padding-top: 12px; border-top: 1px solid var(--border); }
     .btn-ai-unlock { width: 100%; padding: 14px; background: linear-gradient(135deg, #00bcd4, #7c3aed); color: #fff; border: none; border-radius: 12px; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.3s; min-height: 48px; }
     .btn-ai-unlock:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,188,212,0.3); }
     .btn-ai-unlock:disabled { opacity: 0.78; cursor: wait; transform: none; box-shadow: none; }
@@ -1184,15 +1185,6 @@
       <p class="section-title" data-i18n="result.dimTitle">Dimension Scores</p>
       <div class="dim-bars" id="dim-bars"></div>
 
-      <p class="section-title" data-i18n="result.tipsTitle">Growth Tips</p>
-      <div class="tips-card" id="tips-card">
-        <div class="tips-card-header">
-          <span>&#128161;</span>
-          <span data-i18n="result.personalTips">Personalized Tips</span>
-        </div>
-        <ul class="tips-list" id="tips-list"></ul>
-      </div>
-
       <!-- AI Deep Analysis -->
       <div class="ai-analysis-card" id="ai-analysis-card">
         <div class="ai-analysis-header">
@@ -1201,7 +1193,8 @@
         </div>
         <div class="ai-analysis-preview hidden" id="ai-preview">
           <p class="ai-preview-text" data-i18n="premium.preview">Get a detailed breakdown of your emotional intelligence profile including strengths, blind spots, relationship patterns, and personalized growth roadmap.</p>
-          <p class="ai-preview-text">Unlock the fuller report to see your blind spots, relationship triggers, and next-growth plan.</p>
+          <p class="ai-preview-text" data-i18n="premium.previewSecondary">Unlock the fuller report to see your blind spots, relationship triggers, and next-growth plan.</p>
+          <p class="ai-preview-note" data-i18n="premium.teaserNote">Unlock after your score to turn insight into a simple next-step plan.</p>
           <button class="btn-ai-unlock hidden" id="btn-ai-unlock" data-i18n="premium.unlock">Unlock Deep Analysis &#x1F513;</button>
         </div>
         <div class="ai-analysis-content" id="ai-content">
@@ -1210,6 +1203,15 @@
           <div class="ai-section" id="ai-relationships"></div>
           <div class="ai-section" id="ai-growth"></div>
         </div>
+      </div>
+
+      <p class="section-title" data-i18n="result.tipsTitle">Growth Tips</p>
+      <div class="tips-card" id="tips-card">
+        <div class="tips-card-header">
+          <span>&#128161;</span>
+          <span data-i18n="result.personalTips">Personalized Tips</span>
+        </div>
+        <ul class="tips-list" id="tips-list"></ul>
       </div>
 
       <div class="share-row">
@@ -1234,6 +1236,22 @@
       <div class="related-tests">
         <h3 data-i18n="result.moreTests">Explore More Tests</h3>
         <div class="related-grid">
+          <a href="/portal/blog/en/digital-detox.html" class="related-card" data-blog-key="digital-detox" style="--card-color: #6366f1">
+            <span class="related-emoji">&#127807;</span>
+            <span class="related-name" data-i18n="related.digitalDetoxGuide">Digital Detox Guide</span>
+          </a>
+          <a href="/portal/blog/en/habit-building.html" class="related-card" data-blog-key="habit-building" style="--card-color: #10b981">
+            <span class="related-emoji">&#128200;</span>
+            <span class="related-name" data-i18n="related.habitBuildingGuide">Habit Building Guide</span>
+          </a>
+          <a href="/portal/blog/en/stress-management-techniques-guide.html" class="related-card" data-blog-key="stress-management-techniques-guide" style="--card-color: #f97316">
+            <span class="related-emoji">&#128218;</span>
+            <span class="related-name" data-i18n="related.stressManagementGuide">Stress Management Guide</span>
+          </a>
+          <a href="/portal/blog/en/blood-type-personality-guide.html" class="related-card" data-blog-key="blood-type-personality-guide" style="--card-color: #e74c3c">
+            <span class="related-emoji">&#129656;</span>
+            <span class="related-name" data-i18n="related.bloodTypeGuide">Blood Type Guide</span>
+          </a>
           <a href="/hsp-test/" class="related-card" style="--card-color: #7c3aed">
             <span class="related-emoji">🧠</span>
             <span class="related-name" data-i18n="related.hspTest">HSP Test</span>
@@ -1250,10 +1268,6 @@
             <span class="related-emoji">💕</span>
             <span class="related-name" data-i18n="related.attachmentStyle">Attachment Style</span>
           </a>
-          <a href="/blood-type/" class="related-card" style="--card-color: #e74c3c">
-            <span class="related-emoji">&#129656;</span>
-            <span class="related-name">Blood Type Personality</span>
-          </a>
           <a href="/dopamine-type/" class="related-card" style="--card-color: #f59e0b">
             <span class="related-emoji">&#9889;</span>
             <span class="related-name">Dopamine Type</span>
@@ -1269,10 +1283,6 @@
           <a href="/toxic-trait-test/" class="related-card" style="--card-color: #e11d48">
             <span class="related-emoji">&#128128;</span>
             <span class="related-name">Toxic Trait Test</span>
-          </a>
-          <a href="/portal/blog/en/stress-management-techniques-guide.html" class="related-card" style="--card-color: #f97316">
-            <span class="related-emoji">&#128218;</span>
-            <span class="related-name">Stress Management Guide</span>
           </a>
           <a href="/anxiety-type/" class="related-card" style="--card-color: #10b981">
             <span class="related-emoji">&#127744;</span>
@@ -1591,6 +1601,63 @@
       return 'beginner';
     }
 
+    const BLOG_PATHS_BY_KEY = {
+      'digital-detox': {
+        defaultLang: 'en',
+        paths: {
+          en: '/portal/blog/en/digital-detox.html',
+          ru: '/portal/blog/ru/digital-detox.html'
+        }
+      },
+      'habit-building': {
+        defaultLang: 'en',
+        paths: {
+          en: '/portal/blog/en/habit-building.html'
+        }
+      },
+      'stress-management-techniques-guide': {
+        defaultLang: 'en',
+        paths: {
+          ko: '/portal/blog/ko/stress-management-techniques-guide.html',
+          en: '/portal/blog/en/stress-management-techniques-guide.html',
+          zh: '/portal/blog/zh/stress-management-techniques-guide.html',
+          hi: '/portal/blog/hi/stress-management-techniques-guide.html',
+          ru: '/portal/blog/ru/stress-management-techniques-guide.html',
+          ja: '/portal/blog/ja/stress-management-techniques-guide.html',
+          es: '/portal/blog/es/stress-management-techniques-guide.html',
+          pt: '/portal/blog/pt/stress-management-techniques-guide.html',
+          id: '/portal/blog/id/stress-management-techniques-guide.html',
+          tr: '/portal/blog/tr/stress-management-techniques-guide.html',
+          de: '/portal/blog/de/stress-management-techniques-guide.html',
+          fr: '/portal/blog/fr/stress-management-techniques-guide.html'
+        }
+      },
+      'blood-type-personality-guide': {
+        defaultLang: 'en',
+        paths: {
+          ko: '/portal/blog/ko/blood-type-personality-guide.html',
+          en: '/portal/blog/en/blood-type-personality-guide.html'
+        }
+      }
+    };
+
+    function getWinnerBlogHref(blogKey) {
+      const config = BLOG_PATHS_BY_KEY[blogKey];
+      if (!config) return '';
+      const lang = (i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : 'en';
+      return config.paths[lang] || config.paths[config.defaultLang] || '';
+    }
+
+    function updateWinnerBlogLinks() {
+      document.querySelectorAll('.related-card[data-blog-key]').forEach(card => {
+        const blogKey = card.dataset.blogKey;
+        const href = getWinnerBlogHref(blogKey);
+        if (href) {
+          card.setAttribute('href', href);
+        }
+      });
+    }
+
     // Max possible per dimension depends on how many scenes target it
     function getDimMax(dimKey) {
       let max = 0;
@@ -1621,7 +1688,9 @@
       if (typeof gtag !== 'undefined') {
         gtag('event', 'premium_cta_view', {
           eq_total: total,
-          eq_level: level
+          eq_level: level,
+          surface_type: 'app',
+          surface_name: 'eq_test_result'
         });
       }
     }
@@ -1649,7 +1718,9 @@
       if (typeof gtag !== 'undefined') {
         gtag('event', 'premium_unlock_click', {
           eq_total: total,
-          eq_level: level
+          eq_level: level,
+          surface_type: 'app',
+          surface_name: 'eq_test_result'
         });
       }
 
@@ -1664,11 +1735,15 @@
         if (typeof gtag !== 'undefined') {
           gtag('event', 'premium_unlock_complete', {
             eq_total: total,
-            eq_level: level
+            eq_level: level,
+            surface_type: 'app',
+            surface_name: 'eq_test_result'
           });
           gtag('event', 'ai_analysis_view', {
             eq_total: total,
-            eq_level: level
+            eq_level: level,
+            surface_type: 'app',
+            surface_name: 'eq_test_result'
           });
         }
       }, 1200);
@@ -1777,6 +1852,7 @@
       // AI Deep Analysis - generate content based on scores
       generateAIAnalysis(total, level, dimEntries);
       resetPremiumTeaser(total, level);
+      updateWinnerBlogLinks();
     }
 
     function generateAIAnalysis(total, level, dimEntries) {
@@ -1879,7 +1955,10 @@
           const label = this.querySelector('.related-name');
           gtag('event', 'eq_related_click', {
             destination: this.getAttribute('href') || '',
-            target_label: label ? label.textContent.trim() : this.textContent.trim()
+            target_label: label ? label.textContent.trim() : this.textContent.trim(),
+            surface_type: 'app',
+            surface_name: 'eq_test_result',
+            recommendation_group: this.dataset.blogKey ? 'winner_blog' : 'related_test'
           });
         }
       });
@@ -1927,7 +2006,9 @@
       document.querySelectorAll('.lang-option').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.lang === i18n.getCurrentLanguage());
       });
+      updateWinnerBlogLinks();
     });
+    updateWinnerBlogLinks();
 
     // Engagement tracking (false bounce prevention)
     setTimeout(() => {
