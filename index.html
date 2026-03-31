@@ -1220,6 +1220,7 @@
         <button class="share-btn" id="btn-copy" data-i18n="share.copy">Copy Link</button>
       </div>
 
+      <a href="/portal/tests/" class="btn btn-secondary" id="btn-more-tests" data-i18n="result.moreTests">Explore More Tests</a>
       <button class="btn btn-primary" id="btn-retry" data-i18n="result.retry">Try Again</button>
 
       <p class="percentile-stat" id="percentile-stat"></p>
@@ -1236,6 +1237,22 @@
       <div class="related-tests">
         <h3 data-i18n="result.moreTests">Explore More Tests</h3>
         <div class="related-grid">
+          <a href="/portal/tests/" class="related-card" style="--card-color: #00bcd4">
+            <span class="related-emoji">&#128269;</span>
+            <span class="related-name" data-i18n="result.moreTests">Explore More Tests</span>
+          </a>
+          <a href="/attachment-style/" class="related-card" style="--card-color: #e879a0">
+            <span class="related-emoji">💕</span>
+            <span class="related-name" data-i18n="related.attachmentStyle">Attachment Style</span>
+          </a>
+          <a href="/stress-check/" class="related-card" style="--card-color: #e74c3c">
+            <span class="related-emoji">💆</span>
+            <span class="related-name" data-i18n="related.stressCheck">Stress Check</span>
+          </a>
+          <a href="/mbti-love/" class="related-card" style="--card-color: #ff6b9d">
+            <span class="related-emoji">&#128149;</span>
+            <span class="related-name">MBTI Love Match</span>
+          </a>
           <a href="/portal/blog/en/digital-detox.html" class="related-card" data-blog-key="digital-detox" style="--card-color: #6366f1">
             <span class="related-emoji">&#127807;</span>
             <span class="related-name" data-i18n="related.digitalDetoxGuide">Digital Detox Guide</span>
@@ -1259,14 +1276,6 @@
           <a href="/emotion-iceberg/" class="related-card" style="--card-color: #2E86AB">
             <span class="related-emoji">🧊</span>
             <span class="related-name" data-i18n="related.emotionIceberg">Emotion Iceberg</span>
-          </a>
-          <a href="/stress-check/" class="related-card" style="--card-color: #e74c3c">
-            <span class="related-emoji">💆</span>
-            <span class="related-name" data-i18n="related.stressCheck">Stress Check</span>
-          </a>
-          <a href="/attachment-style/" class="related-card" style="--card-color: #e879a0">
-            <span class="related-emoji">💕</span>
-            <span class="related-name" data-i18n="related.attachmentStyle">Attachment Style</span>
           </a>
           <a href="/dopamine-type/" class="related-card" style="--card-color: #f59e0b">
             <span class="related-emoji">&#9889;</span>
@@ -1295,10 +1304,6 @@
           <a href="/portal/blog/en/how-to-improve-emotional-intelligence.html" class="related-card" style="--card-color: #3b82f6">
             <span class="related-emoji">&#128161;</span>
             <span class="related-name">How to Improve EQ</span>
-          </a>
-          <a href="/mbti-love/" class="related-card" style="--card-color: #ff6b9d">
-            <span class="related-emoji">&#128149;</span>
-            <span class="related-name">MBTI Love Match</span>
           </a>
           <a href="/inner-child-test/" class="related-card" style="--card-color: #f9a8d4">
             <span class="related-emoji">&#x1F9F8;</span>
@@ -1945,6 +1950,18 @@
         setTimeout(() => { this.textContent = '📋 ' + i18n.t('share.copy'); }, 2000);
       });
       if (typeof gtag !== 'undefined') gtag('event', 'share', { method: 'url_copy' });
+    });
+
+    $('btn-more-tests').addEventListener('click', function() {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'eq_related_click', {
+          destination: '/portal/tests/',
+          target_label: i18n.t('result.moreTests'),
+          surface_type: 'app',
+          surface_name: 'eq_test_result',
+          recommendation_group: 'tests_hub'
+        });
+      }
     });
 
     $('btn-ai-unlock').addEventListener('click', unlockAIAnalysis);
