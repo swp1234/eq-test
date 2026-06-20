@@ -13,6 +13,7 @@
 
   <title data-i18n="meta.title">EQ Test - Free Emotional Intelligence Quiz Online | DopaBrain</title>
   <meta name="description" data-i18n="meta.description" content="무료 EQ 테스트로 감성지능을 측정하세요. 10가지 감정 시나리오로 자기인식, 공감, 사회성, 감정조절 4가지 EQ 영역을 분석합니다. 즉시 결과 확인!">
+    <meta name="dateModified" content="2026-06-20">
   <meta name="keywords" content="EQ test, emotional intelligence quiz, free EQ test online, empathy test, EQ score, emotional intelligence test, emotion reading, 감성지능 테스트">
 
   <link rel="canonical" href="https://dopabrain.com/eq-test/">
@@ -71,6 +72,7 @@
     "name": "EQ Emotion Reading Challenge",
     "description": "Read emotional scenes and test your empathy across 4 EQ dimensions with 10 interactive scenarios",
     "url": "https://dopabrain.com/eq-test/",
+    "dateModified": "2026-06-20",
     "image": "https://dopabrain.com/eq-test/icon-512.svg",
     "applicationCategory": "LifestyleApplication",
     "educationalLevel": "All",
@@ -1280,6 +1282,10 @@
             <span class="related-emoji">&#9889;</span>
             <span class="related-name" data-i18n="related.stressResponse">Stress Response</span>
           </a>
+          <a href="/hail-mary-mode/" class="related-card" style="--card-color: #ff8c42">
+            <span class="related-emoji">&#128680;</span>
+            <span class="related-name" data-i18n="related.hailMaryMode">Hail Mary Mode Test</span>
+          </a>
           <a href="/toxic-trait-test/" class="related-card" style="--card-color: #e11d48">
             <span class="related-emoji">&#128128;</span>
             <span class="related-name">Toxic Trait Test</span>
@@ -1303,9 +1309,10 @@
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-3600813755953882"
-             data-ad-slot="1234567890"
+             data-ad-slot="auto"
              data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
+             data-full-width-responsive="true"
+             data-ad-surface="eq_test_result"></ins>
       </div>
     </section>
   </div>
@@ -1423,6 +1430,56 @@
 
     // ===== DOM =====
     const $ = id => document.getElementById(id);
+
+    function trackEqEvent(name, params) {
+      const payload = Object.assign({
+        event_category: 'eq_test',
+        surface_type: 'app',
+        surface_name: 'eq_test_result'
+      }, params || {});
+      if (typeof gtag === 'function') {
+        gtag('event', name, payload);
+        return;
+      }
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(Object.assign({ event: name }, payload));
+    }
+
+    function getEqLevelKey() {
+      return getLevel(calcTotal());
+    }
+
+    function getEqShareUrl() {
+      const lang = (i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : document.documentElement.lang || 'en';
+      const total = calcTotal();
+      const level = getEqLevelKey();
+      const url = new URL(window.location.origin + window.location.pathname);
+      url.searchParams.set('lang', lang);
+      url.searchParams.set('utm_source', 'share');
+      url.searchParams.set('utm_medium', 'eq_result');
+      url.searchParams.set('utm_campaign', 'personality_result_share');
+      url.searchParams.set('utm_content', level);
+      url.searchParams.set('eq_level', level);
+      url.searchParams.set('eq_score', String(total));
+      return url.toString();
+    }
+
+    function getEqResultParams(method, extra) {
+      const total = calcTotal();
+      const level = getEqLevelKey();
+      return Object.assign({
+        content_type: 'test_result',
+        method: method,
+        eq_total: total,
+        eq_level: level,
+        lang: (i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : document.documentElement.lang || 'en',
+        utm_source: 'share',
+        utm_medium: 'eq_result',
+        utm_campaign: 'personality_result_share',
+        utm_content: level
+      }, extra || {});
+    }
+
     const screens = {
       start: $('screen-start'),
       scene: $('screen-scene'),
@@ -1698,8 +1755,12 @@
       if (!ad) return;
       try {
         (adsbygoogle = window.adsbygoogle || []).push({});
-        resultAdInitialized = true;
       } catch (e) {}
+      resultAdInitialized = true;
+      trackEqEvent('eq_result_ad_impression', getEqResultParams('ad_impression', {
+        ad_surface: ad.getAttribute('data-ad-surface') || 'eq_test_result',
+        ad_slot: ad.getAttribute('data-ad-slot') || 'auto'
+      }));
     }
 
     function unlockAIAnalysis() {
@@ -1831,12 +1892,13 @@
       tipsList.appendChild(generalLi);
 
       // GA4 event
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'eq_test_complete', {
-          eq_total: total,
-          eq_level: level,
-        });
-      }
+      const resultParams = getEqResultParams('view');
+      trackEqEvent('result_view', resultParams);
+      trackEqEvent('eq_result_view', resultParams);
+      trackEqEvent('eq_test_complete', {
+        eq_total: total,
+        eq_level: level
+      });
 
       // Percentile stat
       const pStat = $('percentile-stat');
@@ -1922,6 +1984,7 @@
         ctaText: i18n.t('start.btn') || 'Take the Test →',
       }, 'eq-test-result.png').then(function() {
         btn.textContent = '✅ Saved!';
+        trackEqEvent('eq_save_click', getEqResultParams('download'));
         setTimeout(function() { btn.textContent = '📸 Save Result'; btn.disabled = false; }, 2000);
       });
     });
@@ -1932,16 +1995,22 @@
       const text = i18n.t('share.twitterText')
         .replace('{score}', total)
         .replace('{level}', level);
-      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text + ' https://dopabrain.com/eq-test/'), '_blank');
-      if (typeof gtag !== 'undefined') gtag('event', 'share', { method: 'twitter' });
+      const shareUrl = getEqShareUrl();
+      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(shareUrl), '_blank');
+      const params = getEqResultParams('twitter', { share_url: shareUrl });
+      trackEqEvent('eq_share_click', params);
+      trackEqEvent('share', params);
     });
 
     $('btn-copy').addEventListener('click', function() {
-      navigator.clipboard.writeText('https://dopabrain.com/eq-test/').then(() => {
+      const shareUrl = getEqShareUrl();
+      navigator.clipboard.writeText(shareUrl).then(() => {
         this.textContent = '✅ ' + i18n.t('share.copied');
         setTimeout(() => { this.textContent = '📋 ' + i18n.t('share.copy'); }, 2000);
       });
-      if (typeof gtag !== 'undefined') gtag('event', 'share', { method: 'url_copy' });
+      const params = getEqResultParams('clipboard', { share_url: shareUrl });
+      trackEqEvent('eq_copy_link', params);
+      trackEqEvent('share', params);
     });
 
     $('btn-more-tests').addEventListener('click', function() {
@@ -1978,6 +2047,7 @@
       currentRound = 0;
       roundScores = new Array(SCENES.length).fill(0);
       dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
+      resultAdInitialized = false;
       showScreen('scene');
       renderScene(0);
       if (typeof gtag !== 'undefined') gtag('event', 'eq_test_start');
@@ -1987,6 +2057,7 @@
       currentRound = 0;
       roundScores = new Array(SCENES.length).fill(0);
       dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
+      resultAdInitialized = false;
       showScreen('start');
       if (typeof gtag !== 'undefined') gtag('event', 'eq_test_retry');
     });
