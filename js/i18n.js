@@ -13,6 +13,13 @@ class I18n {
     }
 
     detectLanguage() {
+        try {
+            const params = new URLSearchParams(window.location.search || '');
+            const urlLang = params.get('lang');
+            if (urlLang && this.supportedLanguages.includes(urlLang)) return urlLang;
+        } catch (e) {
+            // URL language hints are best-effort only.
+        }
         const saved = localStorage.getItem('appLanguage');
         if (saved && this.supportedLanguages.includes(saved)) return saved;
         const browserLang = navigator.language.split('-')[0];
@@ -81,6 +88,7 @@ class I18n {
     }
 
     updateUI() {
+        document.documentElement.lang = this.currentLang;
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             const text = this.t(key);
