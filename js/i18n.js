@@ -51,7 +51,7 @@ class I18n {
             this.translations[lang] = data;
             return data;
         } catch (error) {
-            console.error(`Failed to load language ${lang}:`, error);
+            console.warn(`Failed to load language ${lang}:`, error);
             return {};
         }
     }

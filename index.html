@@ -13,7 +13,7 @@
 
   <title data-i18n="meta.title">EQ Test - Free Emotional Intelligence Quiz Online | DopaBrain</title>
   <meta name="description" data-i18n="meta.description" content="무료 EQ 테스트로 감성지능을 측정하세요. 10가지 감정 시나리오로 자기인식, 공감, 사회성, 감정조절 4가지 EQ 영역을 분석합니다. 즉시 결과 확인!">
-    <meta name="dateModified" content="2026-07-07">
+    <meta name="dateModified" content="2026-07-14">
   <meta name="keywords" content="EQ test, emotional intelligence quiz, free EQ test online, empathy test, EQ score, emotional intelligence test, emotion reading, 감성지능 테스트">
 
   <link rel="canonical" href="https://dopabrain.com/eq-test/">
@@ -72,7 +72,7 @@
     "name": "EQ Emotion Reading Challenge",
     "description": "Read emotional scenes and test your empathy across 4 EQ dimensions with 10 interactive scenarios",
     "url": "https://dopabrain.com/eq-test/",
-    "dateModified": "2026-07-07",
+    "dateModified": "2026-07-14",
     "image": "https://dopabrain.com/eq-test/icon-512.svg",
     "applicationCategory": "LifestyleApplication",
     "educationalLevel": "All",
@@ -1427,6 +1427,7 @@
     let answered = false;
     let premiumUnlocked = false;
     let resultAdInitialized = false;
+    let autoStartConsumed = false;
 
     // ===== DOM =====
     const $ = id => document.getElementById(id);
@@ -1443,6 +1444,56 @@
       }
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push(Object.assign({ event: name }, payload));
+    }
+
+    function getEqCurrentLang() {
+      if (typeof i18n !== 'undefined' && i18n && typeof i18n.getCurrentLanguage === 'function') {
+        return i18n.getCurrentLanguage();
+      }
+      return document.documentElement.lang || 'en';
+    }
+
+    function getEqAutoStartSurface() {
+      const params = new URLSearchParams(window.location.search || '');
+      if (params.get('start') !== '1') return '';
+      return params.get('surface') || params.get('utm_content') || 'url_start';
+    }
+
+    function getEqStartParams(surface) {
+      const startSurface = surface || 'intro_button';
+      return {
+        event_category: 'eq_test',
+        event_label: getEqCurrentLang(),
+        value: SCENES.length,
+        lang: getEqCurrentLang(),
+        cta_surface: startSurface,
+        launch_surface: startSurface,
+        test_slug: 'eq-test',
+        round_count: SCENES.length,
+        surface_type: 'app',
+        surface_name: 'eq_test_start'
+      };
+    }
+
+    function scheduleEqAutoStart() {
+      const autoStartSurface = getEqAutoStartSurface();
+      if (!autoStartSurface) return;
+
+      const launch = () => {
+        setTimeout(() => {
+          if (!autoStartConsumed && screens.start.classList.contains('active')) {
+            startQuiz(autoStartSurface);
+          }
+        }, 80);
+      };
+
+      if (typeof i18n !== 'undefined' && i18n && i18n.initialized) {
+        launch();
+        return;
+      }
+
+      window.addEventListener('languageChanged', launch, { once: true });
+      window.addEventListener('load', launch, { once: true });
     }
 
     function getEqLevelKey() {
@@ -2043,15 +2094,23 @@
     });
 
     // ===== Navigation =====
-    $('btn-start').addEventListener('click', () => {
+    function startQuiz(surface) {
+      const startSurface = surface || 'intro_button';
+      autoStartConsumed = true;
       currentRound = 0;
       roundScores = new Array(SCENES.length).fill(0);
       dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
       resultAdInitialized = false;
       showScreen('scene');
       renderScene(0);
-      if (typeof gtag !== 'undefined') gtag('event', 'eq_test_start');
-    });
+      const startParams = getEqStartParams(startSurface);
+      if (startSurface !== 'intro_button') trackEqEvent('eq_auto_start', startParams);
+      trackEqEvent('eq_test_start', startParams);
+      trackEqEvent('quiz_start', startParams);
+      trackEqEvent('test_start', startParams);
+    }
+
+    $('btn-start').addEventListener('click', () => startQuiz('intro_button'));
 
     $('btn-retry').addEventListener('click', () => {
       currentRound = 0;
@@ -2089,6 +2148,8 @@
       updateWinnerBlogLinks();
     });
     updateWinnerBlogLinks();
+
+    scheduleEqAutoStart();
 
     // Engagement tracking (false bounce prevention)
     setTimeout(() => {
