@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Teste EQ | Desafio de Leitura Emocional - DopaBrain",
-    "description": "Leia cenas emocionais e teste sua empatia! 10 cenários interativos medindo 4 dimensões do seu EQ."
+    "title": "Desafio de leitura emocional EQ | DopaBrain",
+    "description": "Reveja suas respostas em 10 situações emocionais fixas. Usa uma regra de 0–3 pontos definida pelo autor; não é avaliação de EQ validada nem diagnóstico."
   },
   "accessibility": {
     "skipMain": "Ir para o conteúdo principal"
@@ -18,12 +18,13 @@
     "regulation": "Regulação Emocional"
   },
   "intro": {
-    "desc": "Leia cenas emocionais, decodifique sentimentos ocultos e teste sua empatia em 10 desafios interativos.",
+    "desc": "Leia 10 cenas emocionais fixas e compare as respostas que você escolheria.",
     "chip1": "10 Rodadas",
     "chip2": "~3 min",
     "chip3": "4 Dimensões",
-    "disclaimer": "⚠️ Este teste é apenas para autoconhecimento e não é uma avaliação psicológica oficial.",
-    "start": "Iniciar Desafio"
+    "disclaimer": "⚠️ Esta atividade serve apenas para autorreflexão; não é avaliação validada nem diagnóstico.",
+    "start": "Iniciar Desafio",
+    "method": "Cada resposta recebe 0–3 pontos por uma regra do autor. O total são pontos de cenários, não uma pontuação populacional de EQ."
   },
   "types": {
     "decoder": "Decodificador de Emoções",
@@ -132,75 +133,28 @@
     "okay": "Nada mal, continue observando!",
     "miss": "Questão difícil!"
   },
-  "level": {
-    "beginner": "🌱 EQ Iniciante",
-    "beginnerDesc": "Você está começando sua jornada de inteligência emocional. Com prática, pode melhorar muito.",
-    "learner": "📚 EQ Aprendiz",
-    "learnerDesc": "Sua consciência emocional está crescendo. Às vezes capta sentimentos profundos e sua empatia está se desenvolvendo.",
-    "skilled": "🎯 EQ Competente",
-    "skilledDesc": "Você tem uma inteligência emocional sólida. Lê a maioria das situações com precisão e responde com empatia genuína.",
-    "master": "💫 EQ Mestre",
-    "masterDesc": "Sua inteligência emocional é impressionante. Você sente naturalmente o que os outros sentem e responde com sabedoria.",
-    "sage": "🧘 EQ Sábio",
-    "sageDesc": "Inteligência emocional excepcional. Você tem um dom raro para entender emoções humanas no nível mais profundo."
-  },
   "tips": {
     "awareness": "Pratique check-in emocional 3 vezes ao dia: pause e nomeie exatamente o que está sentindo e por quê.",
     "empathy": "Ao ouvir alguém, foque em entender os sentimentos antes de formular sua resposta.",
     "social": "Em conflitos, reconheça a perspectiva do outro antes de compartilhar a sua.",
     "regulation": "Quando emoções fortes surgirem, faça 3 respirações profundas antes de responder. Essa pequena pausa muda tudo.",
-    "general": "Leia ficção regularmente — estudos mostram que melhora significativamente a empatia e a compreensão emocional."
+    "general": "Escolha uma resposta para testar nesta semana e observe o que acontece."
   },
   "result": {
-    "dimTitle": "Pontuação por Dimensão",
-    "tipsTitle": "Dicas de Crescimento",
-    "personalTips": "Dicas Personalizadas",
+    "dimTitle": "Distribuição dos pontos",
+    "tipsTitle": "Sugestões de reflexão",
+    "personalTips": "Ideias para testar",
     "retry": "Tentar Novamente",
-    "moreTests": "Explorar mais testes",
-    "percentileStat": "Apenas <strong>{percent}%</strong> compartilham seu perfil de QE"
-  },
-  "share": {
-    "copy": "📋 Copiar Link",
-    "copied": "Copiado!",
-    "twitterText": "Meu EQ: {score}/30 ({level})! Você consegue ler emoções melhor?"
+    "moreTests": "Reflexões relacionadas",
+    "boundary": "São pontos de 10 cenários fixos, não um nível de EQ medido nem diagnóstico.",
+    "nextPrompt": "Verifique sua carga atual de estresse e transforme a reflexão em um passo prático."
   },
   "units": {
     "pts": "pts"
   },
-  "premium": {
-    "title": "Análise Profunda de QE",
-    "preview": "Obtenha uma análise detalhada dos seus padrões de inteligência emocional, dinâmica de relacionamentos e um roteiro de crescimento personalizado baseado no seu perfil único de pontuação.",
-    "unlock": "Desbloquear meu plano de EQ",
-    "previewSecondary": "Veja seus pontos cegos, gatilhos de relacionamento e o hábito de crescimento que pode acelerar seu EQ mais rápido.",
-    "teaserNote": "Desbloqueie logo após sua pontuação para receber um próximo passo claro."
-  },
-  "ai": {
-    "strengthsTitle": "Seus Pontos Fortes de QE",
-    "strengths": "Sua área mais forte é {dim} ({pct}%). Isso sugere que você se destaca naturalmente em compreender e navegar situações emocionais neste domínio. As pessoas provavelmente veem você como alguém particularmente sintonizado nesta área.",
-    "blindspotsTitle": "Oportunidades de Crescimento",
-    "blindspots": "Sua oportunidade de crescimento está em {dim} ({pct}%). Isso não significa fraqueza — significa potencial inexplorado. Prática pequena e consistente nesta área pode gerar melhorias significativas na sua inteligência emocional geral.",
-    "relTitle": "Padrões de Relacionamento",
-    "relConnector": "Nos relacionamentos, você tende a ser o conector — naturalmente sintonizando com as necessidades dos outros e criando harmonia. Cuidado para não dar demais ou negligenciar suas próprias necessidades emocionais.",
-    "relStable": "Nos relacionamentos, você proporciona estabilidade e calma durante conflitos. Outros confiam na sua compostura. Considere se abrir mais emocionalmente para aprofundar a intimidade.",
-    "relReflective": "Nos relacionamentos, sua autoconsciência ajuda a comunicar suas necessidades com clareza. Você entende bem seus gatilhos, o que previne conflitos desnecessários.",
-    "growthTitle": "Roteiro de Crescimento Personalizado",
-    "growthHigh": "Com seu alto QE, foque em mentorar outros e aplicar inteligência emocional na liderança. Considere explorar práticas avançadas de empatia como a tomada de perspectiva em contextos culturais diversos.",
-    "growthMid": "Você tem uma base sólida de QE. Para evoluir, pratique rotulagem diária de emoções (nomeie 3 emoções que sente cada dia), escuta ativa sem planejar sua resposta e meditação mindfulness para regulação emocional.",
-    "growthLow": "Sua jornada de QE está apenas começando — e isso é empolgante! Comece com identificação básica de emoções: pause 3 vezes ao dia e pergunte \"O que estou sentindo agora?\" Escreva um diário sobre experiências emocionais para construir autoconsciência."
-  },
   "related": {
-    "hspTest": "Teste HSP",
-    "emotionIceberg": "Iceberg Emocional",
     "stressCheck": "Verificação de Estresse",
-    "socialBattery": "Bateria Social",
-    "burnoutTest": "Teste de Burnout",
-    "stressResponse": "Resposta ao Estresse",
-    "anxietyType": "Tipo de Ansiedade",
     "attachmentStyle": "Estilo de Apego",
-    "digitalDetoxGuide": "Guia de Detox Digital",
-    "habitBuildingGuide": "Guia de Hábitos",
-    "stressManagementGuide": "Guia de Gestão do Estresse",
-    "bloodTypeGuide": "Guia de Tipo Sanguíneo",
-    "hailMaryMode": "Hail Mary Mode Test"
+    "hspTest": "Teste HSP"
   }
 }

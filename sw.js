@@ -1,4 +1,5 @@
-const CACHE_NAME = 'eq-test-v2';
+const CACHE_NAME = 'eq-test-v3';
+const APP_SCOPE = '/eq-test/';
 const ASSETS = [
   '/eq-test/',
   '/eq-test/index.html',
@@ -35,12 +36,15 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  if (!event.request.url.startsWith(self.location.origin)) return;
+  const requestUrl = new URL(event.request.url);
+  if (event.request.method !== 'GET') return;
+  if (requestUrl.origin !== self.location.origin) return;
+  if (!requestUrl.pathname.startsWith(APP_SCOPE)) return;
   event.respondWith(
     caches.match(event.request).then(cached => {
       if (cached) return cached;
       return fetch(event.request).then(response => {
-        if (!response || response.status !== 200 || response.type !== 'basic') {
+        if (!response || !response.ok || response.type !== 'basic') {
           return response;
         }
         const clone = response.clone();

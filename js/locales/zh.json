@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "EQ测试 | 情绪解读挑战 - DopaBrain",
-    "description": "解读情感场景，测试你的共情能力！10个互动场景测量自我认知、共情、社交技能和情绪调节4个EQ维度。"
+    "title": "EQ 情绪识别挑战 | DopaBrain",
+    "description": "通过10个固定情绪情境回顾你的回应方式。采用作者设定的0–3分规则，并非经过验证的EQ评估或诊断。"
   },
   "accessibility": {
     "skipMain": "跳到主要内容"
@@ -18,12 +18,13 @@
     "regulation": "情绪调节"
   },
   "intro": {
-    "desc": "解读情感场景，破译隐藏的情绪，通过10个互动挑战测试你的共情能力。",
+    "desc": "阅读10个固定情绪场景，比较你可能选择的回应。",
     "chip1": "10轮",
     "chip2": "约3分钟",
     "chip3": "4个维度",
-    "disclaimer": "⚠️ 本测试仅供自我了解参考，不是正式的心理评估。",
-    "start": "开始挑战"
+    "disclaimer": "⚠️ 本活动仅用于自我反思，不是经过验证的评估或诊断。",
+    "start": "开始挑战",
+    "method": "每个回答按作者设定的规则获得0–3分。总分是情境分数，不是人群EQ分数。"
   },
   "types": {
     "decoder": "情绪解码器",
@@ -132,75 +133,28 @@
     "okay": "还行，继续观察！",
     "miss": "这道题有难度！"
   },
-  "level": {
-    "beginner": "🌱 EQ 新手",
-    "beginnerDesc": "你正在开始情商之旅。通过练习，你的情绪解读和回应能力会大幅提升。",
-    "learner": "📚 EQ 学习者",
-    "learnerDesc": "你对情绪的认知正在成长。你有时能捕捉到深层情感，共情能力在发展中。",
-    "skilled": "🎯 EQ 熟练者",
-    "skilledDesc": "你有扎实的情商。能准确解读大多数情境，并以真诚的共情回应。",
-    "master": "💫 EQ 大师",
-    "masterDesc": "你的情商令人印象深刻。你自然地感知他人的情感，以智慧和关怀回应。",
-    "sage": "🧘 EQ 智者",
-    "sageDesc": "卓越的情商。你拥有在最深层次理解人类情感的稀有天赋。"
-  },
   "tips": {
     "awareness": "练习每天3次情绪检查：暂停下来，准确说出你现在的感受和原因。",
     "empathy": "听别人说话时，在形成回应之前先专注于理解对方的感受。",
     "social": "在冲突中，先承认对方的观点，再表达你自己的看法。",
     "regulation": "当强烈情绪涌起时，在回应前深呼吸3次。这个小小的停顿能改变一切。",
-    "general": "定期阅读小说——研究表明这能显著提高共情力和情绪理解能力。"
+    "general": "选一个本周想尝试的回应，并留意之后发生了什么。"
   },
   "result": {
-    "dimTitle": "维度得分",
-    "tipsTitle": "成长建议",
-    "personalTips": "个性化建议",
+    "dimTitle": "情境得分分布",
+    "tipsTitle": "反思提示",
+    "personalTips": "可尝试的做法",
     "retry": "再次挑战",
-    "moreTests": "探索更多测试",
-    "percentileStat": "仅 <strong>{percent}%</strong> 的参与者拥有与你相同的EQ档案"
-  },
-  "share": {
-    "copy": "📋 复制链接",
-    "copied": "已复制！",
-    "twitterText": "我的EQ得分：{score}/30（{level}）！你能更好地解读情绪吗？"
+    "moreTests": "相关反思",
+    "boundary": "结果只是10个固定情境的分数，不代表测得的EQ水平或诊断。",
+    "nextPrompt": "检查当前压力负荷，把反思转化为一个实际步骤。"
   },
   "units": {
     "pts": "分"
   },
-  "premium": {
-    "title": "EQ 深度分析",
-    "preview": "根据您独特的评分档案，详细分析您的情商模式、关系动态，并提供个性化成长路线图。",
-    "unlock": "解锁我的EQ路线图",
-    "previewSecondary": "查看你的盲点、关系触发点，以及最能加速提升EQ的下一个成长习惯。",
-    "teaserNote": "在分数出来后解锁，马上获得清晰的下一步行动方案。"
-  },
-  "ai": {
-    "strengthsTitle": "您的EQ优势",
-    "strengths": "您最强的领域是{dim}（{pct}%）。这表明您在该领域自然擅长理解和应对情感场景。周围的人可能认为您在这方面特别敏感。",
-    "blindspotsTitle": "成长机会",
-    "blindspots": "您的成长机会在于{dim}（{pct}%）。这不是弱点——而是尚未开发的潜力。在这个领域进行小而持续的练习可以显著提高您的整体情商。",
-    "relTitle": "关系模式",
-    "relConnector": "在关系中，您倾向于扮演连接者的角色——自然地感应他人的需求并创造和谐。注意不要过度付出或忽视自己的情感需求。",
-    "relStable": "在关系中，您在冲突中提供稳定和冷静。他人依赖您的沉着。考虑在情感上更加开放以加深亲密关系。",
-    "relReflective": "在关系中，您的自我意识帮助您清晰地表达需求。您很好地理解自己的触发点，从而防止不必要的冲突。",
-    "growthTitle": "个性化成长路线图",
-    "growthHigh": "凭借高情商，专注于指导他人并在领导力中应用情商。考虑探索高级共情练习，如在多元文化背景下的换位思考。",
-    "growthMid": "您有扎实的EQ基础。为了提升，练习每日情感标注（每天给3种情感命名）、不准备回答的积极倾听、以及用于情绪调节的正念冥想。",
-    "growthLow": "您的EQ之旅刚刚开始——这令人兴奋！从基本情感识别开始：每天暂停3次，问自己「我现在感受到什么？」通过记录情感体验来建立自我意识。"
-  },
   "related": {
-    "hspTest": "HSP测试",
-    "emotionIceberg": "情感冰山",
     "stressCheck": "压力检测",
-    "socialBattery": "社交电量",
-    "burnoutTest": "职业倦怠测试",
-    "stressResponse": "压力反应",
-    "anxietyType": "焦虑类型",
     "attachmentStyle": "依恋类型",
-    "digitalDetoxGuide": "数字排毒指南",
-    "habitBuildingGuide": "习惯养成指南",
-    "stressManagementGuide": "压力管理指南",
-    "bloodTypeGuide": "血型性格指南",
-    "hailMaryMode": "Hail Mary Mode Test"
+    "hspTest": "HSP测试"
   }
 }

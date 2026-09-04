@@ -1,8 +1,9 @@
 {
-  "name": "EQ Test - Emotional Intelligence",
-  "short_name": "EQ Test",
-  "description": "Measure your Emotional Intelligence across 5 dimensions with 40 questions",
+  "name": "EQ Emotion Reading Challenge",
+  "short_name": "EQ Reflection",
+  "description": "Reflect on your responses to 10 fixed emotional scenarios across four dimensions.",
   "start_url": "/eq-test/",
+  "scope": "/eq-test/",
   "display": "standalone",
   "background_color": "#0a0e1a",
   "theme_color": "#00bcd4",

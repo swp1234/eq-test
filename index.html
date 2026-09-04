@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-eq-test-contract="2026-09-03" data-ad-serving="suspended-invalid-traffic-2026-09-03">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="max-image-preview:large">
 
   <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
+  <script>
+    (() => {
+      const languages = new Set(['ko','en','zh','hi','ru','ja','es','pt','id','tr','de','fr']);
+      const surfaces = new Set([
+        'es_emotional_regulation_sticky',
+        'es_emotional_regulation_quick',
+        'es_emotional_regulation_cta'
+      ]);
+      const input = new URLSearchParams(location.search);
+      const clean = new URLSearchParams();
+      const language = input.get('lang');
+      const surface = input.get('surface');
+      if (languages.has(language)) clean.set('lang', language);
+      if (input.get('start') === '1' && surfaces.has(surface)) {
+        clean.set('start', '1');
+        clean.set('surface', surface);
+      }
+      const search = clean.toString();
+      const target = location.pathname + (search ? '?' + search : '');
+      if (location.search !== (search ? '?' + search : '') || location.hash) {
+        history.replaceState(null, '', target);
+      }
+    })();
+  </script>
 
-  <title data-i18n="meta.title">EQ Test - Free Emotional Intelligence Quiz Online | DopaBrain</title>
-  <meta name="description" data-i18n="meta.description" content="무료 EQ 테스트로 감성지능을 측정하세요. 10가지 감정 시나리오로 자기인식, 공감, 사회성, 감정조절 4가지 EQ 영역을 분석합니다. 즉시 결과 확인!">
-    <meta name="dateModified" content="2026-07-14">
+  <title data-i18n="meta.title">EQ Emotion Reading Challenge | DopaBrain</title>
+  <meta name="description" data-i18n="meta.description" content="10가지 고정 감정 시나리오에서 응답 패턴을 돌아보세요. 결과는 작성자가 정한 0~3점 규칙을 사용하며 검증된 EQ 평가나 진단이 아닙니다.">
+  <meta name="dateModified" content="2026-09-03">
   <meta name="keywords" content="EQ test, emotional intelligence quiz, free EQ test online, empathy test, EQ score, emotional intelligence test, emotion reading, 감성지능 테스트">
 
   <link rel="canonical" href="https://dopabrain.com/eq-test/">
@@ -25,8 +47,8 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
 
-  <meta property="og:title" content="What's Your EQ Score? Free Emotional Intelligence Quiz">
-  <meta property="og:description" content="10 emotional scenarios reveal your true EQ. Measure Self-Awareness, Empathy, Social Skills & Regulation. Takes 2 minutes — get your score instantly!">
+  <meta property="og:title" content="EQ Emotion Reading Challenge">
+  <meta property="og:description" content="Try 10 fixed emotional scenarios and review your response pattern. A private reflection activity, not a validated EQ assessment.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dopabrain.com/eq-test/">
   <meta property="og:image" content="https://dopabrain.com/eq-test/og-image.jpg">
@@ -47,8 +69,8 @@
   <meta property="og:locale:alternate" content="fr_FR">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="What's Your EQ Score? Free Emotional Intelligence Quiz">
-  <meta name="twitter:description" content="10 emotional scenarios reveal your true EQ. Takes 2 min — get your score instantly!">
+  <meta name="twitter:title" content="EQ Emotion Reading Challenge">
+  <meta name="twitter:description" content="Try 10 fixed emotional scenarios and review the published 0–3 point rule.">
   <meta name="twitter:image" content="https://dopabrain.com/eq-test/og-image.jpg">
 
   <link rel="alternate" hreflang="ko" href="https://dopabrain.com/eq-test/">
@@ -70,101 +92,21 @@
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "EQ Emotion Reading Challenge",
-    "description": "Read emotional scenes and test your empathy across 4 EQ dimensions with 10 interactive scenarios",
+    "description": "A private reflection activity with 10 fixed emotional scenarios and a published 0–3 point rule",
     "url": "https://dopabrain.com/eq-test/",
-    "dateModified": "2026-07-14",
+    "dateModified": "2026-09-03",
     "image": "https://dopabrain.com/eq-test/icon-512.svg",
     "applicationCategory": "LifestyleApplication",
     "educationalLevel": "All",
     "inLanguage": ["ko", "en", "ja", "zh", "hi", "ru", "es", "pt", "id", "tr", "de", "fr"],
     "author": {"@type": "Organization", "name": "DopaBrain", "url": "https://dopabrain.com/"},
-    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
-  ,
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
     "publisher": {
         "@type": "Organization",
         "name": "DopaBrain",
         "url": "https://dopabrain.com/"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.6",
-        "ratingCount": "1870",
-        "bestRating": "5",
-        "worstRating": "1"
     }
 }
-  </script>
-  <script type="application/ld+json">
-  {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-          {
-              "@type": "Question",
-              "name": "What is EQ (Emotional Intelligence)?",
-              "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "EQ, or Emotional Quotient, measures your emotional intelligence — the ability to recognize, understand, manage, and effectively use emotions in yourself and others. It encompasses four key dimensions: self-awareness, empathy, social skills, and emotional regulation. High EQ is linked to better relationships and career success."
-              }
-          },
-          {
-              "@type": "Question",
-              "name": "What is the difference between EQ and IQ?",
-              "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "IQ (Intelligence Quotient) measures cognitive abilities like logic, reasoning, and problem-solving. EQ (Emotional Quotient) measures emotional skills like empathy, self-awareness, and relationship management. While IQ tends to remain stable, EQ can be developed and improved throughout life. Research suggests EQ is equally or more important than IQ for personal and professional success."
-              }
-          },
-          {
-              "@type": "Question",
-              "name": "How can I improve my EQ score?",
-              "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "You can improve your EQ by practicing active listening, developing self-awareness through journaling or meditation, learning to identify and name your emotions, practicing empathy by considering others' perspectives, and managing stress through healthy coping strategies. Regular practice of these skills can measurably increase your emotional intelligence over time."
-              }
-          },
-          {
-              "@type": "Question",
-              "name": "Is the EQ test free?",
-              "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, this EQ test is completely free with no sign-up required. It features 10 interactive emotional scenarios that measure your abilities across 4 EQ dimensions: self-awareness, empathy, social skills, and emotional regulation. You'll receive detailed results with a personalized EQ score instantly."
-              }
-          },
-          {
-              "@type": "Question",
-              "name": "What is a good EQ score?",
-              "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "EQ scores in this test range from 0 to 100. A score above 80 indicates excellent emotional intelligence with strong empathy and social skills. Scores between 60-80 suggest good emotional awareness with room for growth. Scores below 60 indicate areas where emotional skills can be developed. Unlike IQ, EQ can be significantly improved with practice."
-              }
-          },
-          {
-              "@type": "Question",
-              "name": "What are the 4 dimensions of emotional intelligence?",
-              "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The four EQ dimensions measured in this test are: Self-Awareness (recognizing your own emotions and their impact), Empathy (understanding and sharing others' feelings), Social Skills (managing relationships and communicating effectively), and Emotional Regulation (controlling impulses and adapting to changing circumstances). Each dimension contributes to your overall emotional intelligence profile."
-              }
-          },
-          {
-              "@type": "Question",
-              "name": "How long does the EQ test take?",
-              "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The EQ test takes approximately 2-3 minutes to complete. It consists of 10 interactive emotional scenarios where you choose how you would respond in each situation. There are no right or wrong answers — the test measures your natural emotional tendencies across four dimensions to create your personalized EQ profile."
-              }
-          },
-          {
-              "@type": "Question",
-              "name": "Can emotional intelligence be learned?",
-              "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, emotional intelligence is one of the most trainable cognitive skills. Research shows EQ can be developed at any age through practices like mindfulness meditation, active listening exercises, empathy training, and emotional journaling. Studies indicate that targeted EQ training can improve scores by 25% or more within several months of consistent practice."
-              }
-          }
-      ]
-  }
   </script>
   <script type="application/ld+json">
   {
@@ -289,16 +231,6 @@
       animation: spin 0.8s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-
-    /* ===== Ad Banners ===== */
-    .ad-banner {
-      width: 100%;
-      text-align: center;
-      padding: 8px 0;
-      background: var(--bg-2);
-      position: relative;
-      z-index: 1;
-    }
 
     /* ===== Container ===== */
     .container {
@@ -689,6 +621,7 @@
       margin-bottom: 20px;
     }
     .option-card {
+      width: 100%;
       background: var(--surface);
       border: 2px solid var(--border);
       border-radius: var(--radius);
@@ -700,6 +633,9 @@
       gap: 12px;
       backdrop-filter: blur(12px);
       min-height: 52px;
+      color: var(--text);
+      font: inherit;
+      text-align: left;
     }
     .option-card:hover {
       background: var(--surface-hover);
@@ -833,28 +769,34 @@
       letter-spacing: 1px;
     }
 
-    .level-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 28px;
-      border-radius: 30px;
-      font-size: 1.15rem;
-      font-weight: 800;
-      margin-bottom: 12px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      color: #fff;
-      box-shadow: 0 4px 20px var(--primary-glow);
-    }
-    .level-desc-text {
+    .result-boundary {
       font-size: 0.9rem;
       color: var(--text-muted);
-      margin-bottom: 4px;
-      max-width: 400px;
+      max-width: 520px;
       margin-left: auto;
       margin-right: auto;
       line-height: 1.5;
     }
+    .method-note {
+      margin: 12px auto 20px;
+      max-width: 560px;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      background: var(--surface);
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+    .result-primary-action {
+      margin: 0 0 24px;
+      padding: 18px;
+      border: 1px solid var(--border-focus);
+      border-radius: var(--radius);
+      background: var(--primary-glow);
+    }
+    .result-primary-action p { margin: 0 0 12px; color: var(--text); line-height: 1.5; }
+    .result-primary-action .btn { min-height: 48px; }
 
     .section-title {
       font-size: 1rem;
@@ -949,36 +891,6 @@
       background: var(--primary);
     }
 
-    /* Share */
-    .share-row {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 16px;
-      flex-wrap: wrap;
-    }
-    .share-btn {
-      flex: 1;
-      min-width: 120px;
-      min-height: 44px;
-      padding: 10px 16px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      background: var(--surface);
-      color: var(--text);
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      font-family: inherit;
-    }
-    .share-btn:hover { background: var(--surface-hover); transform: translateY(-1px); }
-    .share-btn.twitter { background: #000; color: #fff; border-color: #000; }
-    .share-btn.twitter:hover { background: #1a1a1a; }
-
     /* Related Tests */
     .related-tests { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); }
     .related-tests h3 { font-size: 16px; color: var(--text-dim); margin-bottom: 12px; text-align: center; }
@@ -987,25 +899,6 @@
     .related-card:hover { transform: translateY(-2px); border-color: var(--card-color, var(--primary)); }
     .related-emoji { font-size: 28px; }
     .related-name { font-size: 12px; font-weight: 600; text-align: center; color: var(--text-dim); }
-    .percentile-stat { text-align: center; margin: 16px 0 0; font-size: 13px; color: var(--text-dim); }
-    .percentile-stat strong { color: var(--primary); font-size: 15px; }
-    .result-ad-slot { margin: 20px 0 6px; padding: 12px; background: var(--bg-2); border: 1px solid var(--border); border-radius: 14px; }
-    .result-ad-slot ins { display: block !important; min-height: 250px; }
-
-    /* AI Deep Analysis */
-    .ai-analysis-card { margin: 24px 0; background: linear-gradient(135deg, rgba(0,188,212,0.08), rgba(124,58,237,0.08)); border: 1.5px solid rgba(0,188,212,0.25); border-radius: 16px; padding: 20px; overflow: hidden; }
-    .ai-analysis-header { display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 14px; }
-    .ai-badge { background: linear-gradient(135deg, #00bcd4, #7c3aed); color: #fff; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 800; letter-spacing: 1px; }
-    .ai-preview-text { font-size: 14px; color: var(--text-dim); line-height: 1.6; margin-bottom: 14px; }
-    .ai-preview-note { font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 4px; padding-top: 12px; border-top: 1px solid var(--border); }
-    .btn-ai-unlock { width: 100%; padding: 14px; background: linear-gradient(135deg, #00bcd4, #7c3aed); color: #fff; border: none; border-radius: 12px; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.3s; min-height: 48px; }
-    .btn-ai-unlock:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,188,212,0.3); }
-    .btn-ai-unlock:disabled { opacity: 0.78; cursor: wait; transform: none; box-shadow: none; }
-    .ai-analysis-content { margin-top: 16px; }
-    .ai-section { margin-bottom: 16px; padding: 14px; background: var(--bg-2, rgba(255,255,255,0.04)); border-radius: 10px; }
-    .ai-section h4 { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
-    .ai-section p { font-size: 13px; color: var(--text-dim); line-height: 1.7; margin: 0; }
-
     /* ===== Responsive ===== */
     @media (max-width: 400px) {
       .dimensions-grid { grid-template-columns: 1fr 1fr; }
@@ -1040,10 +933,6 @@
   <a href="#main" class="skip-link" data-i18n="accessibility.skipMain">Skip to main content</a>
   <div class="app-loader" id="app-loader">
     <div class="loader-spinner"></div>
-  </div>
-
-  <div class="ad-banner" id="top-ad">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="auto" data-ad-format="horizontal"></ins>
   </div>
 
   <div class="container" id="main">
@@ -1133,7 +1022,8 @@
         </div>
       </div>
 
-      <p class="disclaimer" data-i18n="intro.disclaimer">This test is for self-understanding only.</p>
+      <p class="disclaimer" data-i18n="intro.disclaimer">This activity is for self-reflection only, not a validated assessment or diagnosis.</p>
+      <p class="method-note" data-i18n="intro.method">Each response receives an author-defined 0–3 points. The total is scenario points, not a population EQ score.</p>
       <button class="btn btn-primary" id="btn-start" data-i18n="intro.start">Start Challenge</button>
     </section>
 
@@ -1161,7 +1051,7 @@
       </div>
 
       <div class="scene-question">
-        <div class="scene-question-text" id="scene-question"></div>
+        <div class="scene-question-text" id="scene-question" tabindex="-1"></div>
       </div>
 
       <div class="options-list" id="options-list"></div>
@@ -1180,32 +1070,16 @@
             <span class="score-max" id="score-max">/ 30</span>
           </div>
         </div>
-        <div class="level-badge" id="level-badge"></div>
-        <p class="level-desc-text" id="level-desc"></p>
+        <p class="result-boundary" data-i18n="result.boundary">These are points from 10 fixed scenarios, not a measured EQ level or diagnosis.</p>
+      </div>
+
+      <div class="result-primary-action" id="result-primary-action">
+        <p data-i18n="result.nextPrompt">Turn the reflection into one practical next step by checking your current stress load.</p>
+        <a href="/stress-check/" class="btn btn-primary" id="btn-next" data-target-slug="stress-check" data-i18n="related.stressCheck">Stress Check</a>
       </div>
 
       <p class="section-title" data-i18n="result.dimTitle">Dimension Scores</p>
       <div class="dim-bars" id="dim-bars"></div>
-
-      <!-- AI Deep Analysis -->
-      <div class="ai-analysis-card" id="ai-analysis-card">
-        <div class="ai-analysis-header">
-          <span class="ai-badge">&#x2728; AI</span>
-          <span data-i18n="premium.title">Deep EQ Analysis</span>
-        </div>
-        <div class="ai-analysis-preview hidden" id="ai-preview">
-          <p class="ai-preview-text" data-i18n="premium.preview">Get a detailed breakdown of your emotional intelligence profile including strengths, blind spots, relationship patterns, and personalized growth roadmap.</p>
-          <p class="ai-preview-text" data-i18n="premium.previewSecondary">Unlock the fuller report to see your blind spots, relationship triggers, and next-growth plan.</p>
-          <p class="ai-preview-note" data-i18n="premium.teaserNote">Unlock after your score to turn insight into a simple next-step plan.</p>
-          <button class="btn-ai-unlock hidden" id="btn-ai-unlock" data-i18n="premium.unlock">Unlock Deep Analysis &#x1F513;</button>
-        </div>
-        <div class="ai-analysis-content" id="ai-content">
-          <div class="ai-section" id="ai-strengths"></div>
-          <div class="ai-section" id="ai-blindspots"></div>
-          <div class="ai-section" id="ai-relationships"></div>
-          <div class="ai-section" id="ai-growth"></div>
-        </div>
-      </div>
 
       <p class="section-title" data-i18n="result.tipsTitle">Growth Tips</p>
       <div class="tips-card" id="tips-card">
@@ -1216,109 +1090,21 @@
         <ul class="tips-list" id="tips-list"></ul>
       </div>
 
-      <div class="share-row">
-        <button class="share-btn" id="btn-save-card" style="background:var(--primary);color:#fff;border-color:var(--primary)">&#128248; Save Result</button>
-        <button class="share-btn twitter" id="btn-twitter">&#120143; Twitter</button>
-        <button class="share-btn" id="btn-copy" data-i18n="share.copy">Copy Link</button>
-      </div>
-
-      <a href="/portal/tests/" class="btn btn-secondary" id="btn-more-tests" data-i18n="result.moreTests">Explore More Tests</a>
-      <button class="btn btn-primary" id="btn-retry" data-i18n="result.retry">Try Again</button>
-
-      <p class="percentile-stat" id="percentile-stat"></p>
-
       <div class="related-tests">
         <h3 data-i18n="result.moreTests">Explore More Tests</h3>
         <div class="related-grid">
-          <a href="/portal/tests/" class="related-card" style="--card-color: #00bcd4">
-            <span class="related-emoji">&#128269;</span>
-            <span class="related-name" data-i18n="result.moreTests">Explore More Tests</span>
-          </a>
-          <a href="/attachment-style/" class="related-card" style="--card-color: #e879a0">
+          <a href="/attachment-style/" class="related-card" data-target-slug="attachment-style" style="--card-color: #e879a0">
             <span class="related-emoji">💕</span>
             <span class="related-name" data-i18n="related.attachmentStyle">Attachment Style</span>
           </a>
-          <a href="/stress-check/" class="related-card" style="--card-color: #e74c3c">
-            <span class="related-emoji">💆</span>
-            <span class="related-name" data-i18n="related.stressCheck">Stress Check</span>
-          </a>
-          <a href="/mbti-love/" class="related-card" style="--card-color: #ff6b9d">
-            <span class="related-emoji">&#128149;</span>
-            <span class="related-name">MBTI Love Match</span>
-          </a>
-          <a href="/portal/blog/en/digital-detox.html" class="related-card" data-blog-key="digital-detox" style="--card-color: #6366f1">
-            <span class="related-emoji">&#127807;</span>
-            <span class="related-name" data-i18n="related.digitalDetoxGuide">Digital Detox Guide</span>
-          </a>
-          <a href="/portal/blog/en/habit-building.html" class="related-card" data-blog-key="habit-building" style="--card-color: #10b981">
-            <span class="related-emoji">&#128200;</span>
-            <span class="related-name" data-i18n="related.habitBuildingGuide">Habit Building Guide</span>
-          </a>
-          <a href="/portal/blog/en/stress-management-techniques-guide.html" class="related-card" data-blog-key="stress-management-techniques-guide" style="--card-color: #f97316">
-            <span class="related-emoji">&#128218;</span>
-            <span class="related-name" data-i18n="related.stressManagementGuide">Stress Management Guide</span>
-          </a>
-          <a href="/portal/blog/en/blood-type-personality-guide.html" class="related-card" data-blog-key="blood-type-personality-guide" style="--card-color: #e74c3c">
-            <span class="related-emoji">&#129656;</span>
-            <span class="related-name" data-i18n="related.bloodTypeGuide">Blood Type Guide</span>
-          </a>
-          <a href="/hsp-test/" class="related-card" style="--card-color: #7c3aed">
+          <a href="/hsp-test/" class="related-card" data-target-slug="hsp-test" style="--card-color: #7c3aed">
             <span class="related-emoji">🧠</span>
             <span class="related-name" data-i18n="related.hspTest">HSP Test</span>
           </a>
-          <a href="/emotion-iceberg/" class="related-card" style="--card-color: #2E86AB">
-            <span class="related-emoji">🧊</span>
-            <span class="related-name" data-i18n="related.emotionIceberg">Emotion Iceberg</span>
-          </a>
-          <a href="/dopamine-type/" class="related-card" style="--card-color: #f59e0b">
-            <span class="related-emoji">&#9889;</span>
-            <span class="related-name">Dopamine Type</span>
-          </a>
-          <a href="/burnout-test/" class="related-card" style="--card-color: #ef4444">
-            <span class="related-emoji">&#128293;</span>
-            <span class="related-name" data-i18n="related.burnoutTest">Burnout Test</span>
-          </a>
-          <a href="/stress-response/" class="related-card" style="--card-color: #6366f1">
-            <span class="related-emoji">&#9889;</span>
-            <span class="related-name" data-i18n="related.stressResponse">Stress Response</span>
-          </a>
-          <a href="/hail-mary-mode/" class="related-card" style="--card-color: #ff8c42">
-            <span class="related-emoji">&#128680;</span>
-            <span class="related-name" data-i18n="related.hailMaryMode">Hail Mary Mode Test</span>
-          </a>
-          <a href="/toxic-trait-test/" class="related-card" style="--card-color: #e11d48">
-            <span class="related-emoji">&#128128;</span>
-            <span class="related-name">Toxic Trait Test</span>
-          </a>
-          <a href="/anxiety-type/" class="related-card" style="--card-color: #10b981">
-            <span class="related-emoji">&#127744;</span>
-            <span class="related-name" data-i18n="related.anxietyType">Anxiety Type</span>
-          </a>
-          <a href="/mental-age/" class="related-card" style="--card-color: #7c4dff">
-            <span class="related-emoji">&#129488;</span>
-            <span class="related-name" data-i18n="related.mentalAge">Mental Age Test</span>
-          </a>
-          <a href="/portal/blog/en/how-to-improve-emotional-intelligence.html" class="related-card" style="--card-color: #3b82f6">
-            <span class="related-emoji">&#128161;</span>
-            <span class="related-name">How to Improve EQ</span>
-          </a>
         </div>
       </div>
-
-      <div class="result-ad-slot" id="result-inline-ad" aria-label="Sponsored">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-3600813755953882"
-             data-ad-slot="auto"
-             data-ad-format="auto"
-             data-full-width-responsive="true"
-             data-ad-surface="eq_test_result"></ins>
-      </div>
+      <button class="btn btn-secondary" id="btn-retry" data-i18n="result.retry">Try Again</button>
     </section>
-  </div>
-
-  <div class="ad-banner" id="bottom-ad">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="auto" data-ad-format="horizontal"></ins>
   </div>
 
   <!-- Feedback Toast -->
@@ -1425,9 +1211,11 @@
     let dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
     let isDark = true;
     let answered = false;
-    let premiumUnlocked = false;
-    let resultAdInitialized = false;
     let autoStartConsumed = false;
+    let quizRunning = false;
+    let resultTracked = false;
+    let resultActionTracked = false;
+    let nextClickTracked = false;
 
     // ===== DOM =====
     const $ = id => document.getElementById(id);
@@ -1436,7 +1224,7 @@
       const payload = Object.assign({
         event_category: 'eq_test',
         surface_type: 'app',
-        surface_name: 'eq_test_result'
+        surface_name: 'eq_test'
       }, params || {});
       if (typeof gtag === 'function') {
         gtag('event', name, payload);
@@ -1456,22 +1244,22 @@
     function getEqAutoStartSurface() {
       const params = new URLSearchParams(window.location.search || '');
       if (params.get('start') !== '1') return '';
-      return params.get('surface') || params.get('utm_content') || 'url_start';
+      const allowed = new Set([
+        'es_emotional_regulation_sticky',
+        'es_emotional_regulation_quick',
+        'es_emotional_regulation_cta'
+      ]);
+      const surface = params.get('surface') || '';
+      return allowed.has(surface) ? surface : '';
     }
 
     function getEqStartParams(surface) {
       const startSurface = surface || 'intro_button';
       return {
-        event_category: 'eq_test',
-        event_label: getEqCurrentLang(),
-        value: SCENES.length,
         lang: getEqCurrentLang(),
         cta_surface: startSurface,
-        launch_surface: startSurface,
-        test_slug: 'eq-test',
-        round_count: SCENES.length,
-        surface_type: 'app',
-        surface_name: 'eq_test_start'
+        entry_mode: startSurface === 'intro_button' ? 'manual' : 'linked',
+        question_count: SCENES.length
       };
     }
 
@@ -1494,41 +1282,6 @@
 
       window.addEventListener('languageChanged', launch, { once: true });
       window.addEventListener('load', launch, { once: true });
-    }
-
-    function getEqLevelKey() {
-      return getLevel(calcTotal());
-    }
-
-    function getEqShareUrl() {
-      const lang = (i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : document.documentElement.lang || 'en';
-      const total = calcTotal();
-      const level = getEqLevelKey();
-      const url = new URL(window.location.origin + window.location.pathname);
-      url.searchParams.set('lang', lang);
-      url.searchParams.set('utm_source', 'share');
-      url.searchParams.set('utm_medium', 'eq_result');
-      url.searchParams.set('utm_campaign', 'personality_result_share');
-      url.searchParams.set('utm_content', level);
-      url.searchParams.set('eq_level', level);
-      url.searchParams.set('eq_score', String(total));
-      return url.toString();
-    }
-
-    function getEqResultParams(method, extra) {
-      const total = calcTotal();
-      const level = getEqLevelKey();
-      return Object.assign({
-        content_type: 'test_result',
-        method: method,
-        eq_total: total,
-        eq_level: level,
-        lang: (i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : document.documentElement.lang || 'en',
-        utm_source: 'share',
-        utm_medium: 'eq_result',
-        utm_campaign: 'personality_result_share',
-        utm_content: level
-      }, extra || {});
     }
 
     const screens = {
@@ -1617,7 +1370,8 @@
       optionsList.innerHTML = '';
       const letters = ['A', 'B', 'C', 'D'];
       for (let oi = 0; oi < 4; oi++) {
-        const card = document.createElement('div');
+        const card = document.createElement('button');
+        card.type = 'button';
         card.className = 'option-card';
         card.setAttribute('data-idx', oi);
         card.innerHTML = `
@@ -1627,6 +1381,7 @@
         card.addEventListener('click', () => selectOption(idx, oi));
         optionsList.appendChild(card);
       }
+      requestAnimationFrame(() => $('scene-question').focus());
     }
 
     function selectOption(roundIdx, optIdx) {
@@ -1655,7 +1410,7 @@
         if (ci === bestIdx && ci !== optIdx) {
           card.classList.add('correct');
         }
-        card.style.pointerEvents = 'none';
+        card.disabled = true;
       });
 
       // Show feedback toast
@@ -1698,71 +1453,6 @@
       return roundScores.reduce((a, b) => a + b, 0);
     }
 
-    function getLevel(total) {
-      if (total >= 28) return 'sage';
-      if (total >= 23) return 'master';
-      if (total >= 16) return 'skilled';
-      if (total >= 9) return 'learner';
-      return 'beginner';
-    }
-
-    const BLOG_PATHS_BY_KEY = {
-      'digital-detox': {
-        defaultLang: 'en',
-        paths: {
-          en: '/portal/blog/en/digital-detox.html',
-          ru: '/portal/blog/ru/digital-detox.html'
-        }
-      },
-      'habit-building': {
-        defaultLang: 'en',
-        paths: {
-          en: '/portal/blog/en/habit-building.html'
-        }
-      },
-      'stress-management-techniques-guide': {
-        defaultLang: 'en',
-        paths: {
-          ko: '/portal/blog/ko/stress-management-techniques-guide.html',
-          en: '/portal/blog/en/stress-management-techniques-guide.html',
-          zh: '/portal/blog/zh/stress-management-techniques-guide.html',
-          hi: '/portal/blog/hi/stress-management-techniques-guide.html',
-          ru: '/portal/blog/ru/stress-management-techniques-guide.html',
-          ja: '/portal/blog/ja/stress-management-techniques-guide.html',
-          es: '/portal/blog/es/stress-management-techniques-guide.html',
-          pt: '/portal/blog/pt/stress-management-techniques-guide.html',
-          id: '/portal/blog/id/stress-management-techniques-guide.html',
-          tr: '/portal/blog/tr/stress-management-techniques-guide.html',
-          de: '/portal/blog/de/stress-management-techniques-guide.html',
-          fr: '/portal/blog/fr/stress-management-techniques-guide.html'
-        }
-      },
-      'blood-type-personality-guide': {
-        defaultLang: 'en',
-        paths: {
-          ko: '/portal/blog/ko/blood-type-personality-guide.html',
-          en: '/portal/blog/en/blood-type-personality-guide.html'
-        }
-      }
-    };
-
-    function getWinnerBlogHref(blogKey) {
-      const config = BLOG_PATHS_BY_KEY[blogKey];
-      if (!config) return '';
-      const lang = (i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : 'en';
-      return config.paths[lang] || config.paths[config.defaultLang] || '';
-    }
-
-    function updateWinnerBlogLinks() {
-      document.querySelectorAll('.related-card[data-blog-key]').forEach(card => {
-        const blogKey = card.dataset.blogKey;
-        const href = getWinnerBlogHref(blogKey);
-        if (href) {
-          card.setAttribute('href', href);
-        }
-      });
-    }
-
     // Max possible per dimension depends on how many scenes target it
     function getDimMax(dimKey) {
       let max = 0;
@@ -1776,124 +1466,66 @@
       return max;
     }
 
-    function resetPremiumTeaser(total, level) {
-      premiumUnlocked = false;
-      var aiPreview = $('ai-preview');
-      var aiContent = $('ai-content');
-      var aiUnlock = $('btn-ai-unlock');
-
-      if (aiPreview) aiPreview.classList.remove('hidden');
-      if (aiContent) aiContent.style.display = 'none';
-      if (aiUnlock) {
-        aiUnlock.classList.remove('hidden');
-        aiUnlock.disabled = false;
-        aiUnlock.textContent = i18n.t('premium.unlock') || 'Unlock Deep Analysis';
-      }
-
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'premium_cta_view', {
-          eq_total: total,
-          eq_level: level,
-          surface_type: 'app',
-          surface_name: 'eq_test_result'
-        });
-      }
-    }
-
-    function initResultAd() {
-      if (resultAdInitialized) return;
-      const ad = document.querySelector('#result-inline-ad .adsbygoogle');
-      if (!ad) return;
-      try {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {}
-      resultAdInitialized = true;
-      trackEqEvent('eq_result_ad_impression', getEqResultParams('ad_impression', {
-        ad_surface: ad.getAttribute('data-ad-surface') || 'eq_test_result',
-        ad_slot: ad.getAttribute('data-ad-slot') || 'auto'
-      }));
-    }
-
-    function unlockAIAnalysis() {
-      if (premiumUnlocked) return;
-
-      const total = calcTotal();
-      const level = getLevel(total);
-      const aiPreview = $('ai-preview');
-      const aiContent = $('ai-content');
-      const aiUnlock = $('btn-ai-unlock');
-      if (!aiContent || !aiUnlock) return;
-
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'premium_unlock_click', {
-          eq_total: total,
-          eq_level: level,
-          surface_type: 'app',
-          surface_name: 'eq_test_result'
-        });
-      }
-
-      aiUnlock.disabled = true;
-      aiUnlock.textContent = 'Preparing Deep Analysis...';
-
-      setTimeout(() => {
-        premiumUnlocked = true;
-        if (aiPreview) aiPreview.classList.add('hidden');
-        aiContent.style.display = 'block';
-
-        if (typeof gtag !== 'undefined') {
-          gtag('event', 'premium_unlock_complete', {
-            eq_total: total,
-            eq_level: level,
-            surface_type: 'app',
-            surface_name: 'eq_test_result'
-          });
-          gtag('event', 'ai_analysis_view', {
-            eq_total: total,
-            eq_level: level,
-            surface_type: 'app',
-            surface_name: 'eq_test_result'
-          });
-        }
-      }, 1200);
-    }
-
     // ===== Result Rendering =====
+    function updateActionLinks() {
+      const lang = getEqCurrentLang();
+      const suffix = '?lang=' + encodeURIComponent(lang);
+      const routes = {
+        'stress-check': '/stress-check/',
+        'attachment-style': '/attachment-style/',
+        'hsp-test': '/hsp-test/'
+      };
+      document.querySelectorAll('[data-target-slug]').forEach(link => {
+        const route = routes[link.dataset.targetSlug];
+        if (route) link.setAttribute('href', route + suffix);
+      });
+    }
+
+    function observeResultAction() {
+      if (resultActionTracked) return;
+      const target = $('result-primary-action');
+      if (!target || typeof IntersectionObserver !== 'function') return;
+      let dwellTimer = null;
+      const observer = new IntersectionObserver(entries => {
+        const qualified = entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= 0.5);
+        if (!qualified) {
+          if (dwellTimer) clearTimeout(dwellTimer);
+          dwellTimer = null;
+          return;
+        }
+        if (dwellTimer || resultActionTracked) return;
+        dwellTimer = setTimeout(() => {
+          resultActionTracked = true;
+          trackEqEvent('eq_result_action_view', { target_slug: 'stress-check', qualification_ms: 500 });
+          observer.disconnect();
+        }, 500);
+      }, { threshold: [0.5] });
+      observer.observe(target);
+    }
+
     function showResult() {
       const total = calcTotal();
-      const level = getLevel(total);
-
+      quizRunning = false;
       showScreen('result');
-      initResultAd();
+      updateActionLinks();
 
-      // Score ring animation
       const arc = $('score-arc');
       const circumference = 2 * Math.PI * 80;
       arc.style.strokeDasharray = circumference;
       arc.style.strokeDashoffset = circumference;
 
-      let current = 0;
       const duration = 1500;
       const startTime = performance.now();
       function animateScore(now) {
-        const elapsed = now - startTime;
-        const progress = Math.min(elapsed / duration, 1);
+        const progress = Math.min((now - startTime) / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3);
-        current = Math.round(eased * total);
-        $('score-number').textContent = current;
-        const offset = circumference - (eased * (total / 30) * circumference);
-        arc.style.strokeDashoffset = offset;
+        $('score-number').textContent = Math.round(eased * total);
+        arc.style.strokeDashoffset = circumference - (eased * (total / 30) * circumference);
         if (progress < 1) requestAnimationFrame(animateScore);
       }
       requestAnimationFrame(animateScore);
-
       $('score-max').textContent = '/ 30';
 
-      // Level badge
-      $('level-badge').textContent = i18n.t('level.' + level);
-      $('level-desc').textContent = i18n.t('level.' + level + 'Desc');
-
-      // Dimension bars
       const barsContainer = $('dim-bars');
       barsContainer.innerHTML = '';
       DIMS.forEach(dim => {
@@ -1916,198 +1548,67 @@
         `;
         barsContainer.appendChild(bar);
       });
-
       requestAnimationFrame(() => {
         document.querySelectorAll('.dim-bar-fill').forEach(el => {
           el.style.width = el.dataset.width + '%';
         });
       });
 
-      // Growth tips - find lowest 2 dimensions
-      const dimEntries = DIMS.map(d => ({
-        key: d.key,
-        pct: getDimMax(d.key) > 0 ? (dimScores[d.key] || 0) / getDimMax(d.key) : 0
+      const dimEntries = DIMS.map(dim => ({
+        key: dim.key,
+        pct: getDimMax(dim.key) > 0 ? (dimScores[dim.key] || 0) / getDimMax(dim.key) : 0
       })).sort((a, b) => a.pct - b.pct);
-
       const tipsList = $('tips-list');
       tipsList.innerHTML = '';
-      // Always show 3 tips: 2 from weakest dims + 1 general
-      const weakDims = dimEntries.slice(0, 2);
-      weakDims.forEach(wd => {
-        const li = document.createElement('li');
-        li.textContent = i18n.t('tips.' + wd.key);
-        tipsList.appendChild(li);
+      dimEntries.slice(0, 2).forEach(entry => {
+        const item = document.createElement('li');
+        item.textContent = i18n.t('tips.' + entry.key);
+        tipsList.appendChild(item);
       });
-      const generalLi = document.createElement('li');
-      generalLi.textContent = i18n.t('tips.general');
-      tipsList.appendChild(generalLi);
+      const generalItem = document.createElement('li');
+      generalItem.textContent = i18n.t('tips.general');
+      tipsList.appendChild(generalItem);
 
-      // GA4 event
-      const resultParams = getEqResultParams('view');
-      trackEqEvent('result_view', resultParams);
-      trackEqEvent('eq_result_view', resultParams);
-      trackEqEvent('eq_test_complete', {
-        eq_total: total,
-        eq_level: level
-      });
-
-      // Percentile stat
-      const pStat = $('percentile-stat');
-      if (pStat) {
-        const pct = 8 + Math.floor(Math.random() * 20);
-        const template = i18n.t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants share your EQ profile';
-        pStat.innerHTML = template.replace('{percent}', pct);
+      if (!resultTracked) {
+        resultTracked = true;
+        trackEqEvent('eq_test_complete', { content_type: 'reflection', question_count: SCENES.length });
       }
-
-      // AI Deep Analysis - generate content based on scores
-      generateAIAnalysis(total, level, dimEntries);
-      resetPremiumTeaser(total, level);
-      updateWinnerBlogLinks();
+      observeResultAction();
     }
 
-    function generateAIAnalysis(total, level, dimEntries) {
-      const strongest = dimEntries[dimEntries.length - 1];
-      const weakest = dimEntries[0];
-      const dimLabels = { self: 'Self-Awareness', empathy: 'Empathy', social: 'Social Skills', regulation: 'Emotional Regulation' };
-
-      var sLabel = i18n.t('dim.' + strongest.key) || dimLabels[strongest.key] || strongest.key;
-      var wLabel = i18n.t('dim.' + weakest.key) || dimLabels[weakest.key] || weakest.key;
-
-      var strengthsText = (i18n.t('ai.strengths') || 'Your strongest area is {dim} ({pct}%). This suggests you naturally excel at understanding and navigating emotional situations in this domain. People likely see you as someone who is particularly attuned in this area.')
-        .replace('{dim}', sLabel).replace('{pct}', Math.round(strongest.pct * 100));
-
-      var blindspotsText = (i18n.t('ai.blindspots') || 'Your growth opportunity lies in {dim} ({pct}%). This doesn\'t mean weakness — it means untapped potential. Small, consistent practice in this area can yield significant improvements in your overall emotional intelligence.')
-        .replace('{dim}', wLabel).replace('{pct}', Math.round(weakest.pct * 100));
-
-      var relText = '';
-      if (strongest.key === 'empathy' || strongest.key === 'social') {
-        relText = i18n.t('ai.relConnector') || 'In relationships, you tend to be the connector — naturally attuning to others\' needs and creating harmony. Watch for over-giving or neglecting your own emotional needs.';
-      } else if (strongest.key === 'regulation') {
-        relText = i18n.t('ai.relStable') || 'In relationships, you provide stability and calm during conflicts. Others rely on your composure. Consider opening up more emotionally to deepen intimacy.';
-      } else {
-        relText = i18n.t('ai.relReflective') || 'In relationships, your self-awareness helps you communicate your needs clearly. You understand your triggers well, which prevents unnecessary conflicts.';
-      }
-
-      var growthText = '';
-      if (total >= 23) {
-        growthText = i18n.t('ai.growthHigh') || 'With your high EQ, focus on mentoring others and applying emotional intelligence in leadership. Consider exploring advanced empathy practices like perspective-taking in diverse cultural contexts.';
-      } else if (total >= 16) {
-        growthText = i18n.t('ai.growthMid') || 'You have a solid EQ foundation. To level up, practice daily emotion labeling (name 3 emotions you feel each day), active listening without planning your response, and mindfulness meditation for emotional regulation.';
-      } else {
-        growthText = i18n.t('ai.growthLow') || 'Your EQ journey is just beginning — and that\'s exciting! Start with basic emotion identification: pause 3 times daily and ask "What am I feeling right now?" Journal about emotional experiences to build self-awareness.';
-      }
-
-      var sTitle = i18n.t('ai.strengthsTitle') || 'Your EQ Strengths';
-      var bTitle = i18n.t('ai.blindspotsTitle') || 'Growth Opportunities';
-      var rTitle = i18n.t('ai.relTitle') || 'Relationship Patterns';
-      var gTitle = i18n.t('ai.growthTitle') || 'Personalized Growth Roadmap';
-
-      $('ai-strengths').innerHTML = '<h4>' + sTitle + '</h4><p>' + strengthsText + '</p>';
-      $('ai-blindspots').innerHTML = '<h4>' + bTitle + '</h4><p>' + blindspotsText + '</p>';
-      $('ai-relationships').innerHTML = '<h4>' + rTitle + '</h4><p>' + relText + '</p>';
-      $('ai-growth').innerHTML = '<h4>' + gTitle + '</h4><p>' + growthText + '</p>';
-
-    }
-
-    // ===== Share =====
-    $('btn-save-card').addEventListener('click', function() {
-      if (typeof ResultCard === 'undefined') return;
-      var btn = this;
-      btn.textContent = '⏳...';
-      btn.disabled = true;
-      var total = calcTotal();
-      var level = getLevel(total);
-      var levelName = i18n.t('level.' + level);
-      var cardDims = DIMS.map(function(dim) {
-        var score = dimScores[dim.key] || 0;
-        var max = getDimMax(dim.key);
-        var pct = max > 0 ? Math.round((score / max) * 100) : 0;
-        return { label: i18n.t('dim.' + dim.key), pct: pct, color: dim.color };
-      });
-      ResultCard.download({
-        appName: 'EQ Test',
-        typeName: levelName,
-        typeEmoji: '🧠',
-        score: total + '/30',
-        dimensions: cardDims,
-        primaryColor: '#00bcd4',
-        tagline: 'dopabrain.com/eq-test',
-        ctaText: i18n.t('start.btn') || 'Take the Test →',
-      }, 'eq-test-result.png').then(function() {
-        btn.textContent = '✅ Saved!';
-        trackEqEvent('eq_save_click', getEqResultParams('download'));
-        setTimeout(function() { btn.textContent = '📸 Save Result'; btn.disabled = false; }, 2000);
-      });
+    $('btn-next').addEventListener('click', function() {
+      if (nextClickTracked) return;
+      nextClickTracked = true;
+      trackEqEvent('eq_next_click', { target_slug: this.dataset.targetSlug });
     });
 
-    $('btn-twitter').addEventListener('click', () => {
-      const total = calcTotal();
-      const level = i18n.t('level.' + getLevel(total));
-      const text = i18n.t('share.twitterText')
-        .replace('{score}', total)
-        .replace('{level}', level);
-      const shareUrl = getEqShareUrl();
-      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(shareUrl), '_blank');
-      const params = getEqResultParams('twitter', { share_url: shareUrl });
-      trackEqEvent('eq_share_click', params);
-      trackEqEvent('share', params);
-    });
-
-    $('btn-copy').addEventListener('click', function() {
-      const shareUrl = getEqShareUrl();
-      navigator.clipboard.writeText(shareUrl).then(() => {
-        this.textContent = '✅ ' + i18n.t('share.copied');
-        setTimeout(() => { this.textContent = '📋 ' + i18n.t('share.copy'); }, 2000);
-      });
-      const params = getEqResultParams('clipboard', { share_url: shareUrl });
-      trackEqEvent('eq_copy_link', params);
-      trackEqEvent('share', params);
-    });
-
-    $('btn-more-tests').addEventListener('click', function() {
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'eq_related_click', {
-          destination: '/portal/tests/',
-          target_label: i18n.t('result.moreTests'),
-          surface_type: 'app',
-          surface_name: 'eq_test_result',
-          recommendation_group: 'tests_hub'
-        });
-      }
-    });
-
-    $('btn-ai-unlock').addEventListener('click', unlockAIAnalysis);
-
+    const relatedClickTargets = new Set();
     document.querySelectorAll('.related-card').forEach(card => {
       card.addEventListener('click', function() {
-        if (typeof gtag !== 'undefined') {
-          const label = this.querySelector('.related-name');
-          gtag('event', 'eq_related_click', {
-            destination: this.getAttribute('href') || '',
-            target_label: label ? label.textContent.trim() : this.textContent.trim(),
-            surface_type: 'app',
-            surface_name: 'eq_test_result',
-            recommendation_group: this.dataset.blogKey ? 'winner_blog' : 'related_test'
-          });
-        }
+        const target = this.dataset.targetSlug;
+        if (!target || relatedClickTargets.has(target)) return;
+        relatedClickTargets.add(target);
+        trackEqEvent('eq_related_click', { target_slug: target });
       });
     });
 
     // ===== Navigation =====
     function startQuiz(surface) {
+      if (quizRunning) return;
       const startSurface = surface || 'intro_button';
       autoStartConsumed = true;
+      quizRunning = true;
+      resultTracked = false;
+      resultActionTracked = false;
+      nextClickTracked = false;
+      relatedClickTargets.clear();
       currentRound = 0;
       roundScores = new Array(SCENES.length).fill(0);
       dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
-      resultAdInitialized = false;
       showScreen('scene');
       renderScene(0);
       const startParams = getEqStartParams(startSurface);
-      if (startSurface !== 'intro_button') trackEqEvent('eq_auto_start', startParams);
       trackEqEvent('eq_test_start', startParams);
-      trackEqEvent('quiz_start', startParams);
-      trackEqEvent('test_start', startParams);
     }
 
     $('btn-start').addEventListener('click', () => startQuiz('intro_button'));
@@ -2116,9 +1617,9 @@
       currentRound = 0;
       roundScores = new Array(SCENES.length).fill(0);
       dimScores = { awareness: 0, empathy: 0, social: 0, regulation: 0 };
-      resultAdInitialized = false;
+      quizRunning = false;
       showScreen('start');
-      if (typeof gtag !== 'undefined') gtag('event', 'eq_test_retry');
+      trackEqEvent('eq_test_retry');
     });
 
     // ===== Language =====
@@ -2145,18 +1646,11 @@
       document.querySelectorAll('.lang-option').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.lang === i18n.getCurrentLanguage());
       });
-      updateWinnerBlogLinks();
+      updateActionLinks();
     });
-    updateWinnerBlogLinks();
+    updateActionLinks();
 
     scheduleEqAutoStart();
-
-    // Engagement tracking (false bounce prevention)
-    setTimeout(() => {
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'page_engage', { event_category: 'eq_test', engagement_time_msec: 5000 });
-      }
-    }, 5000);
 
     // Hide loader
     window.addEventListener('load', () => {
@@ -2170,13 +1664,7 @@
       navigator.serviceWorker.register('sw.js').catch(() => {});
     }
 
-    // AdSense
-    document.querySelectorAll('.ad-banner .adsbygoogle').forEach(() => {
-      try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
-    });
   })();
   </script>
-  <script src="/portal/js/result-card.js" defer></script>
-  <script src="/portal/js/cross-promo.js" defer></script>
 </body>
 </html>

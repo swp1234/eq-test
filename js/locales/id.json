@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Tes EQ | Tantangan Membaca Emosi - DopaBrain",
-    "description": "Baca adegan emosional dan uji empati Anda! 10 skenario interaktif mengukur 4 dimensi EQ."
+    "title": "Tantangan membaca emosi EQ | DopaBrain",
+    "description": "Tinjau pola respons Anda dalam 10 situasi emosi tetap. Menggunakan aturan 0–3 poin buatan penulis; bukan penilaian EQ tervalidasi atau diagnosis."
   },
   "accessibility": {
     "skipMain": "Langsung ke konten utama"
@@ -18,12 +18,13 @@
     "regulation": "Regulasi Emosi"
   },
   "intro": {
-    "desc": "Baca adegan emosional, pecahkan perasaan tersembunyi, dan uji empati Anda melalui 10 tantangan interaktif.",
+    "desc": "Baca 10 adegan emosi tetap dan bandingkan respons yang mungkin Anda pilih.",
     "chip1": "10 Ronde",
     "chip2": "~3 menit",
     "chip3": "4 Dimensi",
-    "disclaimer": "⚠️ Tes ini hanya untuk pemahaman diri dan bukan penilaian psikologis resmi.",
-    "start": "Mulai Tantangan"
+    "disclaimer": "⚠️ Aktivitas ini hanya untuk refleksi diri, bukan penilaian tervalidasi atau diagnosis.",
+    "start": "Mulai Tantangan",
+    "method": "Setiap jawaban mendapat 0–3 poin berdasarkan aturan penulis. Totalnya adalah poin skenario, bukan skor EQ populasi."
   },
   "types": {
     "decoder": "Dekoder Emosi",
@@ -132,75 +133,28 @@
     "okay": "Lumayan, terus amati!",
     "miss": "Pertanyaan tricky!"
   },
-  "level": {
-    "beginner": "🌱 EQ Pemula",
-    "beginnerDesc": "Anda memulai perjalanan kecerdasan emosional. Dengan latihan, kemampuan membaca emosi Anda bisa meningkat drastis.",
-    "learner": "📚 EQ Pelajar",
-    "learnerDesc": "Kesadaran emosi Anda berkembang. Kadang menangkap perasaan mendalam dan empati Anda bertumbuh.",
-    "skilled": "🎯 EQ Terampil",
-    "skilledDesc": "Kecerdasan emosional Anda solid. Membaca sebagian besar situasi dengan akurat dan merespons dengan empati tulus.",
-    "master": "💫 EQ Master",
-    "masterDesc": "Kecerdasan emosional Anda mengesankan. Secara alami merasakan emosi orang lain dan merespons dengan bijak.",
-    "sage": "🧘 EQ Bijak",
-    "sageDesc": "Kecerdasan emosional luar biasa. Kemampuan langka memahami emosi manusia di level terdalam."
-  },
   "tips": {
     "awareness": "Latih cek emosi 3 kali sehari: berhenti dan sebutkan persis apa yang Anda rasakan dan mengapa.",
     "empathy": "Saat mendengarkan seseorang, fokus memahami perasaan mereka sebelum menyusun respons.",
     "social": "Dalam konflik, akui perspektif orang lain sebelum menyampaikan pandangan Anda.",
     "regulation": "Saat emosi kuat muncul, tarik 3 napas dalam sebelum merespons. Jeda kecil ini mengubah segalanya.",
-    "general": "Baca fiksi secara rutin — penelitian menunjukkan ini meningkatkan empati dan pemahaman emosional secara signifikan."
+    "general": "Pilih satu respons untuk dicoba minggu ini dan amati apa yang terjadi."
   },
   "result": {
-    "dimTitle": "Skor per Dimensi",
-    "tipsTitle": "Tips Pengembangan",
-    "personalTips": "Tips Personal",
+    "dimTitle": "Distribusi poin skenario",
+    "tipsTitle": "Pemantik refleksi",
+    "personalTips": "Ide untuk dicoba",
     "retry": "Coba Lagi",
-    "moreTests": "Jelajahi tes lainnya",
-    "percentileStat": "Hanya <strong>{percent}%</strong> peserta memiliki profil EQ yang sama"
-  },
-  "share": {
-    "copy": "📋 Salin Link",
-    "copied": "Tersalin!",
-    "twitterText": "EQ saya: {score}/30 ({level})! Bisakah kamu membaca emosi lebih baik?"
+    "moreTests": "Refleksi terkait",
+    "boundary": "Ini adalah poin dari 10 skenario tetap, bukan tingkat EQ terukur atau diagnosis.",
+    "nextPrompt": "Periksa beban stres saat ini dan ubah refleksi menjadi satu langkah praktis."
   },
   "units": {
     "pts": "poin"
   },
-  "premium": {
-    "title": "Analisis EQ Mendalam",
-    "preview": "Dapatkan analisis detail pola kecerdasan emosional Anda, dinamika hubungan, dan peta jalan pertumbuhan yang dipersonalisasi berdasarkan profil skor unik Anda.",
-    "unlock": "Buka peta EQ saya",
-    "previewSecondary": "Lihat blind spot Anda, pemicu hubungan, dan satu kebiasaan pertumbuhan yang paling cepat mendorong EQ Anda.",
-    "teaserNote": "Buka segera setelah skor keluar untuk mendapatkan langkah berikutnya yang jelas."
-  },
-  "ai": {
-    "strengthsTitle": "Kekuatan EQ Anda",
-    "strengths": "Area terkuat Anda adalah {dim} ({pct}%). Ini menunjukkan bahwa Anda secara alami unggul dalam memahami dan menavigasi situasi emosional di bidang ini. Orang-orang kemungkinan melihat Anda sebagai seseorang yang sangat peka di area ini.",
-    "blindspotsTitle": "Peluang Pertumbuhan",
-    "blindspots": "Peluang pertumbuhan Anda ada di {dim} ({pct}%). Ini bukan kelemahan — ini adalah potensi yang belum tersentuh. Latihan kecil tapi konsisten di area ini dapat menghasilkan peningkatan signifikan dalam kecerdasan emosional Anda secara keseluruhan.",
-    "relTitle": "Pola Hubungan",
-    "relConnector": "Dalam hubungan, Anda cenderung menjadi penghubung — secara alami menyelaraskan dengan kebutuhan orang lain dan menciptakan harmoni. Waspadai memberi terlalu banyak atau mengabaikan kebutuhan emosional Anda sendiri.",
-    "relStable": "Dalam hubungan, Anda memberikan stabilitas dan ketenangan saat konflik. Orang lain mengandalkan ketenangan Anda. Pertimbangkan untuk lebih terbuka secara emosional untuk memperdalam keintiman.",
-    "relReflective": "Dalam hubungan, kesadaran diri Anda membantu mengkomunikasikan kebutuhan dengan jelas. Anda memahami pemicu Anda dengan baik, yang mencegah konflik yang tidak perlu.",
-    "growthTitle": "Peta Jalan Pertumbuhan Personal",
-    "growthHigh": "Dengan EQ tinggi Anda, fokus pada membimbing orang lain dan menerapkan kecerdasan emosional dalam kepemimpinan. Pertimbangkan untuk mengeksplorasi praktik empati lanjutan seperti pengambilan perspektif dalam konteks budaya yang beragam.",
-    "growthMid": "Anda memiliki fondasi EQ yang solid. Untuk naik level, praktikkan pelabelan emosi harian (beri nama 3 emosi yang Anda rasakan setiap hari), mendengarkan aktif tanpa merencanakan respons, dan meditasi mindfulness untuk regulasi emosi.",
-    "growthLow": "Perjalanan EQ Anda baru saja dimulai — dan itu mengasyikkan! Mulai dengan identifikasi emosi dasar: berhenti 3 kali sehari dan tanyakan \"Apa yang saya rasakan sekarang?\" Tulis jurnal tentang pengalaman emosional untuk membangun kesadaran diri."
-  },
   "related": {
-    "hspTest": "Tes HSP",
-    "emotionIceberg": "Gunung Es Emosi",
     "stressCheck": "Cek Stres",
-    "socialBattery": "Baterai Sosial",
-    "burnoutTest": "Tes Burnout",
-    "stressResponse": "Respons Stres",
-    "anxietyType": "Tipe Kecemasan",
     "attachmentStyle": "Gaya Kelekatan",
-    "digitalDetoxGuide": "Panduan Digital Detox",
-    "habitBuildingGuide": "Panduan Membangun Kebiasaan",
-    "stressManagementGuide": "Panduan Manajemen Stres",
-    "bloodTypeGuide": "Panduan Golongan Darah",
-    "hailMaryMode": "Hail Mary Mode Test"
+    "hspTest": "Tes HSP"
   }
 }
