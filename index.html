@@ -1473,7 +1473,7 @@
     // ===== Result Rendering =====
     function updateActionLinks() {
       const lang = getEqCurrentLang();
-      const suffix = '?lang=' + encodeURIComponent(lang);
+      const suffix = '?lang=' + encodeURIComponent(lang) + '&source=eq_test_result';
       const routes = {
         'stress-check': '/stress-check/',
         'attachment-style': '/attachment-style/',
@@ -1584,6 +1584,14 @@
       if (nextClickTracked) return;
       nextClickTracked = true;
       trackEqEvent('eq_next_click', { target_slug: this.dataset.targetSlug });
+      if (typeof gtag === 'function') {
+        gtag('event', 'content_cta_click', {
+          link_id: 'eq_test_next_stress_check',
+          link_text: (this.textContent || '').trim().slice(0, 40),
+          target_url: this.href || '',
+          source_page: 'eq_test_result'
+        });
+      }
     });
 
     const relatedClickTargets = new Set();
@@ -1593,6 +1601,14 @@
         if (!target || relatedClickTargets.has(target)) return;
         relatedClickTargets.add(target);
         trackEqEvent('eq_related_click', { target_slug: target });
+        if (typeof gtag === 'function') {
+          gtag('event', 'content_cta_click', {
+            link_id: 'eq_test_related_' + (target || 'companion'),
+            link_text: (card.textContent || '').trim().slice(0, 40),
+            target_url: card.href || '',
+            source_page: 'eq_test_result'
+          });
+        }
       });
     });
 
